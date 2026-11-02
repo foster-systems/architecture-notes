@@ -12,8 +12,8 @@ A curated, canonical list of what matters in solution architecture with AI agent
 
 The basics that are always good and always true.
 
-- [Domain-driven design](notes/foundations/ddd.md): Building software around a shared model of the business domain, split into bounded contexts with explicit relationships.
 - [Architecture patterns](notes/foundations/patterns.md): Catalogues of named, reusable solutions for structuring applications and distributed systems.
+- [Domain-driven design](notes/foundations/ddd.md): Building software around a shared model of the business domain, split into bounded contexts with explicit relationships.
 - [SOLID principles](notes/foundations/solid.md): Five design principles (SRP, OCP, LSP, ISP, DIP) for managing dependencies so code stays easy to change.
 - [Test-driven development](notes/foundations/tdd.md): A loop of writing a small failing test, making it pass, then cleaning up the design, one behaviour at a time.
 
@@ -27,13 +27,13 @@ How applications built on language models work, and how to build them well.
 
 Delivering and running software with AI agents: what works, what to control, which tools.
 
-- [Governing agents](notes/agentic-engineering/governance.md): Keeping AI agents and agent fleets safe, checked and accountable: permissions, sandboxes, harnesses, approval gates and security controls.
 - [Agentic tools](notes/agentic-engineering/tools.md): The main coding agents and open conventions used for agentic software delivery in late 2026.
+- [Governing agents](notes/agentic-engineering/governance.md): Keeping AI agents and agent fleets safe, checked and accountable: permissions, sandboxes, harnesses, approval gates and security controls.
 <!-- /topics -->
 
 ## How it works
 
-- One topic is one Markdown file in `notes/<section>/`: front matter holds the summary, why it matters, and 5–7 sources with my notes; the body is my take.
+- One topic is one Markdown file in `notes/`; folders are sections and can nest. Front matter holds the summary, why it matters, and 5–7 sources with my notes; the body is my take.
 - Topics show the current state only. The [commit history](https://github.com/foster-systems/architecture-notes/commits/main) records changes.
 - Every push to `main` rebuilds the site. Details for contributors and agents: [AGENTS.md](AGENTS.md).
 

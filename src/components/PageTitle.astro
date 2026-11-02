@@ -1,13 +1,15 @@
 ---
 import Default from '@astrojs/starlight/components/PageTitle.astro';
-import { getCollection } from 'astro:content';
-import { isSection, isTopic, sectionOf, slug, url, type Topic } from '../lib/repo';
+import { ancestors, url } from '../lib/repo';
 
-const entry = Astro.locals.starlightRoute.entry as Topic;
-const section = isTopic(entry)
-	? (await getCollection('docs', (e) => isSection(e) && sectionOf(e) === sectionOf(entry)))[0]
-	: undefined;
+const trail = ancestors(Astro.locals.starlightRoute.entry.id);
 ---
 
-{section && <a class="eyebrow" href={url(`${slug(section)}/`)}>{section.data.title}</a>}
+{
+	trail.length > 0 && (
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			{trail.map((s) => (s.hasIndex ? <a href={url(`${s.id}/`)}>{s.title}</a> : <span>{s.title}</span>))}
+		</nav>
+	)
+}
 <Default />

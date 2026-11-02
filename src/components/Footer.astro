@@ -1,0 +1,11 @@
+---
+import EditLink from '@astrojs/starlight/components/EditLink.astro';
+import { github, url } from '../lib/repo';
+---
+
+<footer class="site-footer">
+	<EditLink />
+	<p>
+		By <a href="https://foster.systems">Przemek Łuniewski</a> · <a href={github}>GitHub</a> · <a href={url('llms.txt')}>llms.txt</a>
+	</p>
+</footer>

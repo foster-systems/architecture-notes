@@ -10,4 +10,4 @@ description: Use when Przemek has approved a change to the architecture notes (a
 3. Edit or add the topic files in `notes/` as `AGENTS.md` describes.
 4. Run `npm run readme`, then `npm run check`. Fix any error.
 5. Commit everything in one commit with a short message naming the change, and `git push origin main`.
-6. Reply with the URL of each changed topic: `https://notes.foster.systems/<section>/<slug>/`. The site updates within about two minutes.
+6. Reply with the URL of each changed topic: `https://notes.foster.systems/<path>/`, the file path under `notes/` without `.md`. The site updates within about two minutes.

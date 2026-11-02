@@ -1,0 +1,18 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+---
+
+<button class="theme-toggle" type="button" aria-label="Switch between light and dark">
+	<Icon name="moon" class="moon" />
+	<Icon name="sun" class="sun" />
+</button>
+
+<script>
+	document.querySelectorAll('.theme-toggle').forEach((button) =>
+		button.addEventListener('click', () => {
+			const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+			document.documentElement.dataset.theme = theme;
+			localStorage.setItem('starlight-theme', theme);
+		}),
+	);
+</script>

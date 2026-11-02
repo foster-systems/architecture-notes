@@ -1,24 +1,17 @@
-// Rewrites the topic list in README.md from the front matter in notes/. With --check, fails if README.md is stale.
-import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
-
-const field = (text, key) => text.match(new RegExp(`^${key}:\\s*"?(.*?)"?$`, 'm'))?.[1] ?? '';
-const order = (dir) => Number(readFileSync(`notes/${dir}/index.md`, 'utf8').match(/^\s+order:\s*(\d+)/m)?.[1] ?? 99);
-
-const sections = readdirSync('notes', { withFileTypes: true })
-	.filter((d) => d.isDirectory() && existsSync(`notes/${d.name}/index.md`))
-	.map((d) => d.name)
-	.sort((a, b) => order(a) - order(b));
+// Rewrites the topic list in README.md from the notes/ tree. With --check, fails if README.md is stale.
+import { readFileSync, writeFileSync } from 'node:fs';
+import { tree } from '../src/lib/tree.mjs';
 
 const lines = [];
-for (const dir of sections) {
-	const index = readFileSync(`notes/${dir}/index.md`, 'utf8');
-	lines.push(`### [${field(index, 'title')}](notes/${dir}/)`, '', field(index, 'description'), '');
-	for (const file of readdirSync(`notes/${dir}`).filter((f) => f.endsWith('.md') && f !== 'index.md').sort()) {
-		const text = readFileSync(`notes/${dir}/${file}`, 'utf8');
-		lines.push(`- [${field(text, 'title')}](notes/${dir}/${file}): ${field(text, 'description')}`);
-	}
-	lines.push('');
-}
+const walk = (node, depth) => {
+	const dir = node.file?.replace(/index\.md$/, '');
+	lines.push(`${'#'.repeat(depth)} ${dir ? `[${node.title}](${dir})` : node.title}`, '');
+	if (node.description) lines.push(node.description, '');
+	for (const p of node.pages) lines.push(`- [${p.title}](${p.file})${p.description ? `: ${p.description}` : ''}`);
+	if (node.pages.length) lines.push('');
+	for (const s of node.sections) walk(s, Math.min(depth + 1, 6));
+};
+for (const s of tree().sections) walk(s, 3);
 
 const readme = readFileSync('README.md', 'utf8');
 const next = readme.replace(/(<!-- topics -->\n)[\s\S]*?(<!-- \/topics -->)/, `$1\n${lines.join('\n')}$2`);

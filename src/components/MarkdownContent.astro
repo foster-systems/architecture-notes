@@ -1,26 +1,25 @@
 ---
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import { getEntry } from 'astro:content';
-import TopicList from './TopicList.astro';
-import { github, lastChanged, url, isSection, isTopic, sectionOf, slug, topicsIn, type Topic } from '../lib/repo';
+import Index from './Index.astro';
+import { github, lastChanged, section, url, type Entry } from '../lib/repo';
 
-const entry = Astro.locals.starlightRoute.entry as Topic;
+const entry = Astro.locals.starlightRoute.entry as Entry;
 const { data, filePath } = entry;
-const topic = isTopic(entry);
-const section = isSection(entry);
-const topics = section ? await topicsIn(sectionOf(entry)) : [];
+const inNotes = filePath?.startsWith('notes/');
+const node = filePath?.endsWith('/index.md') ? section(entry.id) : undefined;
 const related = (await Promise.all((data.related ?? []).map((id) => getEntry('docs', id)))).filter((e) => e !== undefined);
 const changed = filePath && lastChanged(filePath);
 ---
 
 <Default>
-	{data.description && (topic || section) && <p class="lead">{data.description}</p>}
+	{inNotes && data.description && <p class="lead">{data.description}</p>}
 	{
-		topic && filePath && (
+		inNotes && !node && (
 			<p class="page-meta">
 				{data.sources?.length ? <>{data.sources.length} sources · </> : null}
 				{changed && <>updated {changed} · </>}
-				<a href={`${github}/commits/main/${filePath}`}>history</a> · <a href={url(`${slug(entry)}.md`)}>markdown</a>
+				<a href={`${github}/commits/main/${filePath}`}>history</a> · <a href={url(`${entry.id}.md`)}>markdown</a>
 			</p>
 		)
 	}
@@ -57,7 +56,13 @@ const changed = filePath && lastChanged(filePath);
 
 	<slot />
 
-	{topics.length > 0 && <TopicList topics={topics} />}
+	{
+		node && (
+			<div class="not-content">
+				<Index node={node} level={2} />
+			</div>
+		)
+	}
 
 	{
 		related.length > 0 && (
@@ -66,7 +71,7 @@ const changed = filePath && lastChanged(filePath);
 				{related.map((r, i) => (
 					<>
 						{i > 0 && ' · '}
-						<a href={url(`${slug(r)}/`)}>{r.data.title}</a>
+						<a href={url(`${r.id}/`)}>{r.data.title}</a>
 					</>
 				))}
 			</p>

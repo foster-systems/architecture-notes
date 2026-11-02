@@ -7,7 +7,7 @@ Purpose: one curated, canonical list of what matters in solution architecture wi
 ## Reading
 
 - Index: `README.md` (topics with one-line summaries) or `/llms.txt` on the site.
-- Topic: `notes/<section>/<slug>.md`. Section: `notes/<section>/index.md`.
+- Topic: any `.md` file under `notes/`. Section: any folder under `notes/`; folders nest.
 - When Przemek refers to a topic ("DDD as in my notes"), the topic file is the definition he means.
 
 ## Format
@@ -21,7 +21,7 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 Body: `## My take`, then `## When it fits` / `## When it doesn't` (or `## Where teams go wrong`), then `## How I apply it` only where Przemek has real use.
 
-A section is a folder with an `index.md` (`title`, `description`, `sidebar.order`). Slugs never change once published.
+Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, sidebar, `llms.txt` and README list are built from the folder tree, so adding, nesting or moving files needs no code change. Slugs never change once published.
 
 ## Rules
 
