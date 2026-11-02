@@ -2,7 +2,7 @@
 
 What I read, use and think about as a solution architect working with AI agents. Curated links, each with my note, and my take on every topic. By [Przemek Łuniewski](https://foster.systems).
 
-**Site:** https://foster-systems.github.io/architecture-notes · **For agents:** [llms.txt](https://foster-systems.github.io/architecture-notes/llms.txt) · **Changes:** [posts](posts/) and the [commit history](https://github.com/foster-systems/architecture-notes/commits/main)
+**Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt) · **Changes:** [posts](posts/) and the [commit history](https://github.com/foster-systems/architecture-notes/commits/main)
 
 ## Topics
 

@@ -27,7 +27,7 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${repo}` }],
 			editLink: { baseUrl: `https://github.com/${repo}/edit/main/` },
 			head: [
-				{ tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'Posts', href: `${base}/posts/rss.xml` } },
+				{ tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'Posts', href: `${base.replace(/\/$/, "")}/posts/rss.xml` } },
 			],
 			customCss: ['./src/styles.css'],
 			components: { MarkdownContent: './src/components/MarkdownContent.astro' },

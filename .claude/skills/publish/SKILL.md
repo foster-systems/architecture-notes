@@ -11,4 +11,4 @@ description: Use when Przemek has approved a change to the architecture notes (a
 4. Add one post `posts/<today>-<slug>.md`: what changed and why, in his voice, `topics` listing the ids touched.
 5. Run `npm run readme`, then `npm run check`. Fix any error.
 6. Commit everything in one commit, message `<post title>`, and `git push origin main`.
-7. Reply with the post URL: `https://foster-systems.github.io/architecture-notes/posts/<post file name without .md>/`. The site updates within about two minutes.
+7. Reply with the post URL: `https://notes.foster.systems/posts/<post file name without .md>/`. The site updates within about two minutes.
