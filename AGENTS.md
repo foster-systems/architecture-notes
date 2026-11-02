@@ -35,7 +35,7 @@ A section is a folder with an `index.md` (`title`, `description`, `sidebar.order
 Applies to every note, take and doc here.
 
 - Clear and precise. Plain, simple words, short sentences. Say each thing once. Current state only.
-- No filler, no hedging, no mannered prose: no slogans, no "X, not Y" flourishes, no "that is the point", "the real…", "worth your time", "grounded in", "in the era of".
+- No filler, no hedging, no mannered prose: no slogans, no "X, not Y" flourishes, no "that is the point", "the real…", "worth your time", "grounded in".
 - Write about the subject, not about Przemek: no claims of expertise, no self-promotion.
 - Before showing a draft, cut every word that adds nothing.
 
