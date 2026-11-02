@@ -1,0 +1,19 @@
+---
+import { slug, url, type Topic } from '../lib/repo';
+
+const { topics } = Astro.props as { topics: Topic[] };
+---
+
+<ul class="index not-content">
+	{
+		topics.map((t) => (
+			<li>
+				<a href={url(`${slug(t)}/`)}>
+					<span class="index-title">{t.data.title}</span>
+					{t.data.sources?.length ? <span class="index-count">{t.data.sources.length} sources</span> : null}
+					<span class="index-desc">{t.data.description}</span>
+				</a>
+			</li>
+		))
+	}
+</ul>

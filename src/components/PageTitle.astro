@@ -1,0 +1,13 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { getCollection } from 'astro:content';
+import { isSection, isTopic, sectionOf, slug, url, type Topic } from '../lib/repo';
+
+const entry = Astro.locals.starlightRoute.entry as Topic;
+const section = isTopic(entry)
+	? (await getCollection('docs', (e) => isSection(e) && sectionOf(e) === sectionOf(entry)))[0]
+	: undefined;
+---
+
+{section && <a class="eyebrow" href={url(`${slug(section)}/`)}>{section.data.title}</a>}
+<Default />

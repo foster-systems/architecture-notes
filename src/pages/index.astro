@@ -1,52 +1,47 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import { github, posts, postDate, sections, slug, topicsIn, url } from '../lib/repo';
+import PostList from '../components/PostList.astro';
+import TopicList from '../components/TopicList.astro';
+import { github, posts, sections, slug, topicsIn, url } from '../lib/repo';
 
 const groups = await Promise.all((await sections()).map(async (s) => ({ s, topics: await topicsIn(slug(s)) })));
-const latest = (await posts()).slice(0, 5);
+const latest = (await posts()).slice(0, 3);
 ---
 
 <StarlightPage
 	frontmatter={{
-		title: 'Architecture notes',
+		title: 'Software architecture in the era of agents',
 		description: 'Solution architecture with AI agents: curated sources, each with a note, and a take on each topic. By Przemek Łuniewski.',
 		template: 'splash',
-		hero: {
-			tagline:
-				'The sources I trust on solution architecture with AI agents, each with my note, and my take on each topic.',
-			actions: [
-				{ text: 'About these notes', link: url('about/'), icon: 'right-arrow' },
-				{ text: 'Repo on GitHub', link: github, icon: 'github', variant: 'minimal' },
-			],
-		},
 	}}
 >
+	<p class="lead">The sources I trust on solution architecture with AI agents, each with my note, and my take on each topic.</p>
+	<p class="byline">By <a href="https://foster.systems">Przemek Łuniewski</a></p>
+	<div class="actions not-content">
+		<a class="button" href="#topics">Browse topics</a>
+		<a class="button secondary" href={url('about/')}>About these notes</a>
+	</div>
+
+	<h2 id="topics">Topics</h2>
 	{
 		groups.map(({ s, topics }) => (
-			<section>
-				<h2>
-					<a href={url(`${slug(s)}/`)}>{s.data.title}</a>
-				</h2>
-				<p>{s.data.description}</p>
-				<ul class="cards">
-					{topics.map((t) => (
-						<li>
-							<a href={url(`${slug(t)}/`)}>{t.data.title}</a>
-							<span>{t.data.description}</span>
-						</li>
-					))}
-				</ul>
+			<section class="group">
+				<div>
+					<h3>
+						<a href={url(`${slug(s)}/`)}>{s.data.title}</a>
+					</h3>
+					<p>{s.data.description}</p>
+				</div>
+				<TopicList topics={topics} />
 			</section>
 		))
 	}
-	<h2><a href={url('posts/')}>Latest posts</a></h2>
-	<ul>
-		{
-			latest.map((p) => (
-				<li>
-					<a href={url(`posts/${p.id}/`)}>{p.data.title}</a> <span class="post-meta">{postDate(p)} · {p.data.description}</span>
-				</li>
-			))
-		}
-	</ul>
+
+	<h2 id="posts">Latest posts</h2>
+	<PostList posts={latest} />
+	<p class="more"><a href={url('posts/')}>All posts →</a></p>
+
+	<p class="agents">
+		For agents: <a href={url('llms.txt')}>llms.txt</a> · Markdown at every topic URL + <code>.md</code> · <a href={github}>repo</a> · <a href={url("posts/rss.xml")}>RSS</a>
+	</p>
 </StarlightPage>

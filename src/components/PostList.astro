@@ -1,0 +1,19 @@
+---
+import { postDate, url, type Post } from '../lib/repo';
+
+const { posts } = Astro.props as { posts: Post[] };
+---
+
+<ul class="index posts not-content">
+	{
+		posts.map((p) => (
+			<li>
+				<a href={url(`posts/${p.id}/`)}>
+					<time datetime={postDate(p)}>{postDate(p)}</time>
+					<span class="index-title">{p.data.title}</span>
+					<span class="index-desc">{p.data.description}</span>
+				</a>
+			</li>
+		))
+	}
+</ul>
