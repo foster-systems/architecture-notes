@@ -1,0 +1,9 @@
+.lead { font-size: var(--sl-text-lg); color: var(--sl-color-gray-2); }
+.why { border-inline-start: 3px solid var(--sl-color-accent); padding: 0.5rem 1rem; background: var(--sl-color-gray-6); }
+.sources li { margin-bottom: 1rem; }
+.sources .meta, .cards span, .post-meta, .repo-links { display: block; color: var(--sl-color-gray-3); font-size: var(--sl-text-sm); }
+.sources p { margin-top: 0.25rem; }
+.cards { list-style: none; padding: 0; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.cards li { border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; padding: 0.75rem 1rem; margin: 0; }
+.cards a { font-weight: 600; }
+.repo-links { margin-top: 2rem; }

@@ -1,0 +1,52 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { github, posts, postDate, sections, slug, topicsIn, url } from '../lib/repo';
+
+const groups = await Promise.all((await sections()).map(async (s) => ({ s, topics: await topicsIn(slug(s)) })));
+const latest = (await posts()).slice(0, 5);
+---
+
+<StarlightPage
+	frontmatter={{
+		title: 'Architecture notes',
+		description: 'Curated notes on solution architecture in the era of AI agents, by Przemek Łuniewski.',
+		template: 'splash',
+		hero: {
+			tagline:
+				'What I read, use and think about as a solution architect working with AI agents. Curated links, each with my note, and my take on every topic.',
+			actions: [
+				{ text: 'About these notes', link: url('about/'), icon: 'right-arrow' },
+				{ text: 'Repo on GitHub', link: github, icon: 'github', variant: 'minimal' },
+			],
+		},
+	}}
+>
+	{
+		groups.map(({ s, topics }) => (
+			<section>
+				<h2>
+					<a href={url(`${slug(s)}/`)}>{s.data.title}</a>
+				</h2>
+				<p>{s.data.description}</p>
+				<ul class="cards">
+					{topics.map((t) => (
+						<li>
+							<a href={url(`${slug(t)}/`)}>{t.data.title}</a>
+							<span>{t.data.description}</span>
+						</li>
+					))}
+				</ul>
+			</section>
+		))
+	}
+	<h2><a href={url('posts/')}>Latest posts</a></h2>
+	<ul>
+		{
+			latest.map((p) => (
+				<li>
+					<a href={url(`posts/${p.id}/`)}>{p.data.title}</a> <span class="post-meta">{postDate(p)} · {p.data.description}</span>
+				</li>
+			))
+		}
+	</ul>
+</StarlightPage>

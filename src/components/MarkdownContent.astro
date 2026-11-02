@@ -1,0 +1,76 @@
+---
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import { getEntry } from 'astro:content';
+import { github, lastChanged, url, isSection, isTopic, sectionOf, slug, topicsIn, type Topic } from '../lib/repo';
+
+const entry = Astro.locals.starlightRoute.entry as Topic;
+const { data, filePath } = entry;
+const topic = isTopic(entry);
+const topics = isSection(entry) ? await topicsIn(sectionOf(entry)) : [];
+const related = (await Promise.all((data.related ?? []).map((id) => getEntry('docs', id)))).filter((e) => e !== undefined);
+const changed = filePath && lastChanged(filePath);
+---
+
+<Default>
+	{data.description && topic && <p class="lead">{data.description}</p>}
+	{data.why && <aside class="why"><strong>Why it matters.</strong> {data.why}</aside>}
+
+	<slot />
+
+	{
+		topics.length > 0 && (
+			<ul class="cards">
+				{topics.map((t) => (
+					<li>
+						<a href={url(`${slug(t)}/`)}>{t.data.title}</a>
+						<span>{t.data.description}</span>
+					</li>
+				))}
+			</ul>
+		)
+	}
+
+	{
+		data.sources && (
+			<>
+				<h2 id="sources">Sources</h2>
+				<ol class="sources">
+					{data.sources.map((s) => (
+						<li>
+							<a href={s.url}>{s.title}</a>
+							<span class="meta">
+								{s.author} · {s.type} · {s.year}
+							</span>
+							<p>{s.note}</p>
+						</li>
+					))}
+				</ol>
+			</>
+		)
+	}
+
+
+	{
+		related.length > 0 && (
+			<p class="related">
+				Related:{' '}
+				{related.map((r, i) => (
+					<>
+						{i > 0 && ', '}
+						<a href={url(`${slug(r)}/`)}>{r.data.title}</a>
+					</>
+				))}
+			</p>
+		)
+	}
+
+	{
+		topic && filePath && (
+			<p class="repo-links">
+				{changed && <>Last changed {changed} · </>}
+				<a href={`${github}/commits/main/${filePath}`}>History</a> ·{' '}
+				<a href={url(`${slug(entry)}.md`)}>Markdown</a>
+			</p>
+		)
+	}
+</Default>

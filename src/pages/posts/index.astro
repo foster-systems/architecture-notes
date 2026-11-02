@@ -1,0 +1,20 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { posts, postDate, url } from '../../lib/repo';
+
+const all = await posts();
+---
+
+<StarlightPage frontmatter={{ title: 'Posts', description: 'What changed in the notes, and why. Newest first.' }}>
+	<p>Each post comments on one change to the notes. <a href={url('posts/rss.xml')}>RSS</a></p>
+	<ul>
+		{
+			all.map((p) => (
+				<li>
+					<a href={url(`posts/${p.id}/`)}>{p.data.title}</a>
+					<span class="post-meta">{postDate(p)} · {p.data.description}</span>
+				</li>
+			))
+		}
+	</ul>
+</StarlightPage>

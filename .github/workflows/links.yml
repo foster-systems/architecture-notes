@@ -1,0 +1,23 @@
+name: Links
+on:
+  push:
+    branches: [main]
+    paths: ['notes/**', 'posts/**']
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-retries 3 --accept 200..=299,403,429 'notes/**/*.md' 'posts/*.md'
+      - if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "Broken links $(date +%F)" --body-file lychee/out.md
