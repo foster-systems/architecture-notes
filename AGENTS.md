@@ -14,7 +14,7 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 - `title`, `description`: one plain line, what it is.
 - `why`: one or two lines, why an architect working with agents should know it.
-- `sources`: at most 7, each `title`, `author`, `url`, `type` (book, article, paper, talk, docs, repo, guide, spec), `year`, `note`.
+- `sources`: at most 7, each `title`, `author`, `url`, `type` (book, article, paper, talk, docs, repo, guide, spec), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 
 Body: `## My take`, then `## When it fits` / `## When it doesn't` (or `## Where teams go wrong`), then `## How I apply it` only where Przemek has real use.

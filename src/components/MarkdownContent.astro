@@ -40,6 +40,7 @@ const changed = filePath && lastChanged(filePath);
 							<a href={s.url}>{s.title}</a>
 							<span class="meta">
 								{s.author} · {s.type} · {s.year}
+								{s.agents && <> · <a href={s.agents}>for agents</a></>}
 							</span>
 							<p>{s.note}</p>
 						</li>
