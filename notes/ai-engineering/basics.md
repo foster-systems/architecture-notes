@@ -28,7 +28,7 @@ sources:
     url: "https://applied-llms.org/"
     type: guide
     year: 2024
-    note: "Practitioner lessons on tactics, operations and strategy that hold up. It treats the system around the model as the real product."
+    note: "Practitioner lessons on tactics, operations and strategy that hold up. It focuses on the system around the model."
   - title: "AI Evals: Everything You Need to Know"
     author: "Hamel Husain, Shreya Shankar"
     url: "https://hamel.dev/blog/posts/evals-faq/"
@@ -40,14 +40,14 @@ sources:
     url: "https://simonwillison.net/guides/agentic-engineering-patterns/"
     type: guide
     year: 2026
-    note: "A growing set of patterns for getting good code out of coding agents, grounded in daily use and backed by real prompts."
+    note: "A growing set of patterns for getting good code out of coding agents, from daily use, with the prompts."
 ---
 
 ## My take
 
-An application on a language model is a loop: context in, tokens out, tools called, results back into context. Most of the engineering is in that loop, not in the model.
+An application on a language model is a loop: context in, tokens out, tools called, results back into context. Most of the engineering is in that loop.
 
-Start with the simplest thing that works: one call, then a fixed workflow. Add autonomy only when it pays. Context is the scarce resource: what the model sees at each step decides the result more than clever wording. And without evals there is no engineering. Look at real traces and real errors before building dashboards.
+Start with the simplest thing that works: one call, then a fixed workflow. Add autonomy only when it pays. Context is the scarce resource: what the model sees at each step decides the result more than clever wording. Evals are required: read real traces and errors before building dashboards.
 
 ## Where teams go wrong
 

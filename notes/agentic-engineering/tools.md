@@ -47,7 +47,7 @@ sources:
 
 Tools change monthly; the conventions underneath last longer. I judge a tool by three questions: where the agent runs (my machine, a VM, the vendor's cloud), how it gets context (instruction files, skills, MCP), and what stops it (permissions, sandbox, review).
 
-Invest in the portable layer: AGENTS.md, plain-Markdown docs with progressive disclosure, MCP servers and tests. Then switching or mixing agents is cheap, and no single vendor owns your way of working.
+Invest in the portable layer: AGENTS.md, plain-Markdown docs with progressive disclosure, MCP servers and tests. Then switching or mixing agents is cheap, and you are not locked to one vendor.
 
 ## How I apply it
 

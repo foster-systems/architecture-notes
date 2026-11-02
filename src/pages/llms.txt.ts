@@ -8,7 +8,7 @@ export async function GET(context: APIContext) {
 	const lines = [
 		'# Architecture notes',
 		'',
-		'> Curated notes on solution architecture in the era of AI agents, by Przemek Łuniewski. Each topic links 5–7 sources, each with his note, plus his take.',
+		'> Solution architecture with AI agents, by Przemek Łuniewski. Each topic links 5–7 sources, each with his note, plus his take.',
 		'',
 		`Every link below returns Markdown. Source repo: ${github}. About: ${about ? abs('about.md') : ''}`,
 		'A source with an `agents` URL has an agent-readable copy (repo or Markdown) of its site.',

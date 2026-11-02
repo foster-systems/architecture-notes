@@ -16,13 +16,13 @@ sources:
     url: "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/"
     type: article
     year: 2025
-    note: "The simplest test I know for prompt-injection risk. An agent with all three is a data leak waiting to happen, so I redesign."
+    note: "The simplest test I know for prompt-injection risk. If an agent has all three, it can leak data, so I redesign it."
   - title: Design Patterns for Securing LLM Agents against Prompt Injections
     author: Luca Beurer-Kellner et al.
     url: "https://arxiv.org/abs/2506.08837"
     type: paper
     year: 2025
-    note: "Turns prompt-injection defence into concrete architecture patterns with clear trade-offs. I use it when I need a design, not a warning."
+    note: "Turns prompt-injection defence into concrete architecture patterns with clear trade-offs. I use it to pick a design."
   - title: OWASP Top 10 for Agentic Applications for 2026
     author: OWASP GenAI Security Project
     url: "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/"
@@ -40,12 +40,12 @@ sources:
     url: "https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf"
     type: guide
     year: 2026
-    note: Its themes on permission-hungry agents and keeping coding agents on a leash show what teams in the field actually try. I check my practices against it.
+    note: Its themes on permission-hungry agents and keeping coding agents on a leash show what teams in the field try. I check my practices against it.
 ---
 
 ## My take
 
-Agents act with real credentials, so autonomy must stop at a point I chose on purpose. My rule: agents propose, checks verify, a person decides what goes live.
+Agents act with real credentials, so I choose where autonomy stops. My rule: agents propose, checks verify, a person decides what goes live.
 
 Make checks deterministic where you can: tests, linters, schemas, dependency rules. Keep human judgement for what only a person can judge. Protect the rules themselves: an agent must not be able to edit its own guardrails. And treat any agent that reads untrusted content, holds private data and can send data out as already compromised.
 

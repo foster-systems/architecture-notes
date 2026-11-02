@@ -1,6 +1,6 @@
 # Architecture notes
 
-What I read, use and think about as a solution architect working with AI agents. Curated links, each with my note, and my take on every topic. By [Przemek Łuniewski](https://foster.systems).
+The sources I trust on solution architecture with AI agents, each with my note, and my take on each topic. My agents and I use it as a reference: when I mention a topic, this is what I mean. By [Przemek Łuniewski](https://foster.systems).
 
 **Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt) · **Changes:** [posts](posts/) and the [commit history](https://github.com/foster-systems/architecture-notes/commits/main)
 

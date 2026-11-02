@@ -45,9 +45,9 @@ sources:
 
 ## My take
 
-SOLID is five rules for one goal: code you can change without fear. I care less about the letters and more about two outcomes. Each module has one reason to change. Dependencies point toward the stable core, not toward details.
+SOLID is five rules with one goal: code that stays easy to change. I care about two outcomes more than the letters. Each module has one reason to change. Dependencies point toward the stable core, not toward details.
 
-With agents this matters more, not less. An agent changing a module with one clear job reads less and breaks less. And once dependency direction is a rule, a tool can check it on every change instead of a person arguing about it in review.
+Agents make this more important. An agent changing a module with one clear job reads less and breaks less. And once dependency direction is a rule, a tool can check it on every change instead of a person arguing about it in review.
 
 ## When it fits
 
@@ -57,4 +57,4 @@ With agents this matters more, not less. An agent changing a module with one cle
 ## When it doesn't
 
 - Scripts, spikes and throwaway code.
-- Interfaces with one implementation added "for the open-closed principle". That is machinery, not design.
+- Interfaces with one implementation, added only to follow the open-closed principle.

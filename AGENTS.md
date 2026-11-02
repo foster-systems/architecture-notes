@@ -1,6 +1,8 @@
 # Architecture notes: guide for agents
 
-Przemek Łuniewski's curated notes on solution architecture in the era of AI agents. Public repo: everything here is published under his name.
+Przemek Łuniewski's curated notes on solution architecture with AI agents. Public repo: everything here is published under his name.
+
+Purpose: a reference for Przemek and his agents. Per topic, the best sources, each with his note, and his short take. The links are the value; his text stays short.
 
 ## Reading
 
@@ -29,7 +31,15 @@ A section is a folder with an `index.md` (`title`, `description`, `sidebar.order
 - Link, don't copy: no copied passages, diagrams or images. Notes are in Przemek's words, one or two sentences on why the source is worth reading. Quotes are rare, under 15 words, attributed.
 - Open every URL before adding it. 5–7 sources per topic; curated, not exhaustive.
 - Takes and notes are Przemek's opinions. Draft from what he said; never invent experience he has not described.
-- Style: plain, simple words, short, current state only.
+
+## Writing
+
+Applies to every note, take, post and doc here.
+
+- Clear and precise. Plain, simple words, short sentences. Say each thing once. Current state only.
+- No filler, no hedging, no mannered prose: no slogans, no "X, not Y" flourishes, no "that is the point", "the real…", "worth your time", "grounded in", "in the era of".
+- Write about the subject, not about Przemek: no claims of expertise, no self-promotion.
+- Before showing a draft, cut every word that adds nothing.
 
 ## Publishing
 

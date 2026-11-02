@@ -10,7 +10,7 @@ sources:
     url: "https://www.informit.com/store/test-driven-development-by-example-9780321146533"
     type: book
     year: 2002
-    note: "The original book, with worked examples at the pace TDD is meant to run. Read it for the rhythm, not only the rules."
+    note: "The original book, with worked examples at the pace TDD is meant to run."
   - title: Canon TDD
     author: Kent Beck
     url: "https://newsletter.kentbeck.com/p/canon-tdd"

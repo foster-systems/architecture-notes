@@ -23,7 +23,7 @@ export default defineConfig({
 		starlight({
 			title: 'Architecture notes',
 			description:
-				'Curated notes on solution architecture in the era of AI agents, by Przemek Łuniewski.',
+				'Solution architecture with AI agents: curated sources, each with a note, and a take on each topic. By Przemek Łuniewski.',
 			social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${repo}` }],
 			editLink: { baseUrl: `https://github.com/${repo}/edit/main/` },
 			head: [

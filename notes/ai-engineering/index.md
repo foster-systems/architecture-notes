@@ -5,4 +5,4 @@ sidebar:
   order: 2
 ---
 
-The model is one part. Most of the engineering is in the loop around it: context, tools, retrieval and evals.
+Most of the engineering is in the loop around the model: context, tools, retrieval and evals.

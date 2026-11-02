@@ -4,9 +4,9 @@ description: "Six topics to start: SOLID, DDD, TDD, AI engineering basics, gover
 topics: [foundations/solid, foundations/ddd, foundations/tdd, ai-engineering/basics, agentic-engineering/governance, agentic-engineering/tools]
 ---
 
-These notes start with what I lean on every day.
+These notes start with what I use every day.
 
-**Foundations first.** SOLID, DDD and TDD are old, and that is the point. When many agents work on one system, well-known patterns are how they understand each other. Tests are how they know they are done.
+**Foundations first.** SOLID, DDD and TDD are old and still hold. When many agents work on one system, well-known patterns are how they understand each other. Tests are how they know they are done.
 
 **AI engineering basics.** Before building with agents, know the loop they run: context, tools, evals. I picked sources that teach the system around the model, not prompt tricks.
 
