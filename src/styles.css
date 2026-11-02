@@ -127,8 +127,7 @@ h1#_top {
 .eyebrow,
 .source-type,
 .page-meta,
-.index-count,
-.index time {
+.index-count {
 	font-family: var(--__sl-font-mono);
 	font-size: var(--sl-text-xs);
 }
@@ -176,7 +175,7 @@ h1#_top {
 	color: var(--sl-color-white);
 }
 
-/* Lists: sources, topics, posts */
+/* Lists: sources, topics */
 .sources,
 .index {
 	list-style: none;
@@ -255,35 +254,12 @@ h1#_top {
 	font-size: var(--sl-text-sm);
 	color: var(--sl-color-gray-3);
 }
-.posts a {
-	grid-template-columns: 7rem 1fr;
-}
-.posts time {
-	color: var(--sl-color-gray-4);
-	padding-top: 0.2rem;
-}
-.posts .index-desc {
-	grid-column: 2;
-}
-@media (max-width: 40em) {
-	.posts a {
-		grid-template-columns: 1fr;
-	}
-	.posts .index-desc {
-		grid-column: 1;
-	}
-}
-
 .related {
 	margin-top: 2.5rem;
 	padding-top: 1rem;
 	border-top: 1px solid var(--sl-color-hairline);
 	font-size: var(--sl-text-sm);
 	color: var(--sl-color-gray-4);
-}
-.post-meta {
-	color: var(--sl-color-gray-4);
-	font-size: var(--sl-text-sm);
 }
 
 /* Home */
@@ -333,8 +309,7 @@ html:not([data-has-sidebar]) {
 .button.secondary:hover {
 	background: var(--surface-hover);
 }
-.sl-markdown-content #topics,
-.sl-markdown-content #posts {
+.sl-markdown-content #topics {
 	margin-top: 4rem;
 	font-size: var(--sl-text-xs);
 	font-weight: 500;

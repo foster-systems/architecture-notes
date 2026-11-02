@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
-import { github, posts, postDate, sections, slug, topicsIn, url } from '../lib/repo';
+import { github, sections, slug, topicsIn, url } from '../lib/repo';
 
 export async function GET(context: APIContext) {
 	const abs = (path: string) => new URL(url(path), context.site).href;
@@ -17,7 +17,5 @@ export async function GET(context: APIContext) {
 		lines.push('', `## ${s.data.title}`, '', s.data.description ?? '', '');
 		for (const t of await topicsIn(slug(s))) lines.push(`- [${t.data.title}](${abs(`${slug(t)}.md`)}): ${t.data.description}`);
 	}
-	lines.push('', '## Posts', '');
-	for (const p of await posts()) lines.push(`- [${p.data.title}](${github}/blob/main/${p.filePath}) (${postDate(p)}): ${p.data.description}`);
 	return new Response(lines.join('\n') + '\n', { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 }

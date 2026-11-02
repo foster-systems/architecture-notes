@@ -31,9 +31,6 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${repo}` }],
 			editLink: { baseUrl: `https://github.com/${repo}/edit/main/` },
 			pagination: false,
-			head: [
-				{ tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'Posts', href: `${base.replace(/\/$/, "")}/posts/rss.xml` } },
-			],
 			customCss: ['@fontsource-variable/inter', '@fontsource-variable/jetbrains-mono', './src/styles.css'],
 			routeMiddleware: './src/routeData.ts',
 			components: {
@@ -41,7 +38,7 @@ export default defineConfig({
 				PageTitle: './src/components/PageTitle.astro',
 			},
 			sidebar: [
-				{ label: 'Start here', items: [{ label: 'Home', link: '/' }, { label: 'About', slug: 'about' }, { label: 'Posts', link: '/posts/' }] },
+				{ label: 'Start here', items: [{ label: 'Home', link: '/' }, { label: 'About', slug: 'about' }] },
 				...sections,
 			],
 		}),

@@ -1,8 +1,8 @@
 # Architecture notes
 
-The sources I trust on solution architecture with AI agents, each with my note, and my take on each topic. My agents and I use it as a reference: when I mention a topic, this is what I mean. By [Przemek Łuniewski](https://foster.systems).
+A curated, canonical list of what matters in solution architecture with AI agents: per topic, the sources I trust, each with my note, and my take. My agents and I use it as a reference: when I mention a topic, this is what I mean. By [Przemek Łuniewski](https://foster.systems).
 
-**Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt) · **Changes:** [posts](posts/) and the [commit history](https://github.com/foster-systems/architecture-notes/commits/main)
+**Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt)
 
 ## Topics
 
@@ -34,11 +34,11 @@ Delivering and running software with AI agents: what works, what to control, whi
 ## How it works
 
 - One topic is one Markdown file in `notes/<section>/`: front matter holds the summary, why it matters, and 5–7 sources with my notes; the body is my take.
-- Each change comes with a post in `posts/`, commenting on what was added, removed or changed, and why.
+- Topics show the current state only. The [commit history](https://github.com/foster-systems/architecture-notes/commits/main) records changes.
 - Every push to `main` rebuilds the site. Details for contributors and agents: [AGENTS.md](AGENTS.md).
 
 Suggest a source by opening an [issue](https://github.com/foster-systems/architecture-notes/issues).
 
 ## Licence
 
-Text in `notes/` and `posts/`: [CC BY 4.0](LICENSE-CONTENT). Code: [MIT](LICENSE). Linked sources belong to their authors.
+Text in `notes/`: [CC BY 4.0](LICENSE-CONTENT). Code: [MIT](LICENSE). Linked sources belong to their authors.

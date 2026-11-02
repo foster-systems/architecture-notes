@@ -9,7 +9,6 @@
     "check": "node scripts/readme.mjs --check && astro build"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.19",
     "@astrojs/starlight": "^0.42.8",
     "@fontsource-variable/inter": "^5.3.0",
     "@fontsource-variable/jetbrains-mono": "^5.3.0",

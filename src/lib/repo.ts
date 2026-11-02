@@ -19,10 +19,7 @@ export const lastChanged = (file: string) => {
 	return t || undefined;
 };
 
-export const addedIn = (file: string) => git('log', '--diff-filter=A', '--format=%H', '-1', '--', file) || undefined;
-
 export type Topic = CollectionEntry<'docs'>;
-export type Post = CollectionEntry<'posts'>;
 
 const parts = (e: Topic) => (e.filePath ?? '').split('/');
 export const sectionOf = (e: Topic) => parts(e)[1];
@@ -38,10 +35,4 @@ export async function topicsIn(section: string) {
 	return (await getCollection('docs', (e) => isTopic(e) && sectionOf(e) === section)).sort((a, b) =>
 		a.data.title.localeCompare(b.data.title),
 	);
-}
-
-export const postDate = (p: Post) => p.id.slice(0, 10);
-
-export async function posts() {
-	return (await getCollection('posts')).sort((a, b) => b.id.localeCompare(a.id));
 }

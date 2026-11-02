@@ -2,12 +2,12 @@
 
 Przemek Łuniewski's curated notes on solution architecture with AI agents. Public repo: everything here is published under his name.
 
-Purpose: a reference for Przemek and his agents. Per topic, the best sources, each with his note, and his short take. The links are the value; his text stays short.
+Purpose: one curated, canonical list of what matters in solution architecture with AI agents, used as a reference by Przemek and his agents. Per topic, the best sources, each with his note, and his short take. The links are the value; his text stays short. Topics show the current state only: no posts, changelogs or comments on changes; git history is the record.
 
 ## Reading
 
 - Index: `README.md` (topics with one-line summaries) or `/llms.txt` on the site.
-- Topic: `notes/<section>/<slug>.md`. Section: `notes/<section>/index.md`. Post: `posts/YYYY-MM-DD-<slug>.md`.
+- Topic: `notes/<section>/<slug>.md`. Section: `notes/<section>/index.md`.
 - When Przemek refers to a topic ("DDD as in my notes"), the topic file is the definition he means.
 
 ## Format
@@ -21,8 +21,6 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 Body: `## My take`, then `## When it fits` / `## When it doesn't` (or `## Where teams go wrong`), then `## How I apply it` only where Przemek has real use.
 
-Post front matter: `title`, `description`, `topics` (ids touched). Body: a few short paragraphs on what changed and why. The site links each post to the commit that added it, so a post and its change go in one commit.
-
 A section is a folder with an `index.md` (`title`, `description`, `sidebar.order`). Slugs never change once published.
 
 ## Rules
@@ -34,7 +32,7 @@ A section is a folder with an `index.md` (`title`, `description`, `sidebar.order
 
 ## Writing
 
-Applies to every note, take, post and doc here.
+Applies to every note, take and doc here.
 
 - Clear and precise. Plain, simple words, short sentences. Say each thing once. Current state only.
 - No filler, no hedging, no mannered prose: no slogans, no "X, not Y" flourishes, no "that is the point", "the real…", "worth your time", "grounded in", "in the era of".
@@ -43,4 +41,4 @@ Applies to every note, take, post and doc here.
 
 ## Publishing
 
-Use the `publish` skill (`.claude/skills/publish/SKILL.md`). In short: edit topics, add one post, `npm run readme`, `npm run check`, one commit, push to `main`. The push rebuilds the site.
+Use the `publish` skill (`.claude/skills/publish/SKILL.md`). In short: edit topics, `npm run readme`, `npm run check`, one commit, push to `main`. The push rebuilds the site.

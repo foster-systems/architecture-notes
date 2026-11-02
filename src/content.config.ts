@@ -25,12 +25,4 @@ export const collections = {
 		loader: glob({ base: './notes', pattern: '**/[^_]*.md' }),
 		schema: docsSchema({ extend: topic }),
 	}),
-	posts: defineCollection({
-		loader: glob({ base: './posts', pattern: '*.md' }),
-		schema: z.object({
-			title: z.string(),
-			description: z.string(),
-			topics: z.array(z.string()).default([]),
-		}),
-	}),
 };
