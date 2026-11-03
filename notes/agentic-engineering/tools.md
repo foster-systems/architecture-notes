@@ -10,7 +10,7 @@ sources:
     url: "https://code.claude.com/docs/en/overview"
     type: docs
     year: 2026
-    note: "Entry point to a mature agent harness for the terminal, IDE, desktop, web and CI. Worth reading for its model of instructions, skills, hooks and subagents."
+    note: "Entry point to a mature agent harness for the terminal, IDE, desktop, web and CI, and its model of instructions, skills, hooks and subagents."
   - title: Codex documentation
     author: OpenAI
     url: "https://learn.chatgpt.com/docs"
