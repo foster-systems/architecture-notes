@@ -3,7 +3,7 @@ title: Supervising agents
 description: "The engineer's job when agents write the code: directing them, checking their output, stepping in, and keeping the skill to do it."
 why: "Engineers now answer for code they rarely write or read. An architect has to define what they own, what signals they get, and how they keep the skill to step in."
 tags: [supervisory-control, human-factors, accountability, cognitive-debt, verification]
-related: [agentic-engineering/governance, foundations/tdd]
+related: [agentic-engineering/governance, agentic-engineering/delivery, foundations/tdd]
 sources:
   - title: Supervisory Engineering Work
     author: Annie Vella

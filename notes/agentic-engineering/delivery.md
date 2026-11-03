@@ -3,7 +3,7 @@ title: Delivery at agent scale
 description: "Source control, CI and merge queues when many agents change one codebase at once."
 why: "Agents produce changes faster than tools built for people can check and merge them. Without a pipeline built for that rate, main goes red and nobody trusts the checks."
 tags: [ci, continuous-integration, source-control, merge-queue, monorepo]
-related: [agentic-engineering/governance, agentic-engineering/tools, foundations/tdd]
+related: [agentic-engineering/governance, agentic-engineering/tools, agentic-engineering/supervising-agents, foundations/tdd]
 sources:
   - title: Redesigning source control at Anthropic
     author: Nick G. and the Anthropic source control team
