@@ -2,7 +2,7 @@
 title: Agentic tools
 description: The main coding agents and open conventions used for agentic software delivery in late 2026.
 why: "Fleets mix tools. An architect needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
-tags: [coding-agents, mcp, agents-md, claude-code, codex, copilot]
+tags: [coding-agents, mcp, agents-md, agent-skills, claude-code, codex, copilot]
 related: [agentic-engineering/governance, ai-engineering/basics]
 sources:
   - title: Claude Code overview
@@ -41,4 +41,10 @@ sources:
     type: spec
     year: 2025
     note: A plain-Markdown convention for repo instructions that most coding agents read. The cheapest way to make one repo work well with many agents.
+  - title: Agent Skills specification
+    author: Agentic AI Foundation (Linux Foundation)
+    url: "https://agentskills.io/specification"
+    type: spec
+    year: 2025
+    note: "An open format for instructions and scripts that agents load only when a task needs them. One skill folder works in most coding agents."
 ---
