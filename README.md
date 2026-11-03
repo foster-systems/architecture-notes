@@ -29,6 +29,7 @@ How applications built on language models work, and how to build them well.
 Delivering and running software with AI agents: what works, what to control, which tools.
 
 - [Agentic tools](notes/agentic-engineering/tools.md): The main coding agents and open conventions used for agentic software delivery in late 2026.
+- [Delivery at agent scale](notes/agentic-engineering/delivery.md): Source control, CI and merge queues when many agents change one codebase at once.
 - [Governing agents](notes/agentic-engineering/governance.md): Keeping AI agents and agent fleets safe, checked and accountable: permissions, sandboxes, harnesses, approval gates and security controls.
 <!-- /topics -->
 
