@@ -3,7 +3,7 @@ title: Governing agents
 description: "Keeping AI agents and agent fleets safe, checked and accountable: permissions, sandboxes, harnesses, approval gates and security controls."
 why: "Agents act with real credentials on real systems, and prompt injection is still unsolved. An architect has to design where autonomy stops and how output gets verified."
 tags: [governance, security, prompt-injection, sandboxing, harness-engineering, guardrails]
-related: [foundations/tdd, ai-engineering/basics, agentic-engineering/tools]
+related: [foundations/tdd, ai-engineering/basics, agentic-engineering/tools, agentic-engineering/supervising-agents]
 sources:
   - title: Harness engineering for coding agent users
     author: Birgitta Böckeler
