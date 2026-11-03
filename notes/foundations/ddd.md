@@ -29,6 +29,12 @@ sources:
     type: repo
     year: 2020
     note: "A reference card for context maps: each relationship pattern between bounded contexts, with the team dynamics behind it. The strategic part of DDD, which matters most to me."
+  - title: Context Mapping with an AI-based Component
+    author: Eric Evans
+    url: "https://www.domainlanguage.com/articles/context-mapping-an-ai-based-component/"
+    type: article
+    year: 2026
+    note: "Evans maps an LLM component as its own bounded context, behind an anticorruption layer. A short worked example of strategic design with a probabilistic part."
   - title: DDD Starter Modelling Process
     author: DDD Crew
     url: "https://github.com/ddd-crew/ddd-starter-modelling-process"
