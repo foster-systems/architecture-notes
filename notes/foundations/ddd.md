@@ -42,7 +42,3 @@ sources:
     year: 2026
     note: "A practitioner's case that domain understanding and consistent naming matter more once agents write the code, because agents copy whatever names they find."
 ---
-
-## How I apply it
-
-In a low-code transaction workflow engine, one generic Resource aggregate carries every transaction. Document types are versioned schemas plus workflow configuration, not new code. External systems sit behind adapters, so the domain does not leak into integrations.

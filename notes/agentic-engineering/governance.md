@@ -42,7 +42,3 @@ sources:
     year: 2026
     note: Its themes on permission-hungry agents and keeping coding agents on a leash show what teams in the field try. I check my practices against it.
 ---
-
-## How I apply it
-
-In my wingman agent fleet, agents work in their own threads and push their own changes. The files that hold their rules and loop scripts are guarded by an owner-only GitHub ruleset, so no agent can loosen its own limits, and only my approval makes anything live. These notes run the same way: an agent researches daily and proposes, and nothing is published without my OK.

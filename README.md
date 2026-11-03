@@ -33,7 +33,7 @@ Delivering and running software with AI agents: what works, what to control, whi
 
 ## How it works
 
-- One topic is one Markdown file in `notes/`; folders are sections and can nest. Front matter holds the summary, why it matters, and 5–7 sources with my notes; the body, where present, is how I apply it.
+- One topic is one Markdown file in `notes/`; folders are sections and can nest. Front matter holds the summary, why it matters, and 5–7 sources with my notes. No body.
 - Topics show the current state only. The [commit history](https://github.com/foster-systems/architecture-notes/commits/main) records changes.
 - Every source must be readable by agents. A nightly check (`npm run links`) opens an issue when one is dead or blocked.
 - Every push to `main` rebuilds the site. Details for contributors and agents: [AGENTS.md](AGENTS.md).

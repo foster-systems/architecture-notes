@@ -19,9 +19,9 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 - `sources`: at most 7, each `title`, `author`, `url`, `type` (article, paper, talk, docs, repo, guide, spec), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 
-Body: optional, only `## How I apply it`, where Przemek has real use. No other sections.
+No body: a topic is its front matter.
 
-Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. `scripts/links.mjs` checks this nightly.
+Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. Talks are the exception: they need only be online. `scripts/links.mjs` checks this nightly.
 
 Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, sidebar, `llms.txt` and README list are built from the folder tree, so adding, nesting or moving files needs no code change. Slugs never change once published.
 
@@ -30,7 +30,7 @@ Sections are folders, nested as deep as needed. A folder's optional `index.md` g
 - Publish only after Przemek's explicit OK on the final text. Drafts never go to this repo: not in commits, branches or pull requests.
 - Link, don't copy: no copied passages, diagrams or images. Notes are in Przemek's words, one or two sentences on why the source is worth reading. Quotes are rare, under 15 words, attributed.
 - Open every URL before adding it. 5–7 sources per topic; curated, not exhaustive.
-- `why`, notes and "How I apply it" are Przemek's opinions. Draft from what he said; never invent experience he has not described.
+- `why` and notes are Przemek's opinions. Draft from what he said; never invent experience he has not described.
 
 ## Writing
 

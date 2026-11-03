@@ -9,7 +9,7 @@ These notes are a curated, canonical list of what matters in solution architectu
 
 ## What you find here
 
-One page per topic, grouped in sections. Each says why it matters and lists 5–7 sources I picked, each with my note on why it is worth reading. Some add how I apply it.
+One page per topic, grouped in sections. Each says why it matters and lists 5–7 sources I picked, each with my note on why it is worth reading.
 
 Topics show the current state. When a better source appears, the list changes. Each page links to its history on GitHub.
 

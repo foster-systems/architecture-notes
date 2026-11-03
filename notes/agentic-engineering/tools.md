@@ -42,7 +42,3 @@ sources:
     year: 2025
     note: A plain-Markdown convention for repo instructions that most coding agents read. The cheapest way to make one repo work well with many agents.
 ---
-
-## How I apply it
-
-I run Claude Code agents in T3 Code, on my Mac and on a VM, with scheduled loops on systemd timers. These notes ship an AGENTS.md and an llms.txt, so any agent can read them without scraping.
