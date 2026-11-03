@@ -41,7 +41,7 @@ async function check({ url, readable }) {
 				last = `HTTP ${res.status}`;
 				continue;
 			}
-			if (!readable) return res.status < 400 || res.status === 403 ? null : `HTTP ${res.status}`;
+			if (!readable) return res.status < 400 || res.status === 403 || res.status === 406 ? null : `HTTP ${res.status}`;
 			if (res.status !== 200) return `HTTP ${res.status}: agents cannot read it`;
 			if (type.includes('pdf')) return null;
 			const body = await res.text();
