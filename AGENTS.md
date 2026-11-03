@@ -21,13 +21,14 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 No body: a topic is its front matter.
 
-Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. Talks are the exception: they need only be online. `scripts/links.mjs` checks this nightly.
+Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. Talks are the exception: they need only be online. `scripts/links.mjs` (`npm run links`) checks this nightly; a link-check agent fixes what fails.
 
 Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, sidebar, `llms.txt` and README list are built from the folder tree, so adding, nesting or moving files needs no code change. Slugs never change once published.
 
 ## Rules
 
 - Publish only after Przemek's explicit OK on the final text. Drafts never go to this repo: not in commits, branches or pull requests.
+- One exception: a link fix that keeps the source and its note needs no OK. That is the same content at a new URL, or an `agents` link to a readable copy of it. Replacing or removing a source still needs his OK.
 - Link, don't copy: no copied passages, diagrams or images. Notes are in Przemek's words, one or two sentences on why the source is worth reading. Quotes are rare, under 15 words, attributed.
 - Open every URL before adding it. 5–7 sources per topic; curated, not exhaustive.
 - `why` and notes are Przemek's opinions. Draft from what he said; never invent experience he has not described.
