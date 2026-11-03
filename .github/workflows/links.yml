@@ -2,9 +2,9 @@ name: Links
 on:
   push:
     branches: [main]
-    paths: ['notes/**']
+    paths: ['notes/**', 'scripts/links.mjs']
   schedule:
-    - cron: '0 5 * * 1'
+    - cron: '0 2 * * *'
   workflow_dispatch:
 permissions:
   contents: read
@@ -14,10 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: lycheeverse/lychee-action@v2
+      - uses: actions/setup-node@v5
         with:
-          args: --scheme https --scheme http --no-progress --max-retries 3 --accept 200..=299,403,429 'notes/**/*.md'
-      - if: failure() && github.event_name == 'schedule'
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run links | tee report.md
+      - if: failure() && github.event_name != 'push'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue create --title "Broken links $(date +%F)" --body-file lychee/out.md
+        run: |
+          open=$(gh issue list --state open --search 'in:title "Broken links"' --json number --jq '.[0].number')
+          if [ -n "$open" ]; then gh issue comment "$open" --body-file report.md
+          else gh issue create --title "Broken links" --body-file report.md; fi
