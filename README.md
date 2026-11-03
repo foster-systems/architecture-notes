@@ -1,6 +1,6 @@
 # Architecture notes
 
-A curated, canonical list of what matters in solution architecture with AI agents: per topic, the sources I trust, each with my note, and my take. My agents and I use it as a reference: when I mention a topic, this is what I mean. By [Przemek Łuniewski](https://foster.systems).
+A curated, canonical list of what matters in solution architecture with AI agents: per topic, the sources I trust, each with my note. My agents and I use it as a reference: when I mention a topic, this is what I mean. By [Przemek Łuniewski](https://foster.systems).
 
 **Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt)
 
@@ -33,8 +33,9 @@ Delivering and running software with AI agents: what works, what to control, whi
 
 ## How it works
 
-- One topic is one Markdown file in `notes/`; folders are sections and can nest. Front matter holds the summary, why it matters, and 5–7 sources with my notes; the body is my take.
+- One topic is one Markdown file in `notes/`; folders are sections and can nest. Front matter holds the summary, why it matters, and 5–7 sources with my notes; the body, where present, is how I apply it.
 - Topics show the current state only. The [commit history](https://github.com/foster-systems/architecture-notes/commits/main) records changes.
+- Every source must be readable by agents. A nightly check (`npm run links`) opens an issue when one is dead or blocked.
 - Every push to `main` rebuilds the site. Details for contributors and agents: [AGENTS.md](AGENTS.md).
 
 Suggest a source by opening an [issue](https://github.com/foster-systems/architecture-notes/issues).

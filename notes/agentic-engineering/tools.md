@@ -43,12 +43,6 @@ sources:
     note: A plain-Markdown convention for repo instructions that most coding agents read. The cheapest way to make one repo work well with many agents.
 ---
 
-## My take
-
-Tools change monthly; the conventions underneath last longer. I judge a tool by three questions: where the agent runs (my machine, a VM, the vendor's cloud), how it gets context (instruction files, skills, MCP), and what stops it (permissions, sandbox, review).
-
-Invest in the portable layer: AGENTS.md, plain-Markdown docs with progressive disclosure, MCP servers and tests. Then switching or mixing agents is cheap, and you are not locked to one vendor.
-
 ## How I apply it
 
 I run Claude Code agents in T3 Code, on my Mac and on a VM, with scheduled loops on systemd timers. These notes ship an AGENTS.md and an llms.txt, so any agent can read them without scraping.

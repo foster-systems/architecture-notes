@@ -7,31 +7,10 @@ import { notes, url } from '../lib/repo';
 <StarlightPage
 	frontmatter={{
 		title: 'Software architecture in the era of agents',
-		description: 'Solution architecture with AI agents: curated sources, each with a note, and a take on each topic. By Przemek Łuniewski.',
-		template: 'splash',
+		description: 'Solution architecture with AI agents: curated sources, each with a note. By Przemek Łuniewski.',
 		pagefind: false,
 	}}
 >
-	<p class="lead">The sources I trust on solution architecture with AI agents, each with my note, and my take on each topic.</p>
-	<div class="actions not-content">
-		<a class="button" href="#topics">Browse topics</a>
-		<a class="button secondary" href={url('about/')}>About these notes</a>
-	</div>
-
-	<h2 id="topics">Topics</h2>
-	<div class="not-content">
-		{
-			notes.sections.map((s) => (
-				<section class="group">
-					<div>
-						<h3>{s.hasIndex ? <a href={url(`${s.id}/`)}>{s.title}</a> : s.title}</h3>
-						{s.description && <p>{s.description}</p>}
-					</div>
-					<div>
-						<Index node={s} level={4} />
-					</div>
-				</section>
-			))
-		}
-	</div>
+	<p class="lead">The sources I trust on solution architecture with AI agents, each with my note. <a href={url('about/')}>About these notes</a>.</p>
+	<Index node={{ ...notes, pages: [] }} level={2} />
 </StarlightPage>

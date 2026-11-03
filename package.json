@@ -6,7 +6,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "readme": "node scripts/readme.mjs",
-    "check": "node scripts/readme.mjs --check && astro build"
+    "check": "node scripts/readme.mjs --check && astro build",
+    "links": "node scripts/links.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.8",

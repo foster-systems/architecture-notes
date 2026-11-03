@@ -43,16 +43,6 @@ sources:
     note: Its themes on permission-hungry agents and keeping coding agents on a leash show what teams in the field try. I check my practices against it.
 ---
 
-## My take
-
-Agents act with real credentials, so I choose where autonomy stops. My rule: agents propose, checks verify, a person decides what goes live.
-
-Make checks deterministic where you can: tests, linters, schemas, dependency rules. Keep human judgement for what only a person can judge. Protect the rules themselves: an agent must not be able to edit its own guardrails. And treat any agent that reads untrusted content, holds private data and can send data out as already compromised.
-
-## When it fits
-
-Always. The question is only how much: a solo developer with one agent needs a sandbox and tests; a fleet with production access needs approval gates, audit and protected rules.
-
 ## How I apply it
 
 In my wingman agent fleet, agents work in their own threads and push their own changes. The files that hold their rules and loop scripts are guarded by an owner-only GitHub ruleset, so no agent can loosen its own limits, and only my approval makes anything live. These notes run the same way: an agent researches daily and proposes, and nothing is published without my OK.

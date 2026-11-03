@@ -27,10 +27,10 @@ sources:
     note: "The pattern language for microservices: service boundaries, data, sagas, messaging, testing, deployment and observability. Shows how the patterns depend on each other."
   - title: Enterprise Integration Patterns
     author: "Gregor Hohpe, Bobby Woolf"
-    url: "https://www.enterpriseintegrationpatterns.com/"
-    type: book
+    url: "https://www.enterpriseintegrationpatterns.com/patterns/messaging/"
+    type: guide
     year: 2003
-    note: "65 messaging patterns that still name most of what queues, event buses and agent-to-agent messaging do. The pattern summaries on the site are free to read."
+    note: "65 messaging patterns that still name most of what queues, event buses and agent-to-agent messaging do. Each pattern has its own free page."
   - title: Catalog of Patterns of Distributed Systems
     author: Unmesh Joshi
     url: "https://martinfowler.com/articles/patterns-of-distributed-systems/"
@@ -44,16 +44,3 @@ sources:
     year: 2017
     note: "One large Markdown guide to systems at scale: caching, databases, load balancing, consistency. Written for interviews, but a solid overview an agent can read in one go."
 ---
-
-## My take
-
-I don't need to say much here: the value is in the links. These are large, well-kept catalogues that people and agents can both read. Where a site blocks bots, the "for agents" link points to its source.
-
-## When it fits
-
-- Naming a design choice in a spec, a review or a prompt.
-- Checking an option's trade-offs before committing to it.
-
-## When it doesn't
-
-- Picking a pattern because it is in the catalogue. Start from the problem.

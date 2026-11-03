@@ -20,14 +20,14 @@ export default defineConfig({
 		starlight({
 			title: 'Architecture notes',
 			description:
-				'Solution architecture with AI agents: curated sources, each with a note, and a take on each topic. By Przemek Łuniewski.',
+				'Solution architecture with AI agents: curated sources, each with a note. By Przemek Łuniewski.',
 			social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${repo}` }],
 			editLink: { baseUrl: `https://github.com/${repo}/edit/main/` },
 			pagination: false,
 			favicon: '/favicon.svg',
 			logo: { src: './src/assets/mark.svg' },
 			customCss: ['@fontsource-variable/inter', '@fontsource-variable/jetbrains-mono', './src/styles.css'],
-			routeMiddleware: './src/routeData.ts',
+			tableOfContents: false,
 			components: {
 				MarkdownContent: './src/components/MarkdownContent.astro',
 				PageTitle: './src/components/PageTitle.astro',

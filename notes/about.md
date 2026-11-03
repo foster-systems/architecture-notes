@@ -5,11 +5,11 @@ description: "What these notes are, how sources are chosen, and how to use them.
 
 I am Przemek Łuniewski, a solution architect and AI engineering lead at [Foster Systems](https://foster.systems). I deliver software, AI or not, with a fleet of AI agents.
 
-These notes are a curated, canonical list of what matters in solution architecture with AI agents: the sources I trust on each topic, each with my note, and my take. My agents use them too: when I mention a topic, this is what I mean. The links are the value, so my own text stays short.
+These notes are a curated, canonical list of what matters in solution architecture with AI agents: the sources I trust on each topic, each with my note. My agents use them too: when I mention a topic, this is what I mean. The links are the value, so my own text stays short.
 
 ## What you find here
 
-One page per topic, grouped in sections. Each has my take, when it fits and when it doesn't, and 5–7 sources I picked, each with my note on why it is worth reading.
+One page per topic, grouped in sections. Each says why it matters and lists 5–7 sources I picked, each with my note on why it is worth reading. Some add how I apply it.
 
 Topics show the current state. When a better source appears, the list changes. Each page links to its history on GitHub.
 

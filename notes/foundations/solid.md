@@ -23,12 +23,12 @@ sources:
     type: article
     year: 2014
     note: "SRP is the most misread of the five, and this short post fixes it: a responsibility is defined by who asks for changes, not by how small a class is."
-  - title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+  - title: The Clean Architecture
     author: Robert C. Martin
-    url: "https://www.informit.com/store/clean-architecture-a-craftsmans-guide-to-software-structure-9780134494166"
-    type: book
-    year: 2017
-    note: "The most complete current version of the principles, then scaled up to components and system boundaries, which is where I use them as an architect."
+    url: "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+    type: article
+    year: 2012
+    note: "The dependency rule in one short post: source code dependencies point inward, toward the business rules, across every boundary. The principles at system scale, which is where I use them as an architect."
   - title: "CUPID: for joyful coding"
     author: Dan North
     url: "https://dannorth.net/blog/cupid-for-joyful-coding/"
@@ -42,19 +42,3 @@ sources:
     year: 2026
     note: "A hands-on report on enforcing dependency rules and checking modularity while an agent writes the code: where tools catch design drift and where people still must."
 ---
-
-## My take
-
-SOLID is five rules with one goal: code that stays easy to change. I care about two outcomes more than the letters. Each module has one reason to change. Dependencies point toward the stable core, not toward details.
-
-Agents make this more important. An agent changing a module with one clear job reads less and breaks less. And once dependency direction is a rule, a tool can check it on every change instead of a person arguing about it in review.
-
-## When it fits
-
-- Code that lives for years and is changed by many people or agents.
-- Boundaries between modules and services: the same ideas scale up.
-
-## When it doesn't
-
-- Scripts, spikes and throwaway code.
-- Interfaces with one implementation, added only to follow the open-closed principle.

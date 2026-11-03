@@ -8,7 +8,7 @@ const source = z.object({
 	author: z.string(),
 	url: z.url(),
 	agents: z.url().optional(),
-	type: z.enum(['book', 'article', 'paper', 'talk', 'docs', 'repo', 'guide', 'spec']),
+	type: z.enum(['article', 'paper', 'talk', 'docs', 'repo', 'guide', 'spec']),
 	year: z.number().int(),
 	note: z.string(),
 });

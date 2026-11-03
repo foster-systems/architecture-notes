@@ -17,12 +17,12 @@ sources:
     type: article
     year: 2025
     note: "Why what the model sees at each step matters more than clever prompts, with tactics for long-running agents: compaction, notes and subagents."
-  - title: AI Engineering
+  - title: Building A Generative AI Platform
     author: Chip Huyen
-    url: "https://github.com/chiphuyen/aie-book"
-    type: book
-    year: 2025
-    note: "The most complete single book on building with foundation models: evals, RAG, agents, fine-tuning and serving. The repo links to the O'Reilly edition."
+    url: "https://huyenchip.com/2024/07/25/genai-platform.html"
+    type: article
+    year: 2024
+    note: "Builds a production LLM application one part at a time: retrieval, guardrails, model routing, caching, write actions and observability. The system view of her book AI Engineering."
   - title: "What We've Learned From A Year of Building with LLMs"
     author: "Eugene Yan, Bryan Bischof, Charles Frye, Hamel Husain, Jason Liu, Shreya Shankar"
     url: "https://applied-llms.org/"
@@ -42,15 +42,3 @@ sources:
     year: 2026
     note: "A growing set of patterns for getting good code out of coding agents, from daily use, with the prompts."
 ---
-
-## My take
-
-An application on a language model is a loop: context in, tokens out, tools called, results back into context. Most of the engineering is in that loop.
-
-Start with the simplest thing that works: one call, then a fixed workflow. Add autonomy only when it pays. Context is the scarce resource: what the model sees at each step decides the result more than clever wording. Evals are required: read real traces and errors before building dashboards.
-
-## Where teams go wrong
-
-- An agent where a fixed workflow would do.
-- Retrieval as the default answer to every knowledge problem.
-- Generic scores instead of reading what actually failed.

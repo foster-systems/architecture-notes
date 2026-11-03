@@ -14,22 +14,7 @@ const changed = filePath && lastChanged(filePath);
 
 <Default>
 	{inNotes && data.description && <p class="lead">{data.description}</p>}
-	{
-		inNotes && !node && (
-			<p class="page-meta">
-				{data.sources?.length ? <>{data.sources.length} sources · </> : null}
-				{changed && <>updated {changed} · </>}
-				<a href={`${github}/commits/main/${filePath}`}>history</a> · <a href={url(`${entry.id}.md`)}>markdown</a>
-			</p>
-		)
-	}
-	{
-		data.why && (
-			<aside class="why">
-				<strong>Why it matters</strong> {data.why}
-			</aside>
-		)
-	}
+	{data.why && <p class="why">{data.why}</p>}
 
 	{
 		data.sources && (
@@ -38,15 +23,12 @@ const changed = filePath && lastChanged(filePath);
 				<ol class="sources not-content">
 					{data.sources.map((s) => (
 						<li>
-							<a href={s.url}>
-								{s.title}
-								<span aria-hidden="true"> ↗</span>
-							</a>
-							<span class="source-meta">
-								<span class="source-type">{s.type}</span> {s.author} · {s.year}
+							<a class="source-title" href={s.url}>{s.title}</a>
+							<p class="source-meta">
+								{s.author} · {s.year} · {s.type}
 								{s.agents && <> · <a href={s.agents}>for agents</a></>}
-							</span>
-							<p>{s.note}</p>
+							</p>
+							<p class="source-note">{s.note}</p>
 						</li>
 					))}
 				</ol>
@@ -56,24 +38,26 @@ const changed = filePath && lastChanged(filePath);
 
 	<slot />
 
-	{
-		node && (
-			<div class="not-content">
-				<Index node={node} level={2} />
-			</div>
-		)
-	}
+	{node && <Index node={node} level={2} />}
 
 	{
-		related.length > 0 && (
-			<p class="related">
-				Related:{' '}
-				{related.map((r, i) => (
-					<>
-						{i > 0 && ' · '}
-						<a href={url(`${r.id}/`)}>{r.data.title}</a>
-					</>
-				))}
+		inNotes && !node && (
+			<p class="page-meta not-content">
+				{related.length > 0 && (
+					<span>
+						Related:{' '}
+						{related.map((r, i) => (
+							<>
+								{i > 0 && ', '}
+								<a href={url(`${r.id}/`)}>{r.data.title}</a>
+							</>
+						))}
+					</span>
+				)}
+				<span>
+					{changed && <>Updated {changed} · </>}
+					<a href={`${github}/commits/main/${filePath}`}>History</a> · <a href={url(`${entry.id}.md`)}>Markdown</a>
+				</span>
 			</p>
 		)
 	}
