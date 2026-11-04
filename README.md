@@ -1,6 +1,6 @@
 # Architecture notes
 
-A curated, canonical list of what matters in solution architecture with AI agents: per topic, the sources I trust, each with my note. My agents and I use it as a reference: when I mention a topic, this is what I mean. By [Przemek Łuniewski](https://foster.systems).
+A curated, canonical list of what matters in solution architecture with AI agents.
 
 **Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt)
 
