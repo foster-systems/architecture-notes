@@ -41,4 +41,10 @@ sources:
     type: guide
     year: 2026
     note: Its themes on permission-hungry agents and keeping coding agents on a leash show what teams in the field try. I check my practices against it.
+  - title: "What Will Remain Human in Software Architecture? A Focus Group Report"
+    author: Uwe van Heesch, Olaf Zimmermann, Christian Kohls
+    url: "https://arxiv.org/abs/2609.30334"
+    type: paper
+    year: 2026
+    note: "A focus group of 22 practitioners on what stays human: decisions, accountability and guardrails. Defines harness engineering as the system that governs how agents build software, and uses criticality, uncertainty times cost of change, to decide how much human oversight a change needs."
 ---
