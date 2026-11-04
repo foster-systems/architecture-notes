@@ -35,4 +35,10 @@ sources:
     type: article
     year: 2026
     note: "From a Thoughtworks experiment where agents wrote all the code: the app ran, but CI was red so often that the team stopped trusting it. A system is proven only after it runs in production."
+  - title: ParticleDB 1.1.4
+    author: Kyle Kingsbury (Jepsen)
+    url: "https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"
+    type: article
+    year: 2026
+    note: "An independent test of a database a small team built with LLMs: 96 issues, including lost writes. The tools claimed fixes they had not made, the docs were invented, and the team could not explain its own bugs."
 ---
