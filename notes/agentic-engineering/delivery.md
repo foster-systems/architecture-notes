@@ -11,6 +11,12 @@ sources:
     type: article
     year: 2026
     note: "What changes at 30,000 merges a day: history and merges move to the server, jobs fetch only the files they read, and a global merge queue gives way to post-merge and pre-deploy testing."
+  - title: Building Git infrastructure for agent-scale development
+    author: Brian Celenza
+    url: "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+    type: article
+    year: 2026
+    note: "GitHub's response to agent load: pushes up 4.9x in a year, converging on one ref. Durable storage moves to blob storage, compute becomes stateless, and only the ref update needs agreement."
   - title: Why are good developers so wary of agentic development?
     author: Rachel Laycock
     url: "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
