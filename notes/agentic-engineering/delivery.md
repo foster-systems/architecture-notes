@@ -17,6 +17,12 @@ sources:
     type: article
     year: 2026
     note: "GitHub's response to agent load: pushes up 4.9x in a year, converging on one ref. Durable storage moves to blob storage, compute becomes stateless, and only the ref update needs agreement."
+  - title: "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents"
+    author: GitHub
+    url: "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+    type: article
+    year: 2026
+    note: "How much work agents now start, from GitHub's telemetry: agent first drafts rose from 17% of pull requests in March to over 40% in September, and Actions averaged 124 million jobs a day. It counts only agents GitHub can detect."
   - title: Why are good developers so wary of agentic development?
     author: Rachel Laycock
     url: "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
