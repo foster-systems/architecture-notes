@@ -41,4 +41,10 @@ sources:
     type: article
     year: 2026
     note: "An independent test of a database a small team built with LLMs: 96 issues, including lost writes. The tools claimed fixes they had not made, the docs were invented, and the team could not explain its own bugs."
+  - title: "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency"
+    author: Chris Adams et al.
+    url: "https://arxiv.org/abs/2605.30208"
+    type: paper
+    year: 2026
+    note: "How Meta automates review and landing of low-risk code changes, AI-written ones included: gates, a risk score, LLM review, deterministic checks. Reverts are a third and incidents a fiftieth of other changes, but these changes were picked as low risk, so the authors call this not causal."
 ---
