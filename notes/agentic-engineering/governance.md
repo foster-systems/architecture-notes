@@ -35,12 +35,13 @@ sources:
     type: docs
     year: 2026
     note: "How one major coding agent handles permission modes, sandboxing, managed settings and audit. A useful baseline when setting up any agent tool."
-  - title: Technology Radar Vol. 34
+  - title: Technology Radar Vol. 35
     author: Thoughtworks
-    url: "https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf"
+    url: "https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/11/tr_technology_radar_vol_35_en.pdf"
+    agents: "https://www.thoughtworks.com/radar"
     type: guide
     year: 2026
-    note: Its themes on permission-hungry agents and keeping coding agents on a leash show what teams in the field try. I check my practices against it.
+    note: "Puts agent sandboxing in Adopt and risk-tiered human oversight in Trial, and warns against human-in-the-loop theater: approving what you cannot judge. Shows what teams in the field try. I check my practices against it."
   - title: "What Will Remain Human in Software Architecture? A Focus Group Report"
     author: Uwe van Heesch, Olaf Zimmermann, Christian Kohls
     url: "https://arxiv.org/abs/2609.30334"
