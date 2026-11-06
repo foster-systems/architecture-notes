@@ -23,6 +23,7 @@ How applications built on language models work, and how to build them well.
 
 - [Agent system design](notes/ai-engineering/agent-systems.md): Designing systems where agents choose the path at runtime: one agent or several, shared state, tools, tracing and failure.
 - [AI engineering basics](notes/ai-engineering/basics.md): How applications and agents built on language models work: prompts, context, tools, retrieval and evals.
+- [Choosing models per workload](notes/ai-engineering/model-choice.md): Which model runs which work and where it is hosted, chosen per workload and checked on real traffic.
 
 ### [Agentic engineering](notes/agentic-engineering/)
 
