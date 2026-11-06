@@ -2,7 +2,7 @@
 title: Agentic tools
 description: The main coding agents and open conventions used for agentic software delivery in late 2026.
 why: "Fleets mix tools. An architect needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
-tags: [coding-agents, mcp, agents-md, agent-skills, claude-code, codex, copilot]
+tags: [coding-agents, mcp, agents-md, agent-skills, agent-plugins, claude-code, codex, copilot]
 related: [agentic-engineering/governance, ai-engineering/basics]
 sources:
   - title: Claude Code overview
@@ -23,12 +23,6 @@ sources:
     type: docs
     year: 2026
     note: "Copilot in the cloud runs agent work inside the repo, pull request and branch-protection rules teams already use."
-  - title: Cursor Cloud Agents
-    author: Cursor
-    url: "https://cursor.com/docs/cloud-agent"
-    type: docs
-    year: 2026
-    note: "How a popular IDE agent moved to parallel agents in isolated cloud machines. Useful for comparing environment setup, secrets and network controls."
   - title: Model Context Protocol specification
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://modelcontextprotocol.io/specification/latest"
@@ -47,4 +41,10 @@ sources:
     type: spec
     year: 2025
     note: "An open format for instructions and scripts that agents load only when a task needs them. One skill folder works in most coding agents."
+  - title: Agent Plugins specification
+    author: Agent Plugins Technical Steering Committee
+    url: "https://agent-plugins.org/specification"
+    type: spec
+    year: 2026
+    note: "One folder format for Agent Skills and MCP servers, read by Codex, Copilot, Cursor and VS Code; Claude Code keeps its own. Permissions, signing and name conflicts are left to each client."
 ---
