@@ -4,6 +4,8 @@ description: "How ARR, churn, retention, CAC and gross margin are defined and us
 why: "Boards and investors read these numbers, and product and billing data feed them. Hosting and support costs sit inside gross margin, so technical decisions show up in the metrics."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [saas, metrics, arr, churn, retention, cac, gross-margin]
 related: [product-and-business/pricing-and-billing, product-and-business/fundraising-and-due-diligence, data/product-analytics, infrastructure/finops]
 sources:

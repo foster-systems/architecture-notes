@@ -4,6 +4,8 @@ description: "A loop of writing a small failing test, making it pass, then clean
 why: "Tests give an agent a pass or fail check, so it can fix its own mistakes before anyone reviews the work. Writing the test first also checks that it built what was asked, not just something that runs."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 4
 tags: [testing, tdd, feedback-loop, verification, refactoring]
 related: [foundations/solid, agentic-engineering/governance]
 sources:

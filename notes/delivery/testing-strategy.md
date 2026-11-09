@@ -4,6 +4,8 @@ description: "What to test at what level: the test pyramid, its alternatives and
 why: "A test suite costs time on every change. What each level of test buys decides whether a small team gets fast, trusted feedback or a slow, flaky build."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [testing, test-pyramid, integration-tests, contract-tests]
 related: [foundations/tdd, delivery/ci-cd, architecture/api-design]
 sources:

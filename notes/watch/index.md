@@ -1,8 +1,8 @@
 ---
 title: Watch
-description: "What to follow as technology moves: recurring reports, newsletters and people."
+description: "What to follow as technology moves: what is trending, conferences, reports, newsletters and people."
 sidebar:
   order: 13
 ---
 
-These sources publish on a schedule and show what changes between reviews of the other topics.
+Live feeds show what is trending today. Newsletters, conferences, reports and people show what changes between reviews of the other topics.

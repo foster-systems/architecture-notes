@@ -4,6 +4,8 @@ description: "Reliability targets based on what users experience, and the error 
 why: "An SLO gives a small team a number for deciding when to ship and when to work on reliability. An error budget makes that decision agreed in advance."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [slo, sli, error-budget, alerting, reliability]
 related: [reliability/observability, reliability/incidents, delivery/delivery-metrics]
 sources:

@@ -4,6 +4,8 @@ description: "Engineering practice for personal data: collecting less, keeping i
 why: "Retention and deletion are hard to add once personal data has spread into logs, backups and warehouses. A small company that designs for them early avoids the rework when a customer or regulator asks."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 4
 tags: [personal-data, data-minimisation, retention, deletion, threat-modelling]
 related: [law-and-compliance/gdpr, data/databases, data/product-analytics, security/application-security]
 sources:

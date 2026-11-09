@@ -4,6 +4,8 @@ description: "Writing and running a technical strategy, and working with the fou
 why: "A written strategy lets a small team settle recurring decisions once. Founders and investors judge engineering by what they can see of it, so how it is reported matters too."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 4
 tags: [strategy, technology-choices, board, founders]
 related: [team/technical-leadership, architecture/build-or-buy, architecture/architecture-decisions, delivery/delivery-metrics, product-and-business/fundraising-and-due-diligence]
 sources:

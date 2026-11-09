@@ -4,15 +4,11 @@ description: "Choosing and running a database at a small company, with Postgres 
 why: "The database holds the state a company cannot rebuild, and it is the hardest part of the stack to replace. One locking migration or one untested backup can take the whole product down."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [postgres, schema-migrations, indexing, backups, zero-downtime]
 related: [data/data-pipelines, architecture/multi-tenancy, architecture/build-or-buy, reliability/incidents]
 sources:
-  - title: Just use Postgres
-    author: Ethan McCue
-    url: "https://mccue.dev/pages/8-16-24-just-use-postgres"
-    type: article
-    year: 2024
-    note: "An essay that recommends Postgres as the default for most new applications that need persistent storage. It goes through the alternatives one by one, including SQLite, DynamoDB, MongoDB, Kafka and MySQL, and says when each one still fits."
   - title: Don't Do This
     author: PostgreSQL wiki
     url: "https://wiki.postgresql.org/wiki/Don%27t_Do_This"
@@ -31,6 +27,12 @@ sources:
     type: article
     year: 2016
     note: "A long article on evolving a schema alongside the application. It covers small numbered migrations in version control, a private database per developer, and transition phases for destructive changes. It draws on Thoughtworks projects."
+  - title: Just use Postgres
+    author: Ethan McCue
+    url: "https://mccue.dev/pages/8-16-24-just-use-postgres"
+    type: article
+    year: 2024
+    note: "An essay that recommends Postgres as the default for most new applications that need persistent storage. It goes through the alternatives one by one, including SQLite, DynamoDB, MongoDB, Kafka and MySQL, and says when each one still fits."
   - title: Zero-downtime Postgres migrations - the hard parts
     author: Chris Sinjakli (GoCardless)
     url: "https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/"

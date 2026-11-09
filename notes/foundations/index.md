@@ -1,6 +1,6 @@
 ---
 title: Foundations
-description: The basics that are always good and always true.
+description: Design principles and practices that outlast any stack.
 sidebar:
   order: 1
 ---

@@ -4,6 +4,8 @@ description: "Two security assurance schemes: SOC 2, a report by a CPA firm unde
 why: "Large customers ask for these before buying, so either can decide a sale. Both check that stated controls exist and are followed; neither is a security test."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 4
 tags: [soc-2, iso-27001, compliance, audit, security-assurance]
 related: [security/application-security, security/identity-and-access, law-and-compliance/gdpr, law-and-compliance/nis2-and-cra]
 sources:
@@ -12,13 +14,13 @@ sources:
     url: "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
     type: docs
     year: 2026
-    note: "The AICPA's page for the SOC suite, which includes SOC 2 reports on security, availability, processing integrity, confidentiality or privacy. It carries a notice on allegations against a compliance vendor and urges companies to evaluate SOC services carefully. The current criteria text needs a free AICPA account."
-  - title: "AICPA Exposure Drafts: Proposed 2027 SOC 2® Trust Services Criteria and Description Criteria"
-    author: AICPA Assurance Services Executive Committee
-    url: "https://www.aicpa-cima.com/resources/download/aicpa-exposure-drafts-proposed-2027-soc-2-trust-services-criteria-and-description-criteria"
-    type: spec
+    note: "The AICPA's page for the SOC suite, which includes SOC 2 reports on security, availability, processing integrity, confidentiality or privacy. It carries a notice on allegations against a compliance vendor and urges companies to evaluate SOC services carefully. The current criteria text needs a free AICPA account. A revised set of criteria for 2027 is in draft."
+  - title: "Trust Services Criteria (TSCs) for SOC 2 Reports"
+    author: Lois Colby (Linford & Company)
+    url: "https://linfordco.com/blog/2017-tsp-section-100-trust-services-criteria-soc-2/"
+    type: guide
     year: 2026
-    note: "Drafts of 26 October 2026 that revise the criteria for SOC 2 examinations. The page offers clean and redlined PDFs of the proposed text. The criteria in force are the 2017 set with points of focus revised in 2022."
+    note: "A guide to the current Trust Services Criteria by a partner at Linford & Company, a registered CPA firm that has performed SOC audits since 2008. It explains the five categories, that only security is required, and how points of focus work. It says the 2022 update changed the points of focus and left the criteria as they were. The firm sells these audits."
   - title: "ISO/IEC 27001:2022 - Information security management systems"
     author: ISO and IEC
     url: "https://www.iso.org/standard/27001"

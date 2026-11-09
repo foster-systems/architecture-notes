@@ -4,6 +4,8 @@ description: "Internal platforms that give product teams self-service infrastruc
 why: "A small team has to run every layer it adopts. These sources help decide how much platform to build and whether Kubernetes is worth its cost."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [platform-engineering, internal-platforms, containers, kubernetes, deployment]
 related: [infrastructure/cloud-foundations, infrastructure/finops, delivery/ci-cd, team/team-design, architecture/build-or-buy]
 sources:

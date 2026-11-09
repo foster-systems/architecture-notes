@@ -4,6 +4,8 @@ description: "How applications and agents built on language models work: prompts
 why: "You cannot design, review or govern agent-based systems without knowing how the model loop, context and evals really behave."
 horizon: foundation
 reviewed: 2026-11-03
+sidebar:
+  order: 1
 tags: [llm-apps, agents, context-engineering, evals, rag, tool-use]
 related: [agentic-engineering/governance, agentic-engineering/tools]
 sources:

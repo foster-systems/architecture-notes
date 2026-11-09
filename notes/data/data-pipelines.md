@@ -4,6 +4,8 @@ description: "Moving data from source systems into a warehouse or lakehouse, tra
 why: "Reporting, analytics and AI features all read from these pipelines. A small company needs few of the parts, and each part it adds has to be run and paid for."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [ingestion, transformation, warehouse, lakehouse, orchestration, change-data-capture]
 related: [data/databases, data/product-analytics, data/privacy-by-design, infrastructure/finops]
 sources:

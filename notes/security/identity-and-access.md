@@ -4,6 +4,8 @@ description: "Proving who a user or service is and limiting what it can do: auth
 why: "Broken access control is the top risk in the OWASP Top 10:2025. The authorization model and credential handling chosen early are hard to change later, and least privilege limits the damage when a credential leaks."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [security, identity, authentication, authorization, oauth, passkeys, least-privilege, secrets]
 related: [security/application-security, architecture/multi-tenancy, infrastructure/cloud-foundations, law-and-compliance/soc2-and-iso27001]
 sources:

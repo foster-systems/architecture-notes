@@ -4,6 +4,8 @@ description: "The EU regulation on AI systems and general-purpose models, as ame
 why: "It applies to companies that put AI systems on the EU market or use them in the EU, and to others whose AI output is used there. Duties depend on the company's role and the system's risk tier, so product decisions change what the law requires."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [ai-act, eu-law, compliance, transparency, gpai, high-risk]
 related: [agentic-engineering/governance, ai-engineering/model-choice]
 sources:

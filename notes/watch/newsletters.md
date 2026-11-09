@@ -1,11 +1,13 @@
 ---
-title: Newsletters and engineering blogs
-description: "Regular newsletters and engineering blogs that report what is changing in AI, security, reliability and leadership."
-why: "One person covering all of a company's technology cannot watch every field. A few curated feeds catch the changes that matter and link to first-hand reports."
+title: Newsletters and live feeds
+description: "Regular newsletters on AI, security, reliability and leadership, and live feeds that show what is trending among practitioners."
+why: "One person covering all of a company's technology cannot watch every field. A few curated newsletters catch the changes that matter, and live feeds show what practitioners are reading and starring today."
 horizon: current
 reviewed: 2026-11-09
-tags: [newsletters, blogs, feeds, ai, security, reliability, leadership]
-related: [watch/reports-and-radars, watch/people, ai-engineering/agent-systems, reliability/incidents, security/application-security, team/technical-leadership]
+sidebar:
+  order: 2
+tags: [newsletters, feeds, trending, ai, security, reliability, leadership]
+related: [watch/reports-and-radars, watch/conferences, watch/people, ai-engineering/agent-systems, reliability/incidents, security/application-security, team/technical-leadership]
 sources:
   - title: Latent Space
     author: swyx and team
@@ -37,16 +39,16 @@ sources:
     type: feed
     year: 2026
     note: "A free weekly email for people who build teams and companies, on people, culture and leadership. The archive goes back to 2013."
-  - title: Cloudflare Blog
-    author: Cloudflare
-    url: "https://blog.cloudflare.com/"
+  - title: Hacker News
+    author: Y Combinator
+    url: "https://news.ycombinator.com/"
     type: feed
     year: 2026
-    note: "Technical posts from Cloudflare engineers on security research, cryptography, product launches and open source. It includes post-mortems of the company's own outages. This is the vendor's account."
-  - title: Anthropic Engineering
-    author: Anthropic
-    url: "https://www.anthropic.com/engineering"
+    note: "A ranked list of links submitted and voted on by readers, each with a comment thread. Rank divides points by a power of a story's age, and flags and moderators also affect it. Y Combinator owns and funds the site, and its team is editorially independent."
+  - title: Trending repositories on GitHub
+    author: GitHub
+    url: "https://github.com/trending"
     type: feed
     year: 2026
-    note: "The engineering blog of the company behind Claude. Recent posts cover agent memory, source control and containing Claude across products. This is the vendor's account."
+    note: "A list of repositories the GitHub community is starring now, with the stars each gained in the period. It filters by programming language, spoken language and period: today, this week or this month."
 ---

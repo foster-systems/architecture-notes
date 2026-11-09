@@ -4,6 +4,8 @@ description: "Deciding what to build, what to buy and what to adopt, and the ris
 why: "A small company has little engineering time and needs to spend it on what makes the product different. Every technology and vendor adopted also becomes a long-term operating cost and a dependency."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 6
 tags: [build-vs-buy, boring-technology, vendor-risk, lock-in, strategy]
 related: [architecture/architecture-decisions, infrastructure/finops, security/supply-chain, team/engineering-strategy, foundations/technical-debt]
 sources:

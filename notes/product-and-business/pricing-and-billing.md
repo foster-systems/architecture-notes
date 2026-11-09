@@ -4,6 +4,8 @@ description: "SaaS pricing models, usage-based billing and the engineering of bi
 why: "A pricing model decides what the product must meter, store and enforce, so a pricing change is often an engineering project. Billing bugs charge customers the wrong amount."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [pricing, billing, usage-based, metering, ledger, saas]
 related: [product-and-business/saas-metrics, architecture/build-or-buy, infrastructure/finops]
 sources:
@@ -11,7 +13,7 @@ sources:
     author: Patrick McKenzie
     url: "https://stripe.com/guides/atlas/saas-pricing"
     type: guide
-    year: 2026
+    year: 2018
     note: "A Stripe Atlas guide to pricing and packaging SaaS sold mostly without sales contact. It works through example companies selling to consumers, small businesses, niche markets and enterprises. The author has built four software companies."
   - title: "The AI pricing and monetization playbook"
     author: Bessemer Venture Partners

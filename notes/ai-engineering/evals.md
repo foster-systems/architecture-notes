@@ -4,6 +4,8 @@ description: "How to evaluate LLM applications and agents, during development an
 why: "Model output varies from run to run, so a change that looks fine in one trial can break others. Evals tell a small team whether a prompt, model or tool change made the product better or worse."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [evals, llm-apps, agents, llm-as-judge, regression-testing, observability]
 related: [ai-engineering/basics, ai-engineering/agent-systems, ai-engineering/model-choice, reliability/observability]
 sources:

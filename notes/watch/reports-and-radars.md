@@ -2,8 +2,10 @@
 title: Reports and radars
 description: "Recurring reports and radars that track technology, developer practice and security year by year."
 why: "A small team cannot run its own market research. These editions show what practitioners adopt, what the data supports and where attacks start, and they come on a known schedule."
-horizon: emerging
+horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [trends, surveys, radar, research, ai, security]
 related: [delivery/delivery-metrics, agentic-engineering/governance, security/application-security, watch/newsletters, watch/people]
 sources:

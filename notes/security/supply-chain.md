@@ -4,6 +4,8 @@ description: "Keeping dependencies, build pipelines and releases trustworthy: pr
 why: "Most code a small company ships comes from dependencies, and a poisoned package or stolen token reaches production through the normal build."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [security, supply-chain, slsa, sbom, dependencies, signing]
 related: [security/application-security, agentic-engineering/governance, delivery/ci-cd, law-and-compliance/nis2-and-cra]
 sources:

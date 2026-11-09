@@ -4,6 +4,8 @@ description: "How teams are structured and how they communicate: Conway's law, T
 why: "Team boundaries shape the software once a company outgrows one informal group. Choices about who works with whom and how they communicate are cheaper to make early than to change later."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [organisation, conways-law, team-topologies, remote-work]
 related: [team/hiring, team/technical-leadership, infrastructure/platform-engineering, foundations/ddd]
 sources:

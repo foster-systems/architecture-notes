@@ -4,6 +4,8 @@ description: "Tracking what users do in a product as events, and using that data
 why: "Product decisions at a small company rest on a few numbers, such as activation and retention. Those numbers depend on the events behind them, and past events are hard to repair."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [event-tracking, tracking-plan, metrics, retention, experimentation]
 related: [data/data-pipelines, data/privacy-by-design, product-and-business/saas-metrics, product-and-business/product-discovery]
 sources:

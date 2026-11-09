@@ -4,6 +4,8 @@ description: "Building software around a shared model of the business domain, sp
 why: "Bounded contexts and one shared language give agents precise names and clear scope, so they invent less and stop mixing concepts. When code is cheap to produce, the model behind it is what matters."
 horizon: foundation
 reviewed: 2026-11-03
+sidebar:
+  order: 2
 tags: [domain-modelling, bounded-context, ubiquitous-language, strategic-design, aggregates]
 related: [foundations/solid, foundations/tdd, agentic-engineering/governance]
 sources:
@@ -18,7 +20,7 @@ sources:
     url: "https://martinfowler.com/bliki/BoundedContext.html"
     type: article
     year: 2014
-    note: A short explanation of the most important idea in DDD.
+    note: A short explanation of bounded contexts, a central pattern in DDD.
   - title: Effective Aggregate Design
     author: Vaughn Vernon
     url: "https://www.dddcommunity.org/library/vernon_2011/"

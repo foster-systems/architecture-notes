@@ -4,6 +4,8 @@ description: "How product teams find what to build, and how engineers work with 
 why: "At a small company the same few people decide what to build and then build it. Discovery gives them ways to test ideas with customers before spending engineering time on them."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [product, discovery, customer-interviews, product-market-fit, shaping]
 related: [product-and-business/saas-metrics, data/product-analytics, team/team-design]
 sources:

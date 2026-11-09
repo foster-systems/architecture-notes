@@ -4,6 +4,8 @@ description: "How to measure software delivery and developer productivity: DORA,
 why: "A small team needs to know whether delivery is getting better without turning numbers into targets. These sources define what can be measured and where measurement misleads."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [dora, space, developer-experience, productivity, metrics]
 related: [delivery/ci-cd, agentic-engineering/delivery, team/technical-leadership, team/engineering-strategy]
 sources:

@@ -4,6 +4,8 @@ description: "The EU regulation on personal data, with EDPB guidance on processo
 why: "It applies to any company established in the EU that handles personal data. A SaaS company is usually a processor for its customers' data and a controller for its own accounts, and each role has different duties."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [gdpr, eu-law, compliance, privacy, processors, data-transfers]
 related: [data/privacy-by-design, law-and-compliance/nis2-and-cra, law-and-compliance/soc2-and-iso27001]
 sources:

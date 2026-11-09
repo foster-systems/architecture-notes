@@ -4,6 +4,8 @@ description: "Individuals whose writing shapes engineering practice today, acros
 why: "New practice often appears first in the writing of people who are doing the work. Following a few of them shows what experienced builders and leaders try before it reaches reports."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [people, blogs, feeds, engineering, ai, leadership]
 related: [watch/reports-and-radars, watch/newsletters, agentic-engineering/tools, team/technical-leadership, team/engineering-strategy]
 sources:

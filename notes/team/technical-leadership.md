@@ -4,6 +4,8 @@ description: "Leading while still building: the CTO and staff-plus roles, how mu
 why: "At a small company one person often sets direction, manages people and still ships code. These roles pull against each other, and the balance has to change as the team grows."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [leadership, management, cto, staff-plus]
 related: [team/hiring, team/engineering-strategy, team/team-design]
 sources:

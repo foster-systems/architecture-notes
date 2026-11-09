@@ -4,6 +4,8 @@ description: "How distributed systems behave: consistency, replication, partitio
 why: "A SaaS product is a distributed system as soon as it has a database, a queue and a third-party API. Early choices on consistency and failure handling are expensive to change and surface as data bugs and outages."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [distributed-systems, consistency, replication, partitioning, failure, overload]
 related: [architecture/multi-tenancy, data/databases, reliability/slos, foundations/patterns]
 sources:

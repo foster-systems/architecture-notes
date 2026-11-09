@@ -4,6 +4,8 @@ description: "Designing web and service APIs that stay usable as they change: RE
 why: "A published API is a contract others build on, so mistakes are expensive to undo. Choices on versioning, retries and schemas decide what can change later without breaking customers."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [api, rest, grpc, openapi, versioning, compatibility, idempotency]
 related: [architecture/system-design, foundations/ddd, security/application-security]
 sources:

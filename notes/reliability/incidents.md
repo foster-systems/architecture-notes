@@ -4,6 +4,8 @@ description: "Responding to production failures, learning from them, staffing on
 why: "Incidents test whether a team can communicate, restore service and recover data under pressure. A small company needs these basics before its first serious outage."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [incidents, postmortems, on-call, backups, disaster-recovery]
 related: [reliability/observability, reliability/slos, data/databases, security/application-security]
 sources:

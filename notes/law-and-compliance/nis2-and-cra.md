@@ -4,6 +4,8 @@ description: "Two EU cybersecurity laws: NIS2 binds providers of services such a
 why: "A SaaS provider falls under NIS2 as a cloud computing service provider once it is medium-sized or larger under the EU definition; a smaller one can still meet NIS2 terms through its customers' supply-chain duties. A web app used only through a browser is not a Cyber Resilience Act product, but an installed client or mobile app is, and the backend it needs is covered with it."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [nis2, cra, eu-law, compliance, cybersecurity, incident-reporting]
 related: [security/supply-chain, reliability/incidents, law-and-compliance/gdpr, law-and-compliance/soc2-and-iso27001]
 sources:

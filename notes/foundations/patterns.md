@@ -4,16 +4,11 @@ description: Catalogues of named, reusable solutions for structuring application
 why: "Pattern names are a shared language for people and agents: 'add a circuit breaker' says more than a page of prompt. A good catalogue lets both look up the problem, the solution and the trade-offs."
 horizon: foundation
 reviewed: 2026-11-03
+sidebar:
+  order: 3
 tags: [patterns, distributed-systems, integration, microservices, reference]
 related: [foundations/ddd, foundations/solid]
 sources:
-  - title: Architectural Patterns
-    author: Patrick van Bergen
-    url: "https://architectural-patterns.net/"
-    agents: "https://github.com/garfix/architectural-patterns"
-    type: guide
-    year: 2026
-    note: "A wide index of patterns that shape a whole application, from data and control flow to access control and deployment. Each has a short definition and links to go deeper. Good as a checklist at the start of a project."
   - title: Cloud Design Patterns
     author: Microsoft
     url: "https://learn.microsoft.com/azure/architecture/patterns/"
@@ -45,4 +40,11 @@ sources:
     type: repo
     year: 2017
     note: "One large Markdown guide to systems at scale: caching, databases, load balancing, consistency. Written for interviews, but a solid overview an agent can read in one go."
+  - title: Architectural Patterns
+    author: Patrick van Bergen
+    url: "https://architectural-patterns.net/"
+    agents: "https://github.com/garfix/architectural-patterns"
+    type: guide
+    year: 2026
+    note: "A wide index of patterns that shape a whole application, from data and control flow to access control and deployment. Each has a short definition and links to go deeper. Good as a checklist at the start of a project."
 ---

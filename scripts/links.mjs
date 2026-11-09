@@ -1,4 +1,4 @@
-// Checks every link in notes/. A source's readable URL (`agents`, else `url`) must serve real text to a bot, except talks;
+// Checks every link in notes/. A source's readable URL (`agents`, else `url`) must serve real text to a bot, except talks and videos;
 // every other link must not be dead. Prints a Markdown report; exits 1 on any failure.
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
@@ -19,7 +19,7 @@ for (const file of files) {
 	const text = readFileSync(file, 'utf8');
 	const fm = parse(text.match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1] ?? '') ?? {};
 	for (const s of fm.sources ?? []) {
-		add(s.agents ?? s.url, file, s.type !== 'talk');
+		add(s.agents ?? s.url, file, !['talk', 'video'].includes(s.type));
 		if (s.agents) add(s.url, file, false);
 	}
 	for (const [, url] of text.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)) add(url, file, false);

@@ -4,6 +4,8 @@ description: "Understanding what running systems do through logs, metrics and tr
 why: "A small team debugs production with the telemetry it already has. OpenTelemetry keeps that instrumentation independent of the vendor that stores it."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [observability, logs, metrics, traces, opentelemetry, alerting]
 related: [reliability/slos, reliability/incidents, infrastructure/finops]
 sources:

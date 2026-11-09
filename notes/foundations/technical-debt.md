@@ -4,6 +4,8 @@ description: "What technical debt is and how to manage it."
 why: "Every small company takes on debt to ship. Knowing which debt slows the team, and which can wait, decides where cleanup time goes."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 5
 tags: [technical-debt, code-quality, migrations, maintenance]
 related: [delivery/delivery-metrics, architecture/architecture-decisions, team/engineering-strategy]
 sources:

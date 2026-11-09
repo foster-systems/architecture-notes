@@ -4,6 +4,8 @@ description: "How code gets from commit to production: continuous delivery, depl
 why: "A small team ships often only if each release is cheap and safe to undo. Separating deploy from release lets work reach production before users see it."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [continuous-delivery, deployment, feature-flags, trunk-based-development, canary]
 related: [agentic-engineering/delivery, delivery/testing-strategy, delivery/delivery-metrics, reliability/slos]
 sources:

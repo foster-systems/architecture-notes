@@ -4,6 +4,8 @@ description: "Managing cloud spend as an engineering and business practice, incl
 why: "Cloud spend moves with every deploy and falls directly on gross margin in a SaaS company. Cost per customer or per request shows whether infrastructure spend grows faster than the business."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [finops, cloud-cost, unit-economics, gross-margin, cost-optimization]
 related: [infrastructure/cloud-foundations, infrastructure/platform-engineering, product-and-business/saas-metrics, product-and-business/pricing-and-billing, ai-engineering/model-choice]
 sources:

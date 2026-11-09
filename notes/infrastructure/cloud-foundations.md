@@ -4,6 +4,8 @@ description: "The base of a cloud setup: accounts, networks, architecture review
 why: "Account boundaries and network ranges are set early and are hard to change once production depends on them. Infrastructure in code keeps a small team's setup repeatable and reviewable."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [cloud, accounts, networking, well-architected, infrastructure-as-code]
 related: [infrastructure/platform-engineering, infrastructure/finops, security/identity-and-access, architecture/multi-tenancy]
 sources:

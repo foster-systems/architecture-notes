@@ -4,6 +4,8 @@ description: "How a SaaS product shares infrastructure and data among customers 
 why: "The tenancy model sets cost per customer, blast radius, what enterprise buyers accept and how hard the data layer is to change later. One tenant reading another's data is among the worst failures a SaaS company can have."
 horizon: foundation
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [saas, tenant-isolation, data-partitioning, row-level-security, noisy-neighbor, sharding]
 related: [architecture/system-design, data/databases, security/application-security, security/identity-and-access]
 sources:

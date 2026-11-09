@@ -4,6 +4,8 @@ description: "How to find and assess engineers and bring them into the team: fun
 why: "A small company feels every hire. Each one changes a large share of the team, and interview habits copied from large companies test the wrong things."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [hiring, interviews, work-samples, onboarding]
 related: [team/technical-leadership, team/team-design, agentic-engineering/tools]
 sources:
