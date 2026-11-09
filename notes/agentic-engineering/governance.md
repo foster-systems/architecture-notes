@@ -5,7 +5,7 @@ why: "Agents act with real credentials on real systems, and prompt injection is 
 horizon: current
 reviewed: 2026-11-09
 tags: [governance, security, prompt-injection, sandboxing, harness-engineering, guardrails, supply-chain]
-related: [foundations/tdd, ai-engineering/basics, agentic-engineering/tools, agentic-engineering/supervising-agents]
+related: [foundations/tdd, ai-engineering/basics, agentic-engineering/tools, agentic-engineering/supervising-agents, law-and-compliance/ai-act]
 sources:
   - title: Harness engineering for coding agent users
     author: Birgitta Böckeler
