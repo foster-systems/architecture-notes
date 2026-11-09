@@ -14,7 +14,7 @@ sources:
     url: "https://code.claude.com/docs/en/overview"
     type: docs
     year: 2026
-    note: "Entry point to a mature agent harness for the terminal, IDE, desktop, web and CI, and its model of instructions, skills, hooks and subagents."
+    note: "Entry point to an agent harness for the terminal, IDE, desktop, web and CI, and its model of instructions, skills, hooks and subagents."
   - title: Codex documentation
     author: OpenAI
     url: "https://learn.chatgpt.com/docs"
@@ -26,7 +26,7 @@ sources:
     url: "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
     type: docs
     year: 2026
-    note: "Copilot in the cloud runs agent work inside the repo, pull request and branch-protection rules teams already use."
+    note: "GitHub's documentation of Copilot on the web and mobile. It covers repository chat, agent work that can open a pull request, code review, automations, session history and customization. It also compares cloud sandbox sessions with GitHub Actions sessions and lists their limits."
   - title: Model Context Protocol specification
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://modelcontextprotocol.io/specification/latest"

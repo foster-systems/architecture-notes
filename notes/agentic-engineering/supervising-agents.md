@@ -34,12 +34,12 @@ sources:
     type: article
     year: 2026
     note: "Cognitive debt: a team loses its shared understanding of what the system does and why. Lists warning signs and practices that rebuild it."
-  - title: "Multi-step SWE: Can Coding Agents Keep Building on Their Own Code Over Long Horizons?"
-    author: "Xiangkai Zeng, Zheng Liu, Zihao Lin (Klavis AI)"
-    url: "https://arxiv.org/abs/2611.07166"
-    type: paper
+  - title: Agentic Engineering Patterns
+    author: Simon Willison
+    url: "https://simonwillison.net/guides/agentic-engineering-patterns/"
+    type: guide
     year: 2026
-    note: "Chains of 5 to 15 dependent steps on the agent's own code, graded by mostly hidden tests: the best of nine models passes 57% of steps but completes 18.5% of attempts. In 52% of failed steps the agent reported success and named no gap. Built by a vendor of evaluation environments, with no single-step baseline to separate carried-over errors from hard steps."
+    note: "A guide of patterns for working with coding agents such as Claude Code and Codex, with annotated prompts. Chapters cover testing and QA, understanding agent-written code through linear walkthroughs, and anti-patterns such as opening pull requests with code the author has not reviewed."
   - title: ParticleDB 1.1.4
     author: Kyle Kingsbury (Jepsen)
     url: "https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"

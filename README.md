@@ -12,10 +12,9 @@ A subjective reading list on building software companies, sorted by topic. Each 
 
 Design principles and practices that outlast any stack.
 
-- [SOLID principles](notes/foundations/solid.md): Five design principles (SRP, OCP, LSP, ISP, DIP) for managing dependencies so code stays easy to change.
 - [Domain-driven design](notes/foundations/ddd.md): Building software around a shared model of the business domain, split into bounded contexts with explicit relationships.
-- [Architecture patterns](notes/foundations/patterns.md): Catalogues of named, reusable solutions for structuring applications and distributed systems.
 - [Test-driven development](notes/foundations/tdd.md): A loop of writing a small failing test, making it pass, then cleaning up the design, one behaviour at a time.
+- [SOLID principles](notes/foundations/solid.md): Five design principles (SRP, OCP, LSP, ISP, DIP) for managing dependencies so code stays easy to change.
 - [Technical debt](notes/foundations/technical-debt.md): What technical debt is and how to manage it.
 
 ### [AI engineering](notes/ai-engineering/)
@@ -41,6 +40,7 @@ Delivering and running software with AI agents: what works, what to control, whi
 How systems are shaped and how those decisions are made.
 
 - [System design](notes/architecture/system-design.md): How distributed systems behave: consistency, replication, partitioning, failure and overload.
+- [Architecture styles and patterns](notes/architecture/styles.md): The first structural decision of a software company (monolith, modular monolith or services) and the catalogues of named patterns.
 - [Multi-tenancy](notes/architecture/multi-tenancy.md): How a SaaS product shares infrastructure and data among customers while keeping them apart.
 - [API design](notes/architecture/api-design.md): Designing web and service APIs that stay usable as they change: REST, gRPC, OpenAPI, versioning and compatibility.
 - [Web frontend](notes/architecture/web-frontend.md): The client side of a SaaS web application: rendering choices, web performance and accessibility.
@@ -84,7 +84,7 @@ Seeing what production does, setting targets for it and recovering when it fails
 
 Securing the product and how it is built.
 
-- [Application security](notes/security/application-security.md): Secure development and web application security: common risks, security requirements, secure development practices and threat modelling.
+- [Application security](notes/security/application-security.md): Building secure web applications: common risks, security requirements, secure development practices and threat modelling.
 - [Identity and access](notes/security/identity-and-access.md): Proving who a user or service is and limiting what it can do: authentication, OAuth, passkeys, authorization, least privilege and secrets management.
 - [Software supply chain](notes/security/supply-chain.md): Keeping dependencies, build pipelines and releases trustworthy: provenance, software bills of materials, dependency risk and signing.
 
@@ -112,7 +112,7 @@ The people who build the software and how they are led.
 
 - [Hiring](notes/team/hiring.md): How to find and assess engineers and bring them into the team: funnels, work samples, interviews and onboarding.
 - [Team design](notes/team/team-design.md): How teams are structured and how they communicate: Conway's law, Team Topologies, team size and remote work.
-- [Technical leadership](notes/team/technical-leadership.md): Leading while still building: the CTO and staff-plus roles, how much code to keep writing, and managing people.
+- [Technical leadership](notes/team/technical-leadership.md): The early-stage CTO's job: what the role is, how it changes as the team grows to about 30, CTO versus VP of Engineering, and how much code to keep writing.
 - [Engineering strategy](notes/team/engineering-strategy.md): Writing and running a technical strategy, and working with the founders and the board.
 
 ### [Watch](notes/watch/)

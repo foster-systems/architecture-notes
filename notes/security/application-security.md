@@ -1,6 +1,6 @@
 ---
 title: Application security
-description: "Secure development and web application security: common risks, security requirements, secure development practices and threat modelling."
+description: "Building secure web applications: common risks, security requirements, secure development practices and threat modelling."
 why: "A small software company rarely has a security team, so the people who build the product apply the controls themselves. These sources give them a list of risks, a requirements baseline and a way to reason about design."
 horizon: foundation
 reviewed: 2026-11-09

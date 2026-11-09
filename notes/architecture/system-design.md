@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 1
 tags: [distributed-systems, consistency, replication, partitioning, failure, overload]
-related: [architecture/multi-tenancy, data/databases, reliability/slos, foundations/patterns]
+related: [architecture/multi-tenancy, data/databases, reliability/slos, architecture/styles]
 sources:
   - title: "Distributed Systems"
     author: Martin Kleppmann

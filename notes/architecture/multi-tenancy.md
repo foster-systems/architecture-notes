@@ -5,7 +5,7 @@ why: "The tenancy model sets cost per customer, blast radius, what enterprise bu
 horizon: foundation
 reviewed: 2026-11-09
 sidebar:
-  order: 2
+  order: 3
 tags: [saas, tenant-isolation, data-partitioning, row-level-security, noisy-neighbor, sharding]
 related: [architecture/system-design, data/databases, security/application-security, security/identity-and-access]
 sources:

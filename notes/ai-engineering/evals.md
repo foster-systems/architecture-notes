@@ -45,10 +45,10 @@ sources:
     type: repo
     year: 2026
     note: "A command-line tool and library for testing prompts, agents and RAG systems, also used for red teaming. It runs in CI/CD and compares models across providers. The README states it is now part of OpenAI and remains MIT licensed."
-  - title: Evaluation Overview
-    author: Langfuse
-    url: "https://langfuse.com/docs/evaluation/overview"
-    type: docs
+  - title: "AI Evals: Everything You Need to Know"
+    author: "Hamel Husain, Shreya Shankar"
+    url: "https://hamel.dev/blog/posts/evals-faq/"
+    type: guide
     year: 2026
-    note: "The vendor's documentation for evaluation in Langfuse, available as a cloud service or self-hosted. It separates offline evaluation on a fixed dataset before shipping from online evaluation of live production traces. Scores come from LLM judges, human annotation or custom code."
+    note: "An FAQ of about 60 questions on evaluating LLM products, drawn from teaching more than 5,000 engineers and product managers. It runs from error analysis of real traces and validating LLM judges against human labels to CI versus production monitoring and evals for RAG and agents. The authors call its advice sharp opinions. The page promotes their paid course."
 ---

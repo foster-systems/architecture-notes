@@ -5,7 +5,7 @@ why: "A small company has little engineering time and needs to spend it on what 
 horizon: foundation
 reviewed: 2026-11-09
 sidebar:
-  order: 6
+  order: 7
 tags: [build-vs-buy, boring-technology, vendor-risk, lock-in, strategy]
 related: [architecture/architecture-decisions, infrastructure/finops, security/supply-chain, team/engineering-strategy, foundations/technical-debt]
 sources:

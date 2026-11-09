@@ -1,11 +1,11 @@
 ---
 title: Test-driven development
 description: "A loop of writing a small failing test, making it pass, then cleaning up the design, one behaviour at a time."
-why: "Tests give an agent a pass or fail check, so it can fix its own mistakes before anyone reviews the work. Writing the test first also checks that it built what was asked, not just something that runs."
+why: "Tests give an agent a pass or fail check, so it can fix its own mistakes before anyone reviews the work. Writing the test first also checks that it built what was asked."
 horizon: foundation
 reviewed: 2026-11-09
 sidebar:
-  order: 4
+  order: 2
 tags: [testing, tdd, feedback-loop, verification, refactoring]
 related: [foundations/solid, agentic-engineering/governance]
 sources:

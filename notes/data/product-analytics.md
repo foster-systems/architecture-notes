@@ -38,7 +38,7 @@ sources:
     url: "https://articles.sequoiacap.com/retention"
     type: article
     year: 2018
-    note: "A guide to measuring retention, with curve shapes, cohort charts and benchmarks across consumer, subscription, SaaS and game businesses. It is part of Sequoia's series on building products using data."
+    note: "A guide to measuring retention, with curve shapes and cohort charts for consumer, subscription and SaaS businesses, and benchmark figures for games. It is part of Sequoia's series on building products using data."
   - title: How Not To Run an A/B Test
     author: Evan Miller
     url: "https://www.evanmiller.org/how-not-to-run-an-ab-test.html"

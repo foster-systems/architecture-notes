@@ -37,7 +37,7 @@ sources:
     author: Chris Sinjakli (GoCardless)
     url: "https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/"
     type: article
-    year: 2019
+    year: 2015
     note: "GoCardless's account of about 15 seconds of API downtime caused by a migration that added foreign keys. It explains how a migration waiting in the Postgres lock queue blocks ordinary queries behind it, and lists the practices that follow, such as setting `lock_timeout`."
   - title: Strong Migrations
     author: Andrew Kane

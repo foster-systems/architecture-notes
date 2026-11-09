@@ -5,7 +5,7 @@ why: "Rendering choices decide how much JavaScript each user's device must run. 
 horizon: current
 reviewed: 2026-11-09
 sidebar:
-  order: 4
+  order: 5
 tags: [frontend, rendering, ssr, islands, performance, core-web-vitals, accessibility, wcag, eaa]
 related: [architecture/api-design, law-and-compliance/gdpr]
 sources:
@@ -50,5 +50,5 @@ sources:
     url: "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en"
     type: docs
     year: 2026
-    note: "The Commission's page on the Act. It lists the products and services covered, including computers and operating systems, smartphones, banking services, e-books and e-commerce. It says Member States had to incorporate the Act into national law by June 2022."
+    note: "The Commission's page on the Act. It lists the products and services covered, including computers and operating systems, smartphones, banking services, e-books and e-commerce. It says Member States had to incorporate the Act into national law by June 2022. Under Article 31 of Directive (EU) 2019/882, those national rules apply from 28 June 2025."
 ---

@@ -35,7 +35,7 @@ sources:
     year: 2020
     note: "Latacora's advice for startups that will be asked for a SOC 2 report. It names seven practices to adopt early, from single sign-on with two-factor authentication to a spreadsheet of vendors. It advises committing to few controls in a first audit."
   - title: "SOC2: The Screenshots Will Continue Until Security Improves"
-    author: Fly.io
+    author: Thomas Ptacek (Fly.io)
     url: "https://fly.io/blog/soc2-the-screenshots-will-continue-until-security-improves/"
     type: article
     year: 2022

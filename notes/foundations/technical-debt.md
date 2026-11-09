@@ -5,7 +5,7 @@ why: "Every small company takes on debt to ship. Knowing which debt slows the te
 horizon: foundation
 reviewed: 2026-11-09
 sidebar:
-  order: 5
+  order: 4
 tags: [technical-debt, code-quality, migrations, maintenance]
 related: [delivery/delivery-metrics, architecture/architecture-decisions, team/engineering-strategy]
 sources:

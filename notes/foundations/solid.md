@@ -5,7 +5,7 @@ why: "Agents work better in code with clear responsibilities and dependency dire
 horizon: foundation
 reviewed: 2026-11-03
 sidebar:
-  order: 1
+  order: 3
 tags: [design-principles, object-oriented-design, dependencies, modularity, maintainability]
 related: [foundations/ddd, foundations/tdd]
 sources:
@@ -20,7 +20,7 @@ sources:
     url: "https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf"
     type: paper
     year: 1994
-    note: "The formal source behind the L. Substitutability is about behaviour and contracts, not type signatures."
+    note: "The formal source behind the L. It defines substitutability by behaviour and contracts."
   - title: The Single Responsibility Principle
     author: Robert C. Martin
     url: "https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html"

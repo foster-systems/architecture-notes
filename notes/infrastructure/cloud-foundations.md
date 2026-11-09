@@ -31,7 +31,7 @@ sources:
     author: Google Cloud
     url: "https://docs.cloud.google.com/architecture/best-practices-vpc-design"
     type: guide
-    year: 2026
+    year: 2025
     note: "Google's guide to designing cloud networks: subnets, shared networks, connecting networks, firewall rules, NAT and DNS. It ends with reference architectures. The details are specific to Google Cloud."
   - title: Infrastructure As Code
     author: Martin Fowler

@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 3
 tags: [agents, multi-agent, distributed-systems, mcp, observability, reliability, memory]
-related: [ai-engineering/basics, agentic-engineering/governance, foundations/patterns]
+related: [ai-engineering/basics, agentic-engineering/governance, architecture/styles]
 sources:
   - title: "Don't Build Multi-Agents"
     author: Walden Yan (Cognition)

@@ -5,7 +5,7 @@ why: "A published API is a contract others build on, so mistakes are expensive t
 horizon: foundation
 reviewed: 2026-11-09
 sidebar:
-  order: 3
+  order: 4
 tags: [api, rest, grpc, openapi, versioning, compatibility, idempotency]
 related: [architecture/system-design, foundations/ddd, security/application-security]
 sources:
