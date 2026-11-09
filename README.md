@@ -33,6 +33,12 @@ Delivering and running software with AI agents: what works, what to control, whi
 - [Delivery at agent scale](notes/agentic-engineering/delivery.md): Source control, CI and merge queues when many agents change one codebase at once.
 - [Governing agents](notes/agentic-engineering/governance.md): Keeping AI agents and agent fleets safe, checked and accountable: permissions, sandboxes, harnesses, approval gates and security controls.
 - [Supervising agents](notes/agentic-engineering/supervising-agents.md): The engineer's job when agents write the code: directing them, checking their output, stepping in, and keeping the skill to do it.
+
+### [Law and compliance](notes/law-and-compliance/)
+
+The laws and standards that bind a software company working in the EU.
+
+- [EU AI Act](notes/law-and-compliance/ai-act.md): The EU regulation on AI systems and general-purpose models, as amended by the Digital Omnibus on AI.
 <!-- /topics -->
 
 ## Contributing
