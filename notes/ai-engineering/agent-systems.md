@@ -1,8 +1,10 @@
 ---
 title: Agent system design
-description: "Designing systems where agents choose the path at runtime: one agent or several, shared state, tools, tracing and failure."
+description: "Designing systems where agents choose the path at runtime: one agent or several, shared state, memory, tools, tracing and failure."
 why: "Agent systems are distributed systems that fail quietly: quality drops while latency and error rates look normal. The design has to make that visible and keep autonomy bounded."
-tags: [agents, multi-agent, distributed-systems, mcp, observability, reliability]
+horizon: current
+reviewed: 2026-11-09
+tags: [agents, multi-agent, distributed-systems, mcp, observability, reliability, memory]
 related: [ai-engineering/basics, agentic-engineering/governance, foundations/patterns]
 sources:
   - title: "From Microservices to Agents: the Next Evolution of Distributed Systems"
@@ -42,4 +44,10 @@ sources:
     type: article
     year: 2026
     note: "A production tool platform for agents over 800+ servers: separate control and data planes, tools generated from existing APIs and disabled until their owners approve them, policies per caller and PII redaction."
+  - title: "The components of agent memory"
+    author: "Anthropic (Lance Martin)"
+    url: "https://www.anthropic.com/research/components-of-agent-memory"
+    type: article
+    year: 2026
+    note: "Splits memory into transcripts, notes, wikis and a small layer loaded into every session, with an offline pass that checks notes against transcripts. In Anthropic's tests of its own models, adding a wiki to search raised the score on 25 questions from 53% to 61%, and one wiki grew larger than its sources."
 ---

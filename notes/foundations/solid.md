@@ -2,6 +2,8 @@
 title: SOLID principles
 description: "Five design principles (SRP, OCP, LSP, ISP, DIP) for managing dependencies so code stays easy to change."
 why: "Agents work better in code with clear responsibilities and dependency direction: they read less, guess less and break less. SOLID gives the words and rules to set that structure and check it."
+horizon: foundation
+reviewed: 2026-11-03
 tags: [design-principles, object-oriented-design, dependencies, modularity, maintainability]
 related: [foundations/ddd, foundations/tdd]
 sources:
@@ -28,13 +30,13 @@ sources:
     url: "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
     type: article
     year: 2012
-    note: "The dependency rule in one short post: source code dependencies point inward, toward the business rules, across every boundary. The principles at system scale, which is where I use them as an architect."
+    note: "The dependency rule in one short post: source code dependencies point inward, toward the business rules, across every boundary. The principles at system scale."
   - title: "CUPID: for joyful coding"
     author: Dan North
     url: "https://dannorth.net/blog/cupid-for-joyful-coding/"
     type: article
     year: 2022
-    note: A well-argued critique that offers properties to aim for instead of rules to obey. It keeps me from applying SOLID as dogma.
+    note: A well-argued critique that offers properties to aim for instead of rules to obey.
   - title: Maintainability sensors for coding agents
     author: Birgitta Böckeler
     url: "https://martinfowler.com/articles/sensors-for-coding-agents.html"

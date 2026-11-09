@@ -1,4 +1,5 @@
 // @ts-check
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { tree } from './src/lib/tree.mjs';
@@ -16,11 +17,11 @@ const notes = tree();
 export default defineConfig({
 	site,
 	base,
+	redirects: JSON.parse(readFileSync('redirects.json', 'utf8')),
 	integrations: [
 		starlight({
-			title: 'Architecture notes',
-			description:
-				'Solution architecture with AI agents: curated sources, each with a note. By Przemek Łuniewski.',
+			title: 'Shelf',
+			description: 'A subjective reading list on building software companies. By Przemek Łuniewski.',
 			social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${repo}` }],
 			editLink: { baseUrl: `https://github.com/${repo}/edit/main/` },
 			pagination: false,

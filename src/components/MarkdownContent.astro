@@ -55,7 +55,8 @@ const changed = filePath && lastChanged(filePath);
 					</span>
 				)}
 				<span>
-					{changed && <>Updated {changed} · </>}
+					{data.horizon && <>{data.horizon} · </>}
+					{data.reviewed ? <>Reviewed {data.reviewed.toISOString().slice(0, 10)} · </> : changed && <>Updated {changed} · </>}
 					<a href={`${github}/commits/main/${filePath}`}>History</a> · <a href={url(`${entry.id}.md`)}>Markdown</a>
 				</span>
 			</p>

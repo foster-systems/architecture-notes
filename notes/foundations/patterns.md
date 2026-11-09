@@ -2,6 +2,8 @@
 title: Architecture patterns
 description: Catalogues of named, reusable solutions for structuring applications and distributed systems.
 why: "Pattern names are a shared language for people and agents: 'add a circuit breaker' says more than a page of prompt. A good catalogue lets both look up the problem, the solution and the trade-offs."
+horizon: foundation
+reviewed: 2026-11-03
 tags: [patterns, distributed-systems, integration, microservices, reference]
 related: [foundations/ddd, foundations/solid]
 sources:

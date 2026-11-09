@@ -2,6 +2,8 @@
 title: Domain-driven design
 description: "Building software around a shared model of the business domain, split into bounded contexts with explicit relationships."
 why: "Bounded contexts and one shared language give agents precise names and clear scope, so they invent less and stop mixing concepts. When code is cheap to produce, the model behind it is what matters."
+horizon: foundation
+reviewed: 2026-11-03
 tags: [domain-modelling, bounded-context, ubiquitous-language, strategic-design, aggregates]
 related: [foundations/solid, foundations/tdd, agentic-engineering/governance]
 sources:
@@ -10,13 +12,13 @@ sources:
     url: "https://www.domainlanguage.com/ddd/reference/"
     type: guide
     year: 2015
-    note: A free summary of every pattern from Evans himself. I use it to check a definition without reopening the book.
+    note: A free summary of every pattern from Evans himself.
   - title: Bounded Context
     author: Martin Fowler
     url: "https://martinfowler.com/bliki/BoundedContext.html"
     type: article
     year: 2014
-    note: The clearest short explanation of the most important idea in DDD. I send it to a team before any discussion about boundaries.
+    note: A short explanation of the most important idea in DDD.
   - title: Effective Aggregate Design
     author: Vaughn Vernon
     url: "https://www.dddcommunity.org/library/vernon_2011/"
@@ -28,7 +30,7 @@ sources:
     url: "https://github.com/ddd-crew/context-mapping"
     type: repo
     year: 2020
-    note: "A reference card for context maps: each relationship pattern between bounded contexts, with the team dynamics behind it. The strategic part of DDD, which matters most to me."
+    note: "A reference card for context maps: each relationship pattern between bounded contexts, with the team dynamics behind it. The strategic part of DDD."
   - title: Context Mapping with an AI-based Component
     author: Eric Evans
     url: "https://www.domainlanguage.com/articles/context-mapping-an-ai-based-component/"

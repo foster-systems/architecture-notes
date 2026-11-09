@@ -2,6 +2,8 @@
 title: Supervising agents
 description: "The engineer's job when agents write the code: directing them, checking their output, stepping in, and keeping the skill to do it."
 why: "Engineers now answer for code they rarely write or read. An architect has to define what they own, what signals they get, and how they keep the skill to step in."
+horizon: current
+reviewed: 2026-11-09
 tags: [supervisory-control, human-factors, accountability, cognitive-debt, verification]
 related: [agentic-engineering/governance, agentic-engineering/delivery, foundations/tdd]
 sources:
@@ -17,24 +19,25 @@ sources:
     type: paper
     year: 1983
     note: "The classic on why automation makes the human's job harder: monitoring is dull but critical, and skills fade without practice. Five pages, and it applies directly to agents."
-  - title: AI and the ironies of automation - Part 1
-    author: Uwe Friedrichsen
-    url: "https://ufried.com/blog/ironies_of_ai_1/"
+  - title: "How to effectively debug when you no longer understand the code"
+    author: "Cindy Sridharan"
+    url: "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b"
+    agents: "https://r.jina.ai/https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b"
     type: article
-    year: 2025
-    note: "Applies Bainbridge to AI agents: overseers lose the skill to catch errors, and people who never do the work cannot learn to supervise it."
+    year: 2026
+    note: "Three production bugs fixed with agents in unfamiliar code. Collect facts first, compare with a control case, keep only hypotheses that fit every fact. The engineer chose the controls and rejected unchecked claims."
   - title: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt
     author: Margaret-Anne Storey
     url: "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/"
     type: article
     year: 2026
     note: "Cognitive debt: a team loses its shared understanding of what the system does and why. Lists warning signs and practices that rebuild it."
-  - title: Why are good developers so wary of agentic development?
-    author: Rachel Laycock
-    url: "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
-    type: article
+  - title: "Multi-step SWE: Can Coding Agents Keep Building on Their Own Code Over Long Horizons?"
+    author: "Xiangkai Zeng, Zheng Liu, Zihao Lin (Klavis AI)"
+    url: "https://arxiv.org/abs/2611.07166"
+    type: paper
     year: 2026
-    note: "From a Thoughtworks experiment where agents wrote all the code: the app ran, but CI was red so often that the team stopped trusting it. A system is proven only after it runs in production."
+    note: "Chains of 5 to 15 dependent steps on the agent's own code, graded by mostly hidden tests: the best of nine models passes 57% of steps but completes 18.5% of attempts. In 52% of failed steps the agent reported success and named no gap. Built by a vendor of evaluation environments, with no single-step baseline to separate carried-over errors from hard steps."
   - title: ParticleDB 1.1.4
     author: Kyle Kingsbury (Jepsen)
     url: "https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"

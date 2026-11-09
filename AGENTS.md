@@ -1,37 +1,40 @@
-# Architecture notes: guide for agents
+# Shelf: guide for agents
 
-Przemek Łuniewski's curated notes on solution architecture with AI agents. Public repo: everything here is published under his name.
-
-Purpose: one curated, canonical list of what matters in solution architecture with AI agents, used as a reference by Przemek and his agents. Per topic, the best sources, each with his note, and why it matters. The links are the value; his text stays short. Topics show the current state only: no posts, changelogs or comments on changes; git history is the record.
+A subjective reading list on building and running software companies, kept by Przemek Łuniewski. Public repo. Per topic, the best sources, each with a short note on what it is. The links are the value. Topics show the current state only: git history is the record.
 
 ## Reading
 
 - Index: `README.md` (topics with one-line summaries) or `/llms.txt` on the site.
 - Topic: any `.md` file under `notes/`. Section: any folder under `notes/`; folders nest.
-- When Przemek refers to a topic ("DDD as in my notes"), the topic file is the definition he means.
 
 ## Format
 
 Topic front matter (validated by `src/content.config.ts`; the build fails on errors):
 
 - `title`, `description`: one plain line, what it is.
-- `why`: one or two lines, why an architect working with agents should know it.
-- `sources`: at most 7, each `title`, `author`, `url`, `type` (article, paper, talk, docs, repo, guide, spec), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
+- `why`: one or two lines, why it matters.
+- `horizon`: `foundation` (holds for years), `current` (in use now), `emerging` (worth watching).
+- `reviewed`: date of the last review. Reviews fall due after 30, 7 and 1 days for the three horizons; `npm run due` lists overdue topics.
+- `sources`: at most 7, each `title`, `author`, `url`, `type` (article, paper, talk, video, docs, repo, guide, spec, tool, framework, law, feed), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 
 No body: a topic is its front matter.
 
-Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. Talks are the exception: they need only be online. `scripts/links.mjs` (`npm run links`) checks this nightly; a link-check agent fixes what fails.
+Every summary (`description`, `why`, `note`) has at most 5 sentences, ideally 3, and says what the thing is, not what is inside. The build enforces 5.
 
-Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, sidebar, `llms.txt` and README list are built from the folder tree, so adding, nesting or moving files needs no code change. Slugs never change once published.
+Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. Talks and videos need only be online. `npm run links` checks this.
+
+Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, sidebar, `llms.txt` and README list are built from the folder tree.
+
+A published URL keeps working: when a topic moves, add old path to new path in `redirects.json`.
 
 ## Rules
 
-- Publish only after Przemek's explicit OK on the final text. Drafts never go to this repo: not in commits, branches or pull requests.
-- One exception: a link fix that keeps the source and its note needs no OK. That is the same content at a new URL, or an `agents` link to a readable copy of it. Replacing or removing a source still needs his OK.
-- Link, don't copy: no copied passages, diagrams or images. Notes are in Przemek's words, one or two sentences on why the source is worth reading. Quotes are rare, under 15 words, attributed.
+- Link, don't copy: no copied passages, diagrams or images. Quotes are rare, under 15 words, attributed.
 - Open every URL before adding it. 5–7 sources per topic; curated, not exhaustive.
-- `why` and notes are Przemek's opinions. Draft from what he said; never invent experience he has not described.
+- A new source must beat what it displaces. A source that is superseded or proven wrong is removed; the commit message says why.
+- Notes describe the source. Never invent experience or opinions and attribute them to Przemek.
+- Agents decide and publish. Each change needs an independent review and passing `npm run check` and `npm run links`.
 
 ## Writing
 
@@ -44,4 +47,4 @@ Applies to every note and doc here.
 
 ## Publishing
 
-Use the `publish` skill (`.claude/skills/publish/SKILL.md`). In short: edit topics, `npm run readme`, `npm run check`, one commit, push to `main`. The push rebuilds the site.
+Edit topics, `npm run readme`, `npm run check`, `npm run links`, one commit, PR to `main`, merge. The merge rebuilds the site. Manual change: the `publish` skill.
