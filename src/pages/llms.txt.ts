@@ -6,9 +6,9 @@ type Node = (typeof notes)['sections'][number];
 export function GET(context: APIContext) {
 	const abs = (path: string) => new URL(url(path), context.site).href;
 	const lines = [
-		'# Architecture notes',
+		'# Shelf',
 		'',
-		'> Solution architecture with AI agents, by Przemek Łuniewski. Each topic links 5–7 sources, each with his note.',
+		'> A subjective reading list on building software companies, by Przemek Łuniewski. Each topic links up to 7 sources, each with a short note on what it is.',
 		'',
 		`Every link below returns Markdown. Source repo: ${github}.`,
 		'A source with an `agents` URL has an agent-readable copy (repo or Markdown) of its site.',

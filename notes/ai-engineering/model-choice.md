@@ -2,6 +2,8 @@
 title: Choosing models per workload
 description: "Which model runs which work and where it is hosted, chosen per workload and checked on real traffic."
 why: "Model and host set the cost, quality and data exposure of every agent run, and both keep changing. Architects need a repeatable way to choose and to check the choice."
+horizon: current
+reviewed: 2026-11-06
 tags: [models, open-weight, routing, inference, cost, evals]
 related: [ai-engineering/basics, ai-engineering/agent-systems]
 sources:

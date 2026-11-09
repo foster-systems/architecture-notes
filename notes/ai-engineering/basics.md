@@ -2,6 +2,8 @@
 title: AI engineering basics
 description: "How applications and agents built on language models work: prompts, context, tools, retrieval and evals."
 why: "You cannot design, review or govern agent-based systems without knowing how the model loop, context and evals really behave."
+horizon: foundation
+reviewed: 2026-11-03
 tags: [llm-apps, agents, context-engineering, evals, rag, tool-use]
 related: [agentic-engineering/governance, agentic-engineering/tools]
 sources:
@@ -10,7 +12,7 @@ sources:
     url: "https://www.anthropic.com/engineering/building-effective-agents"
     type: article
     year: 2024
-    note: "My default starting point on agent design: start with simple workflows and add autonomy only when it pays off."
+    note: "A guide to agent design: start with simple workflows and add autonomy only when it pays off."
   - title: Effective context engineering for AI agents
     author: Anthropic
     url: "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
@@ -34,7 +36,7 @@ sources:
     url: "https://hamel.dev/blog/posts/evals-faq/"
     type: guide
     year: 2026
-    note: "The most practical evals reference I know. It starts from error analysis on real traces, not dashboards and generic metrics."
+    note: "A practical evals reference. It starts from error analysis on real traces, not dashboards and generic metrics."
   - title: Agentic Engineering Patterns
     author: Simon Willison
     url: "https://simonwillison.net/guides/agentic-engineering-patterns/"

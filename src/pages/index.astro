@@ -6,11 +6,11 @@ import { notes, url } from '../lib/repo';
 
 <StarlightPage
 	frontmatter={{
-		title: 'Software architecture in the era of agents',
-		description: 'Solution architecture with AI agents: curated sources, each with a note. By Przemek Łuniewski.',
+		title: 'A subjective reading list',
+		description: 'A subjective reading list on building software companies. By Przemek Łuniewski.',
 		pagefind: false,
 	}}
 >
-	<p class="lead">The sources I trust on solution architecture with AI agents, each with my note. <a href={url('about/')}>About these notes</a>.</p>
+	<p class="lead">On building software companies, sorted by topic. Each source has a short note on what it is. <a href={url('about/')}>About</a>.</p>
 	<Index node={{ ...notes, pages: [] }} level={2} />
 </StarlightPage>

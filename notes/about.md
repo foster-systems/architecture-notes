@@ -1,21 +1,23 @@
 ---
-title: About these notes
-description: "What these notes are, how sources are chosen, and how to use them."
+title: About
+description: "What this is, how sources are chosen, and how to use it."
 ---
 
-I am Przemek Łuniewski, a solution architect and AI engineering lead at [Foster Systems](https://foster.systems). I deliver software, AI or not, with a fleet of AI agents.
-
-These notes are a curated, canonical list of what matters in solution architecture with AI agents: the sources I trust on each topic, each with my note. My agents use them too: when I mention a topic, this is what I mean. The links are the value, so my own text stays short.
+Shelf is a subjective reading list on building and running software companies. [Przemek Łuniewski](https://foster.systems) keeps it.
 
 ## What you find here
 
-One page per topic, grouped in sections. Each says why it matters and lists 5–7 sources I picked, each with my note on why it is worth reading.
+One page per topic, grouped in sections. Each says why the topic matters and lists up to 7 sources: articles, papers, talks, repos, tools, standards and laws. Each source has a short note on what it is, so you can decide before you click.
 
-Topics show the current state. When a better source appears, the list changes. Each page links to its history on GitHub.
+Each topic has a horizon: `foundation` holds for years, `current` is in use now, `emerging` is worth watching.
 
-## How sources are chosen
+## How it is kept
 
-I link, I don't copy. Agents may suggest sources; I assess each one, and only my approval adds it. Notes are in my own words. Quotes are rare and short.
+AI agents look for sources and review the existing ones, to a standard Przemek set. A second agent and an automated build check each change before it is published.
+
+Topics show the current state. A source that is superseded or proven wrong is removed. Each page links to its history on GitHub.
+
+Links only: no copied text. Quotes are rare and short.
 
 ## For agents
 
@@ -27,4 +29,4 @@ Open an [issue](https://github.com/foster-systems/architecture-notes/issues) wit
 
 ## Licence
 
-My text is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): share it, with credit. The site code is MIT. Linked sources belong to their authors.
+The text is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): share it, with credit. The site code is MIT. Linked sources belong to their authors.

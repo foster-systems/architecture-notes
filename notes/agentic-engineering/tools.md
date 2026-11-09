@@ -2,6 +2,8 @@
 title: Agentic tools
 description: The main coding agents and open conventions used for agentic software delivery in late 2026.
 why: "Fleets mix tools. An architect needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
+horizon: emerging
+reviewed: 2026-11-06
 tags: [coding-agents, mcp, agents-md, agent-skills, agent-plugins, claude-code, codex, copilot]
 related: [agentic-engineering/governance, ai-engineering/basics]
 sources:
@@ -16,7 +18,7 @@ sources:
     url: "https://learn.chatgpt.com/docs"
     type: docs
     year: 2026
-    note: "Current docs for the Codex CLI, IDE extension and cloud. I use them to compare approvals, sandboxing and AGENTS.md handling with other agents."
+    note: "Current docs for the Codex CLI, IDE extension and cloud. Covers approvals, sandboxing and AGENTS.md handling."
   - title: GitHub Copilot on GitHub.com and GitHub Mobile
     author: GitHub
     url: "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
@@ -28,7 +30,7 @@ sources:
     url: "https://modelcontextprotocol.io/specification/latest"
     type: spec
     year: 2026
-    note: "The standard way agents reach tools and data, supported by all the tools above. I read its security principles before connecting any server."
+    note: "The standard way agents reach tools and data, supported by all the tools above. Includes security principles for connecting a server."
   - title: AGENTS.md
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://agents.md/"
