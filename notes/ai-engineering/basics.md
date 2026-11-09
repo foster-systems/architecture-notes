@@ -3,10 +3,18 @@ title: AI engineering basics
 description: "How applications and agents built on language models work: prompts, context, tools, retrieval and evals."
 why: "You cannot design, review or govern agent-based systems without knowing how the model loop, context and evals really behave."
 horizon: foundation
-reviewed: 2026-11-03
+reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [llm-apps, agents, context-engineering, evals, rag, tool-use]
 related: [agentic-engineering/governance, agentic-engineering/tools]
 sources:
+  - title: Deep Dive into LLMs like ChatGPT
+    author: Andrej Karpathy
+    url: "https://www.youtube.com/watch?v=7xTGNNLPyMI"
+    type: video
+    year: 2025
+    note: "A lecture of about three and a half hours on how language models are trained and run. Chapters cover tokenization, inference as sampling one token at a time, hallucinations, tool use, working memory and reinforcement learning."
   - title: Building effective agents
     author: "Anthropic (Erik Schluntz, Barry Zhang)"
     url: "https://www.anthropic.com/engineering/building-effective-agents"
@@ -30,17 +38,11 @@ sources:
     url: "https://applied-llms.org/"
     type: guide
     year: 2024
-    note: "Practitioner lessons on tactics, operations and strategy that hold up. It focuses on the system around the model."
-  - title: "AI Evals: Everything You Need to Know"
-    author: "Hamel Husain, Shreya Shankar"
-    url: "https://hamel.dev/blog/posts/evals-faq/"
-    type: guide
-    year: 2026
-    note: "A practical evals reference. It starts from error analysis on real traces, not dashboards and generic metrics."
-  - title: Agentic Engineering Patterns
-    author: Simon Willison
-    url: "https://simonwillison.net/guides/agentic-engineering-patterns/"
-    type: guide
-    year: 2026
-    note: "A growing set of patterns for getting good code out of coding agents, from daily use, with the prompts."
+    note: "Practitioner lessons on tactics, operations and strategy. It focuses on the system around the model."
+  - title: Introducing Contextual Retrieval
+    author: "Anthropic (Daniel Ford)"
+    url: "https://www.anthropic.com/engineering/contextual-retrieval"
+    type: article
+    year: 2024
+    note: "Anthropic's account of its retrieval method, which adds a generated line of context to each chunk before indexing. It explains chunking, embeddings, BM25 lexical search merged with embeddings through rank fusion, and reranking. Across four kinds of documents, the share of relevant documents missed in the top 20 chunks falls from 5.7% to 1.9% with all steps combined. The vendor ran the test and used its own model to write the context lines."
 ---

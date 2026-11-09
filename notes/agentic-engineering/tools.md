@@ -1,9 +1,11 @@
 ---
 title: Agentic tools
 description: The main coding agents and open conventions used for agentic software delivery in late 2026.
-why: "Fleets mix tools. An architect needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
+why: "Fleets mix tools. A team needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
 horizon: emerging
 reviewed: 2026-11-09
+sidebar:
+  order: 1
 tags: [coding-agents, mcp, agents-md, agent-skills, agent-plugins, claude-code, codex, copilot]
 related: [agentic-engineering/governance, ai-engineering/basics]
 sources:
@@ -12,7 +14,7 @@ sources:
     url: "https://code.claude.com/docs/en/overview"
     type: docs
     year: 2026
-    note: "Entry point to a mature agent harness for the terminal, IDE, desktop, web and CI, and its model of instructions, skills, hooks and subagents."
+    note: "Entry point to an agent harness for the terminal, IDE, desktop, web and CI, and its model of instructions, skills, hooks and subagents."
   - title: Codex documentation
     author: OpenAI
     url: "https://learn.chatgpt.com/docs"
@@ -24,7 +26,7 @@ sources:
     url: "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
     type: docs
     year: 2026
-    note: "Copilot in the cloud runs agent work inside the repo, pull request and branch-protection rules teams already use."
+    note: "GitHub's documentation of Copilot on the web and mobile. It covers repository chat, agent work that can open a pull request, code review, automations, session history and customization. It also compares cloud sandbox sessions with GitHub Actions sessions and lists their limits."
   - title: Model Context Protocol specification
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://modelcontextprotocol.io/specification/latest"
@@ -36,7 +38,7 @@ sources:
     url: "https://agents.md/"
     type: spec
     year: 2025
-    note: A plain-Markdown convention for repo instructions that most coding agents read. The cheapest way to make one repo work well with many agents.
+    note: A plain-Markdown convention for repo instructions that most coding agents read.
   - title: Agent Skills specification
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://agentskills.io/specification"
@@ -48,5 +50,5 @@ sources:
     url: "https://agent-plugins.org/specification"
     type: spec
     year: 2026
-    note: "One folder format for Agent Skills and MCP servers, read by Codex, Copilot, Cursor and VS Code; Claude Code keeps its own. Permissions, signing and name conflicts are left to each client."
+    note: "One folder format for Agent Skills and MCP servers, read by Codex, Copilot, Cursor and VS Code; Claude Code keeps its own. Permission prompts, trust policy and sandboxing are left to each client."
 ---

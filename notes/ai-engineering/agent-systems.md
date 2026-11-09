@@ -4,15 +4,11 @@ description: "Designing systems where agents choose the path at runtime: one age
 why: "Agent systems are distributed systems that fail quietly: quality drops while latency and error rates look normal. The design has to make that visible and keep autonomy bounded."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 3
 tags: [agents, multi-agent, distributed-systems, mcp, observability, reliability, memory]
-related: [ai-engineering/basics, agentic-engineering/governance, foundations/patterns]
+related: [ai-engineering/basics, agentic-engineering/governance, architecture/styles]
 sources:
-  - title: "From Microservices to Agents: the Next Evolution of Distributed Systems"
-    author: Mallika Rao
-    url: "https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai"
-    type: article
-    year: 2026
-    note: "Compares agent systems with microservices and lists how they fail: bad early decisions that compound, unbounded retries, silent quality drops, drifting state. A good review checklist, light on evidence."
   - title: "Don't Build Multi-Agents"
     author: Walden Yan (Cognition)
     url: "https://cognition.com/blog/dont-build-multi-agents"
@@ -50,4 +46,10 @@ sources:
     type: article
     year: 2026
     note: "Splits memory into transcripts, notes, wikis and a small layer loaded into every session, with an offline pass that checks notes against transcripts. In Anthropic's tests of its own models, adding a wiki to search raised the score on 25 questions from 53% to 61%, and one wiki grew larger than its sources."
+  - title: "From Microservices to Agents: the Next Evolution of Distributed Systems"
+    author: Mallika Rao
+    url: "https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai"
+    type: article
+    year: 2026
+    note: "Compares agent systems with microservices and lists how they fail: bad early decisions that compound, unbounded retries, silent quality drops, drifting state. A good review checklist, light on evidence."
 ---

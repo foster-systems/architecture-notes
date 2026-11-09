@@ -1,9 +1,11 @@
 ---
 title: Domain-driven design
 description: "Building software around a shared model of the business domain, split into bounded contexts with explicit relationships."
-why: "Bounded contexts and one shared language give agents precise names and clear scope, so they invent less and stop mixing concepts. When code is cheap to produce, the model behind it is what matters."
+why: "Bounded contexts and one shared language give agents precise names and clear scope, so they invent less and stop mixing concepts."
 horizon: foundation
 reviewed: 2026-11-03
+sidebar:
+  order: 1
 tags: [domain-modelling, bounded-context, ubiquitous-language, strategic-design, aggregates]
 related: [foundations/solid, foundations/tdd, agentic-engineering/governance]
 sources:
@@ -18,7 +20,7 @@ sources:
     url: "https://martinfowler.com/bliki/BoundedContext.html"
     type: article
     year: 2014
-    note: A short explanation of the most important idea in DDD.
+    note: A short explanation of bounded contexts, a central pattern in DDD.
   - title: Effective Aggregate Design
     author: Vaughn Vernon
     url: "https://www.dddcommunity.org/library/vernon_2011/"
@@ -42,7 +44,7 @@ sources:
     url: "https://github.com/ddd-crew/ddd-starter-modelling-process"
     type: repo
     year: 2020
-    note: "An open, step-by-step path from understanding the business to code, with a workshop tool for each step. Good for starting a team without debating theory."
+    note: "An open, step-by-step path from understanding the business to code, with a workshop tool for each step."
   - title: Domain-Driven Design matters more when AI writes your code
     author: Miłosz Smółka
     url: "https://threedots.tech/post/ddd-and-ai-coding/"

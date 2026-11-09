@@ -4,6 +4,8 @@ description: "Source control, CI and merge queues when many agents change one co
 why: "Agents produce changes faster than tools built for people can check and merge them. Without a pipeline built for that rate, main goes red and nobody trusts the checks."
 horizon: current
 reviewed: 2026-11-06
+sidebar:
+  order: 4
 tags: [ci, continuous-integration, source-control, merge-queue, monorepo]
 related: [agentic-engineering/governance, agentic-engineering/tools, agentic-engineering/supervising-agents, foundations/tdd]
 sources:

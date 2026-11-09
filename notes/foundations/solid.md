@@ -4,6 +4,8 @@ description: "Five design principles (SRP, OCP, LSP, ISP, DIP) for managing depe
 why: "Agents work better in code with clear responsibilities and dependency direction: they read less, guess less and break less. SOLID gives the words and rules to set that structure and check it."
 horizon: foundation
 reviewed: 2026-11-03
+sidebar:
+  order: 3
 tags: [design-principles, object-oriented-design, dependencies, modularity, maintainability]
 related: [foundations/ddd, foundations/tdd]
 sources:
@@ -18,13 +20,13 @@ sources:
     url: "https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf"
     type: paper
     year: 1994
-    note: "The formal source behind the L. Substitutability is about behaviour and contracts, not type signatures."
+    note: "The formal source behind the L. It defines substitutability by behaviour and contracts."
   - title: The Single Responsibility Principle
     author: Robert C. Martin
     url: "https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html"
     type: article
     year: 2014
-    note: "SRP is the most misread of the five, and this short post fixes it: a responsibility is defined by who asks for changes, not by how small a class is."
+    note: "A short post on the single responsibility principle. It defines a responsibility by who asks for changes."
   - title: The Clean Architecture
     author: Robert C. Martin
     url: "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
@@ -36,7 +38,7 @@ sources:
     url: "https://dannorth.net/blog/cupid-for-joyful-coding/"
     type: article
     year: 2022
-    note: A well-argued critique that offers properties to aim for instead of rules to obey.
+    note: A critique that offers properties to aim for instead of rules to obey.
   - title: Maintainability sensors for coding agents
     author: Birgitta Böckeler
     url: "https://martinfowler.com/articles/sensors-for-coding-agents.html"

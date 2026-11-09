@@ -1,9 +1,11 @@
 ---
 title: EU AI Act
 description: "The EU regulation on AI systems and general-purpose models, as amended by the Digital Omnibus on AI."
-why: "It applies to companies that put AI systems on the EU market or use them in the EU, and to others whose AI output is used there. Duties depend on the company's role and the system's risk tier, so product decisions change what the law requires. Transparency duties apply since 2 August 2026; high-risk duties start on 2 December 2027 for uses listed in Annex III and on 2 August 2028 for AI built into regulated products."
+why: "It applies to companies that put AI systems on the EU market or use them in the EU, and to others whose AI output is used there. Duties depend on the company's role and the system's risk tier, so product decisions change what the law requires."
 horizon: current
 reviewed: 2026-11-09
+sidebar:
+  order: 2
 tags: [ai-act, eu-law, compliance, transparency, gpai, high-risk]
 related: [agentic-engineering/governance, ai-engineering/model-choice]
 sources:
