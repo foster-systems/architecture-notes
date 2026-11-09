@@ -5,4 +5,4 @@ sidebar:
   order: 13
 ---
 
-Live feeds show what is trending today. Newsletters, conferences, reports and people show what changes between reviews of the other topics.
+Live feeds show what is trending today. Newsletters, conferences, reports and people show how practice changes over months and years.

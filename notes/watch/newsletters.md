@@ -26,9 +26,9 @@ sources:
     url: "https://tldrsec.com/"
     type: feed
     year: 2026
-    note: "A free weekly cybersecurity newsletter of tools, talks and resources, with guest issues from other practitioners."
+    note: "A free weekly cybersecurity newsletter of tools, talks and resources, with guest posts from other practitioners."
   - title: SRE Weekly
-    author: Tinker Tinker Tinker, LLC
+    author: Lex Neva
     url: "https://sreweekly.com/"
     type: feed
     year: 2026
