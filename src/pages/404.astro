@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Miniature from '../components/Miniature.astro';
+import Sections from '../components/Sections.astro';
+import { url } from '../lib/repo';
+---
+
+<Base title="Page not found" index={false}>
+	<article class="container inner plain">
+		<header class="head">
+			<div class="head-title">
+				<p class="eyebrow">404</p>
+				<h1>Page not found</h1>
+				<Miniature />
+			</div>
+		</header>
+		<div class="intro">
+			<p class="lede">Check the address, or go to the <a href={url('')}>reading list</a>.</p>
+		</div>
+		<div class="list">
+			<Sections />
+		</div>
+	</article>
+</Base>

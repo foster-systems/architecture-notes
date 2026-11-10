@@ -1,7 +1,6 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { docsSchema } from '@astrojs/starlight/schema';
 
 const sentences = (text: string) => (text.match(/[.!?]+["')]*(\s+(?=[A-Z"'(])|$)/g) ?? []).length;
 const summary = z.string().refine((text) => sentences(text) <= 5, 'at most 5 sentences');
@@ -18,6 +17,7 @@ const source = z.object({
 
 const topic = z
 	.object({
+		title: z.string(),
 		description: summary.optional(),
 		why: summary.optional(),
 		horizon: z.enum(['foundation', 'current', 'emerging']).optional(),
@@ -25,12 +25,13 @@ const topic = z
 		sources: z.array(source).max(7).optional(),
 		related: z.array(z.string()).optional(),
 		tags: z.array(z.string()).optional(),
+		sidebar: z.object({ order: z.number() }).optional(),
 	})
 	.refine((d) => !d.sources || (d.horizon && d.reviewed), 'a topic with sources needs horizon and reviewed');
 
 export const collections = {
-	docs: defineCollection({
+	notes: defineCollection({
 		loader: glob({ base: './notes', pattern: '**/[^_]*.md' }),
-		schema: docsSchema({ extend: topic }),
+		schema: topic,
 	}),
 };

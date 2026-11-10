@@ -1,0 +1,35 @@
+---
+import Horizon from './Horizon.astro';
+import { inline, url, type Topic } from '../lib/repo';
+
+interface Props {
+	topics: Topic[];
+	detail?: boolean;
+	/** The section's review date; a row shows its own only when it differs. */
+	reviewed?: string;
+}
+const { topics, detail = false, reviewed } = Astro.props;
+---
+
+<ul class:list={['rows', { detail }]}>
+	{
+		topics.map((t) => (
+			<li>
+				<a class:list={['row', t.horizon && `hz-${t.horizon}`]} href={url(`${t.id}/`)} data-topic={t.id}>
+					{t.horizon ? <Horizon value={t.horizon} /> : <span />}
+					<span class="row-title">{t.title}</span>
+					{detail && (
+						<span class="row-desc">
+							<Fragment set:html={inline(t.description ?? '')} />
+							{t.reviewed && t.reviewed !== reviewed && <span class="row-meta">Reviewed {t.reviewed}</span>}
+						</span>
+					)}
+					<span class="row-count">
+						{t.sources}
+						<span class="sr"> sources</span>
+					</span>
+				</a>
+			</li>
+		))
+	}
+</ul>

@@ -1,0 +1,28 @@
+---
+import { url, type Topic } from '../lib/repo';
+
+interface Props {
+	topics: Topic[];
+	current?: string;
+	from?: number;
+	/** Names the group and makes it one tab stop; arrow keys walk the books. */
+	label?: string;
+}
+const { topics, current, from = 0, label } = Astro.props;
+---
+
+<span class="books" role={label && 'toolbar'} aria-label={label}>
+	{
+		topics.map((t, i) => (
+			<a
+				class:list={['book', t.horizon && `hz-${t.horizon}`]}
+				href={url(`${t.id}/`)}
+				aria-current={t.id === current ? 'page' : undefined}
+				data-topic={t.id}
+				style={`--more: ${Math.max(0, Math.min(2, t.sources - 5))}; --i: ${from + i}`}
+			>
+				<span>{t.title}</span>
+			</a>
+		))
+	}
+</span>

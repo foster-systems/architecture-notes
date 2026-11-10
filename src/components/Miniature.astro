@@ -1,0 +1,8 @@
+---
+import Spines from './Spines.astro';
+import { notes, topicsOf } from '../lib/repo';
+---
+
+<span class="miniature" aria-hidden="true">
+	{notes.sections.map((s) => <Spines topics={topicsOf(s)} sized />)}
+</span>

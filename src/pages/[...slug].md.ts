@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import type { Entry } from '../lib/repo';
 
 export async function getStaticPaths() {
-	return (await getCollection('docs')).filter((e) => e.id !== 'index').map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+	return (await getCollection('notes')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 
 export function GET({ props }: { props: { entry: Entry } }) {

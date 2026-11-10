@@ -1,0 +1,169 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Horizon from '../components/Horizon.astro';
+import Miniature from '../components/Miniature.astro';
+import Rail from '../components/Rail.astro';
+import Rows from '../components/Rows.astro';
+import Spines from '../components/Spines.astro';
+import { ancestors, inline, notes, typeset, section, sectionUrl, topicsOf, two, url, type Entry } from '../lib/repo';
+
+export async function getStaticPaths() {
+	return (await getCollection('notes')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: Entry };
+const { data, id, filePath } = entry;
+const node = filePath?.endsWith('/index.md') ? section(id) : undefined;
+const kind = node ? 'section' : data.sources ? 'topic' : 'plain';
+const trail = ancestors(id);
+const home = trail.at(-1);
+const peers = node ? notes.sections : (home?.pages ?? []);
+const at = peers.findIndex((p) => p.id === id);
+const pager = [
+	{ rel: 'prev', to: peers[at - 1] },
+	{ rel: 'next', to: peers[at + 1] },
+].filter((l) => at >= 0 && l.to);
+const related = (await Promise.all((data.related ?? []).map((r) => getEntry('notes', r)))).filter((e) => e !== undefined);
+const reviewed = data.reviewed?.toISOString().slice(0, 10);
+const latest = node?.pages.map((p) => p.reviewed ?? '').sort().at(-1);
+const position = at >= 0 && `${two(at + 1)} / ${two(peers.length)}`;
+const rail = { kind, id, node, home, position, latest, related } as const;
+// Prose names a horizon in inline code; show it with its mark.
+const prose = entry.rendered?.html.replace(
+	/<code>(foundation|current|emerging)<\/code>/g,
+	'<span class="hz"><span class="spine hz-$1"></span><span class="hz-word">$1</span></span>',
+);
+---
+
+<Base title={data.title} description={data.description} entry={entry}>
+	<article
+		class:list={['container inner', kind]}
+		data-pagefind-meta={kind === 'topic' ? `horizon:${data.horizon}` : node && position ? `eyebrow:${position}` : undefined}
+	>
+		<header class="head" data-pagefind-meta={kind === 'topic' ? `eyebrow:${home?.title ?? ''}` : undefined}>
+			<div class="head-title">
+				{node && position ? (
+					<a class="eyebrow" href={url(`#${id}`)} aria-label={`Section ${at + 1} of ${peers.length}`} data-pagefind-ignore>
+						{position}
+					</a>
+				) : (
+					<nav class="eyebrow" aria-label="Breadcrumbs" data-pagefind-ignore>
+						<a href={url('')}>Shelf</a>
+						{trail.map((s) => (
+							<>
+								<span aria-hidden="true">/</span>
+								{s.hasIndex ? <a href={url(`${s.id}/`)}>{s.title}</a> : <span>{s.title}</span>}
+							</>
+						))}
+					</nav>
+				)}
+				<h1>{data.title}</h1>
+				{kind === 'plain' && <Miniature />}
+			</div>
+			<p class="head-key" data-pagefind-ignore>
+				{node && <span>{node.pages.length} topics</span>}
+				{node && latest && <span class="key-place">Reviewed {latest}</span>}
+				{data.horizon && <Horizon value={data.horizon} word />}
+				{reviewed && <span class="key-reviewed">Reviewed {reviewed}</span>}
+				{kind === 'topic' && home && (
+					<span class="key-place">
+						<Spines topics={home.pages} current={id} />
+						{position}
+					</span>
+				)}
+			</p>
+		</header>
+
+		<div class="intro">
+			{data.description && <p class="lede" set:html={inline(data.description)} />}
+			{data.why && <p class="why" set:html={inline(data.why)} />}
+			{node && <div class="why prose" set:html={entry.rendered?.html} />}
+			<span class="sep"> ¶ </span>
+		</div>
+
+		{kind !== 'topic' && <Rail {...rail} />}
+
+		<div class="list">
+			{node && (
+				<div data-pagefind-ignore>
+					<p class="rows-head count" aria-hidden="true">sources</p>
+					<Rows topics={node.pages} detail reviewed={latest} />
+					{node.sections.map((s) => (
+						<section class="sub">
+							<h2>
+								<a href={sectionUrl(s)}>{s.title}</a>
+							</h2>
+							<Rows topics={topicsOf(s)} detail />
+						</section>
+					))}
+				</div>
+			)}
+			{data.sources && (
+				<section>
+					<h2 class="label ruled" id="sources" data-pagefind-ignore>
+						Sources · {data.sources.length}
+					</h2>
+					<ol class="sources">
+						{data.sources.map((s, i) => (
+							<li>
+								<p class="source-tag" data-pagefind-ignore>
+									<span class="num" aria-hidden="true">{two(i + 1)}</span>
+									<span class="source-facts">
+										<span class="source-type">{s.type}</span>
+										<span class="source-year">{s.year}</span>
+									</span>
+								</p>
+								<div class="source-text">
+									<a class="source-title" href={s.url}><span>{typeset(s.title)}</span></a><span class="sep"> · </span>
+									<p class="source-meta">
+										{typeset(s.author)}{s.agents && <span data-pagefind-ignore>&nbsp;·&nbsp;<a href={s.agents}>for agents</a></span>}
+									</p>
+									<p class="note" set:html={inline(s.note)} />
+									<span class="sep"> ¶ </span>
+								</div>
+							</li>
+						))}
+					</ol>
+				</section>
+			)}
+			{kind === 'plain' && <div class="prose" set:html={prose} />}
+		</div>
+
+		{kind === 'topic' && <Rail {...rail} />}
+	</article>
+
+	{
+		(pager.length > 0 || (!node && home)) && (
+			<nav class="container" aria-label="Previous and next" data-pagefind-ignore>
+				<div class="pager">
+					{!node && home && (
+						<a class="pager-up" href={sectionUrl(home)}>
+							<span class="arrow" aria-hidden="true" />
+							<span>{home.title}</span>
+							<span class="pager-place">{position}</span>
+						</a>
+					)}
+					{pager.map(({ rel, to }) => (
+						<a href={'pages' in to ? sectionUrl(to) : url(`${to.id}/`)} rel={rel} aria-label={`${rel === 'prev' ? 'Previous' : 'Next'}: ${to.title}`}>
+							<span class="arrow" aria-hidden="true" />
+							{'horizon' in to && <Horizon value={to.horizon} silent />}
+							<span>{to.title}</span>
+						</a>
+					))}
+				</div>
+			</nav>
+		)
+	}
+</Base>
+
+<script>
+	// Section pages: a row and its book answer each other.
+	const page = document.querySelector('.inner.section');
+	const mark = (e: Event, on: boolean) => {
+		const id = (e.target as Element).closest<HTMLElement>('[data-topic]')?.dataset.topic;
+		if (id) page!.querySelectorAll(`[data-topic="${id}"]`).forEach((el) => el.toggleAttribute('data-hot', on));
+	};
+	for (const type of ['mouseover', 'focusin']) page?.addEventListener(type, (e) => mark(e, true));
+	for (const type of ['mouseout', 'focusout']) page?.addEventListener(type, (e) => mark(e, false));
+</script>
