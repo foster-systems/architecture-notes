@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Arrow from '../components/Arrow.astro';
 import Horizon from '../components/Horizon.astro';
 import Miniature from '../components/Miniature.astro';
 import Rail from '../components/Rail.astro';
@@ -115,7 +116,7 @@ const prose = entry.rendered?.html.replace(
 									</span>
 								</p>
 								<div class="source-text">
-									<a class="source-title" href={s.url}><span>{typeset(s.title)}</span></a><span class="sep"> · </span>
+									<a class="source-title" href={s.url}><span>{typeset(s.title)}</span><span class="out">&nbsp;<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2.5h5.5V8M9.5 2.5l-7 7" /></svg></span></a><span class="sep"> · </span>
 									<p class="source-meta">
 										{typeset(s.author)}{s.agents && <span data-pagefind-ignore>&nbsp;·&nbsp;<a href={s.agents}>for agents</a></span>}
 									</p>
@@ -139,14 +140,14 @@ const prose = entry.rendered?.html.replace(
 				<div class="pager">
 					{!node && home && (
 						<a class="pager-up" href={sectionUrl(home)}>
-							<span class="arrow" aria-hidden="true" />
+							<Arrow />
 							<span>{home.title}</span>
 							<span class="pager-place">{position}</span>
 						</a>
 					)}
 					{pager.map(({ rel, to }) => (
 						<a href={'pages' in to ? sectionUrl(to) : url(`${to.id}/`)} rel={rel} aria-label={`${rel === 'prev' ? 'Previous' : 'Next'}: ${to.title}`}>
-							<span class="arrow" aria-hidden="true" />
+							<Arrow />
 							{'horizon' in to && <Horizon value={to.horizon} silent />}
 							<span>{to.title}</span>
 						</a>

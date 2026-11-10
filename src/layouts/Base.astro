@@ -28,13 +28,13 @@ const changed = page && !entry.data.reviewed && lastChanged(file);
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>{`${title} | Shelf`}</title>
+		<title>{home ? title : `${title} | Shelf`}</title>
 		{description && <meta name="description" content={description} />}
 		<link rel="canonical" href={canonical} />
 		<link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
 		<link rel="sitemap" href={url('sitemap-index.xml')} />
 		<meta property="og:title" content={title} />
-		<meta property="og:type" content="article" />
+		<meta property="og:type" content={home ? 'website' : 'article'} />
 		<meta property="og:url" content={canonical} />
 		<meta property="og:site_name" content="Shelf" />
 		{description && <meta property="og:description" content={description} />}
