@@ -24,7 +24,7 @@ sources:
   - title: "How to effectively debug when you no longer understand the code"
     author: "Cindy Sridharan"
     url: "https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b"
-    agents: "https://r.jina.ai/https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b"
+    agents: "https://web.archive.org/web/20261017150838/https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b"
     type: article
     year: 2026
     note: "Three production bugs fixed with agents in unfamiliar code. Collect facts first, compare with a control case, keep only hypotheses that fit every fact. The engineer chose the controls and rejected unchecked claims."

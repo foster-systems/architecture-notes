@@ -12,6 +12,7 @@ sources:
   - title: "Regulation (EU) 2024/1689 (AI Act), consolidated text"
     author: European Union
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"
+    agents: "https://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1"
     type: law
     year: 2026
     note: "The full text of the Act as amended by Regulation (EU) 2026/1744, consolidated at 27 July 2026. It is a reference copy; the acts published in the Official Journal are the authentic texts."

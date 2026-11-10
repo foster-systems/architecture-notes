@@ -12,6 +12,7 @@ sources:
   - title: "Directive (EU) 2022/2555 (NIS 2 Directive)"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/9b84d482-85bd-11ed-9887-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2022
     note: "The full text of NIS2. Its annexes list cloud computing, data centre and managed service providers, and Article 2 limits scope to medium-sized or larger entities, with exceptions. Article 20 makes management accountable, Article 21 lists the minimum security measures and Article 23 sets incident reports at 24 hours, 72 hours and one month."
@@ -24,6 +25,7 @@ sources:
   - title: "Commission Implementing Regulation (EU) 2024/2690"
     author: European Commission
     url: "https://eur-lex.europa.eu/eli/reg_impl/2024/2690/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/28f15de8-8ce9-11ef-a130-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2024
     note: "The detailed security requirements under NIS2 for cloud computing, managed service and other digital providers. The annex sets out the measures, from policy and incident handling to supply chain security. The regulation also defines when an incident counts as significant."
@@ -36,6 +38,7 @@ sources:
   - title: "Regulation (EU) 2024/2847 (Cyber Resilience Act)"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/21b7d4eb-a6e2-11ef-85f0-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2024
     note: "The full text of the Act, which sets security requirements for products with digital elements. Article 13 sets a support period of at least five years, or the expected time in use if shorter, and Article 14 sets the reporting duties. Article 71 applies reporting from 11 September 2026 and most other duties from 11 December 2027. Micro and small enterprises are exempt from fines for missing the 24-hour deadlines."

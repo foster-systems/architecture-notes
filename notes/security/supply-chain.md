@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 3
 tags: [security, supply-chain, slsa, sbom, dependencies, signing]
-related: [security/application-security, agentic-engineering/governance, delivery/ci-cd, law-and-compliance/nis2-and-cra]
+related: [security/application-security, agentic-engineering/governance, delivery/ci-cd, law-and-compliance/nis2-and-cra, law-and-compliance/open-source-licences]
 sources:
   - title: SLSA specification
     author: "SLSA project (Linux Foundation)"
