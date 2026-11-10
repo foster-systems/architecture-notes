@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 7
 tags: [build-vs-buy, boring-technology, vendor-risk, lock-in, strategy]
-related: [architecture/architecture-decisions, infrastructure/finops, security/supply-chain, team/engineering-strategy, foundations/technical-debt, law-and-compliance/open-source-licences]
+related: [architecture/architecture-decisions, infrastructure/finops, security/supply-chain, team/engineering-strategy, foundations/technical-debt, law-and-compliance/open-source-licences, law-and-compliance/data-act]
 sources:
   - title: "Choose Boring Technology"
     author: Dan McKinley
