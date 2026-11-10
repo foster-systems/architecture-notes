@@ -1,11 +1,30 @@
 ---
 import EditLink from '@astrojs/starlight/components/EditLink.astro';
-import { github, url } from '../lib/repo';
+import Pagination from './Pagination.astro';
+import { github, lastChanged, url, type Entry } from '../lib/repo';
+
+const { editUrl } = Astro.locals.starlightRoute;
+const entry = Astro.locals.starlightRoute.entry as Entry;
+const { data, filePath } = entry;
+const page = filePath?.startsWith('notes/') && !filePath.endsWith('/index.md');
+const changed = page && !data.reviewed && lastChanged(filePath);
 ---
 
+<Pagination />
 <footer class="site-footer">
-	<EditLink />
-	<p>
-		By <a href="https://foster.systems">Przemek Łuniewski</a> · <a href={github}>GitHub</a> · <a href={url('llms.txt')}>llms.txt</a>
+	{
+		editUrl && (
+			<div class="page-actions dots">
+				<span><EditLink /></span>
+				{page && <span><a href={`${github}/commits/main/${filePath}`}>History</a></span>}
+				{page && <span><a href={url(`${entry.id}.md`)}>Markdown</a></span>}
+				{changed && <span class="updated">Updated {changed}</span>}
+			</div>
+		)
+	}
+	<p class="dots">
+		<span>By <a href="https://foster.systems">Przemek Łuniewski</a></span>
+		<span><a href={github}>GitHub</a></span>
+		<span><a href={url('llms.txt')}>llms.txt</a></span>
 	</p>
 </footer>

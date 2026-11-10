@@ -5,6 +5,8 @@ import { findSection, tree } from './tree.mjs';
 
 export const github = `https://github.com/${repo}`;
 export const url = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
+/** In-page anchor of a section heading. */
+export const anchor = (id: string) => id.replaceAll('/', '-');
 export type Entry = CollectionEntry<'docs'>;
 
 export const lastChanged = (file: string) => {
