@@ -1,7 +1,7 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import Index from '../components/Index.astro';
-import { notes, url } from '../lib/repo';
+import { anchor, notes, url } from '../lib/repo';
 ---
 
 <StarlightPage
@@ -9,8 +9,14 @@ import { notes, url } from '../lib/repo';
 		title: 'A subjective reading list',
 		description: 'A subjective reading list on building software companies. By Przemek Łuniewski.',
 		pagefind: false,
+		prev: false,
+		next: false,
+		tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
 	}}
+	headings={notes.sections.map((s) => ({ depth: 2, slug: anchor(s.id), text: s.title }))}
 >
 	<p class="lead">On building software companies, sorted by topic. Each source has a short note on what it is. <a href={url('about/')}>About</a>.</p>
-	<Index node={{ ...notes, pages: [] }} level={2} />
+	<div class="home">
+		<Index node={{ ...notes, pages: [] }} level={2} />
+	</div>
 </StarlightPage>

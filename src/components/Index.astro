@@ -1,5 +1,5 @@
 ---
-import { url } from '../lib/repo';
+import { anchor, url } from '../lib/repo';
 
 const { node, level = 3 } = Astro.props;
 const Heading = `h${Math.min(level, 6)}`;
@@ -20,7 +20,7 @@ const Heading = `h${Math.min(level, 6)}`;
 {
 	node.sections.map((s) => (
 		<section class="index-section" data-pagefind-ignore>
-			<Heading>{s.hasIndex ? <a href={url(`${s.id}/`)}>{s.title}</a> : s.title}</Heading>
+			<Heading id={anchor(s.id)}>{s.hasIndex ? <a href={url(`${s.id}/`)}>{s.title}</a> : s.title}</Heading>
 			{s.description && <p class="index-section-desc">{s.description}</p>}
 			<Astro.self node={s} level={level + 1} />
 		</section>

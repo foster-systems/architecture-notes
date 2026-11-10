@@ -1,0 +1,29 @@
+---
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+---
+
+<Default />
+
+<script>
+	// Keep the current page's link in view: on load, and when the phone menu opens.
+	const pane = document.querySelector<HTMLElement>('#starlight__sidebar');
+	const reveal = () => {
+		const link = pane?.querySelector<HTMLElement>("[aria-current='page']");
+		if (!pane || !link) return;
+		const p = pane.getBoundingClientRect();
+		const l = link.getBoundingClientRect();
+		const bottom = Math.min(p.bottom, innerHeight);
+		if (l.top >= p.top && l.bottom + 48 <= bottom) return;
+		const centred = Math.min(pane.scrollHeight - pane.clientHeight, pane.scrollTop + l.top - p.top - (bottom - p.top - l.height) / 2);
+		// Start on a group's top edge when the link still fits below it.
+		const edges = [...pane.querySelectorAll('.top-level > li')]
+			.map((li) => li.getBoundingClientRect().top - p.top + pane.scrollTop)
+			.filter((y) => y <= centred)
+			.reverse();
+		const linkBottom = l.bottom - p.top + pane.scrollTop;
+		const fit = (gap: number) => edges.find((y) => linkBottom - y + gap <= bottom - p.top);
+		pane.scrollTop = fit(48) ?? fit(0) ?? centred;
+	};
+	reveal();
+	pane?.addEventListener('toggle', (e) => (e as ToggleEvent).newState === 'open' && reveal());
+</script>

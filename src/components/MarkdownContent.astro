@@ -2,14 +2,13 @@
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import { getEntry } from 'astro:content';
 import Index from './Index.astro';
-import { github, lastChanged, section, url, type Entry } from '../lib/repo';
+import { section, url, type Entry } from '../lib/repo';
 
 const entry = Astro.locals.starlightRoute.entry as Entry;
 const { data, filePath } = entry;
 const inNotes = filePath?.startsWith('notes/');
 const node = filePath?.endsWith('/index.md') ? section(entry.id) : undefined;
 const related = (await Promise.all((data.related ?? []).map((id) => getEntry('docs', id)))).filter((e) => e !== undefined);
-const changed = filePath && lastChanged(filePath);
 ---
 
 <Default>
@@ -19,14 +18,13 @@ const changed = filePath && lastChanged(filePath);
 	{
 		data.sources && (
 			<>
-				<h2 id="sources">Sources</h2>
+				<h2 id="sources" data-pagefind-ignore>Sources</h2>
 				<ol class="sources not-content">
 					{data.sources.map((s) => (
 						<li>
-							<a class="source-title" href={s.url}>{s.title}</a>
+							<a class="source-title" href={s.url}><span>{s.title}</span></a>
 							<p class="source-meta">
-								{s.author} · {s.year} · {s.type}
-								{s.agents && <> · <a href={s.agents}>for agents</a></>}
+								<span class="source-type" data-pagefind-ignore>{s.type}</span> <span>{s.author}&nbsp;·&nbsp;{s.year}{s.agents && <>&nbsp;·&nbsp;<a href={s.agents}>for agents</a></>}</span>
 							</p>
 							<p class="source-note">{s.note}</p>
 						</li>
@@ -41,25 +39,15 @@ const changed = filePath && lastChanged(filePath);
 	{node && <Index node={node} level={2} />}
 
 	{
-		inNotes && !node && (
-			<p class="page-meta not-content">
-				{related.length > 0 && (
-					<span>
-						Related:{' '}
-						{related.map((r, i) => (
-							<>
-								{i > 0 && ', '}
-								<a href={url(`${r.id}/`)}>{r.data.title}</a>
-							</>
-						))}
-					</span>
-				)}
-				<span>
-					{data.horizon && <>{data.horizon} · </>}
-					{data.reviewed ? <>Reviewed {data.reviewed.toISOString().slice(0, 10)} · </> : changed && <>Updated {changed} · </>}
-					<a href={`${github}/commits/main/${filePath}`}>History</a> · <a href={url(`${entry.id}.md`)}>Markdown</a>
-				</span>
-			</p>
+		related.length > 0 && (
+			<nav class="related not-content" aria-labelledby="related">
+				<p id="related" class="related-label">Related</p>
+				<ul>
+					{related.map((r) => (
+						<li><a href={url(`${r.id}/`)}>{r.data.title}</a></li>
+					))}
+				</ul>
+			</nav>
 		)
 	}
 </Default>

@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { tree } from './src/lib/tree.mjs';
-import { repo, site, base } from './site.config.mjs';
+import { repo, site, base, startHere } from './site.config.mjs';
 
 // Starlight's autogenerate expects src/content/docs, so the sidebar is built from the notes/ tree.
 const link = (n) => ({ label: n.title, link: `/${n.id}/` });
@@ -24,7 +24,6 @@ export default defineConfig({
 			description: 'A subjective reading list on building software companies. By Przemek Łuniewski.',
 			social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${repo}` }],
 			editLink: { baseUrl: `https://github.com/${repo}/edit/main/` },
-			pagination: false,
 			favicon: '/favicon.svg',
 			logo: { src: './src/assets/mark.svg' },
 			customCss: ['@fontsource-variable/inter', '@fontsource-variable/jetbrains-mono', './src/styles.css'],
@@ -34,10 +33,11 @@ export default defineConfig({
 				PageTitle: './src/components/PageTitle.astro',
 				ThemeSelect: './src/components/ThemeSelect.astro',
 				Footer: './src/components/Footer.astro',
+				Sidebar: './src/components/Sidebar.astro',
 			},
 			sidebar: [
-				{ label: 'Start here', items: [{ label: 'Home', link: '/' }, ...notes.pages.map(link)] },
-				...notes.sections.map((s) => ({ label: s.title, items: items(s) })),
+				{ label: startHere, collapsed: true, items: [{ label: 'Home', link: '/' }, ...notes.pages.map(link)] },
+				...notes.sections.map((s) => ({ label: s.title, collapsed: true, items: items(s) })),
 			],
 		}),
 	],
