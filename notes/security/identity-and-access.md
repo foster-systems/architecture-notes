@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 2
 tags: [security, identity, authentication, authorization, oauth, passkeys, least-privilege, secrets]
-related: [security/application-security, architecture/multi-tenancy, infrastructure/cloud-foundations, law-and-compliance/soc2-and-iso27001]
+related: [security/application-security, architecture/multi-tenancy, infrastructure/cloud-foundations, law-and-compliance/soc2-and-iso27001, product-and-business/enterprise-readiness]
 sources:
   - title: "Digital Identity Guidelines: Authentication and Authenticator Management (SP 800-63B-4)"
     author: "David Temoshok et al. (NIST)"
