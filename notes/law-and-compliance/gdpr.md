@@ -12,6 +12,7 @@ sources:
   - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2016
     note: "The full text of the GDPR as published in the Official Journal. Chapter IV sets the duties of controllers and processors, and Article 28 covers the processor relationship. Chapter V covers transfers outside the EU."

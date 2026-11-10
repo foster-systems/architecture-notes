@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 4
 tags: [fundraising, due-diligence, safe, term-sheet, venture-capital]
-related: [product-and-business/saas-metrics, foundations/technical-debt, security/application-security, law-and-compliance/soc2-and-iso27001]
+related: [product-and-business/saas-metrics, foundations/technical-debt, security/application-security, law-and-compliance/soc2-and-iso27001, law-and-compliance/open-source-licences]
 sources:
   - title: "The SAFE: The standard way startups raise money"
     author: Y Combinator

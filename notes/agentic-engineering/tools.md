@@ -3,7 +3,7 @@ title: Agentic tools
 description: The main coding agents and open conventions used for agentic software delivery in late 2026.
 why: "Fleets mix tools. A team needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
 horizon: emerging
-reviewed: 2026-11-09
+reviewed: 2026-11-10
 sidebar:
   order: 1
 tags: [coding-agents, mcp, agents-md, agent-skills, agent-plugins, claude-code, codex, copilot]
@@ -50,5 +50,5 @@ sources:
     url: "https://agent-plugins.org/specification"
     type: spec
     year: 2026
-    note: "One folder format for Agent Skills and MCP servers, read by Codex, Copilot, Cursor and VS Code; Claude Code keeps its own. Permission prompts, trust policy and sandboxing are left to each client."
+    note: "One folder format that packages Agent Skills and MCP servers. Clients that read it include Codex, Copilot, Cursor, Kiro, OpenHands and VS Code; Claude Code keeps its own plugin format. The spec does not require clients to sandbox plugin processes and leaves authorization and credentials to each client."
 ---

@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 7
 tags: [build-vs-buy, boring-technology, vendor-risk, lock-in, strategy]
-related: [architecture/architecture-decisions, infrastructure/finops, security/supply-chain, team/engineering-strategy, foundations/technical-debt]
+related: [architecture/architecture-decisions, infrastructure/finops, security/supply-chain, team/engineering-strategy, foundations/technical-debt, law-and-compliance/open-source-licences]
 sources:
   - title: "Choose Boring Technology"
     author: Dan McKinley
@@ -42,6 +42,7 @@ sources:
   - title: "Regulation (EU) 2023/2854 (Data Act)"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/ef51c6ab-a06c-11ee-b164-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2023
     note: "An EU regulation on access to and use of data, applicable since 12 September 2025. Chapter VI gives customers of cloud and other data processing services rights when switching provider: at most two months' notice, a 30-day transition in the normal case and no switching charges from 12 January 2027."

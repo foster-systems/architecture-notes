@@ -3,7 +3,7 @@ title: Choosing models per workload
 description: "Which model runs which work and where it is hosted, chosen per workload and checked on real traffic."
 why: "Model and host set the cost, quality and data exposure of every agent run, and both keep changing. A team needs a repeatable way to choose and to check the choice."
 horizon: emerging
-reviewed: 2026-11-09
+reviewed: 2026-11-10
 sidebar:
   order: 4
 tags: [models, open-weight, routing, inference, cost, evals]
@@ -26,7 +26,7 @@ sources:
     url: "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5"
     type: article
     year: 2026
-    note: "Announces version 5 of the publisher's model index, dated 27 October 2026. It puts the top open-weights model, Kimi K3.1 Pro, at 46 against 58 for the top proprietary model, a gap of 12 points where version 4.3 showed 3. Among models with weights released by that date, the best score 32. Kimi K3.1 Pro's weights were published on Hugging Face in November 2026 under Moonshot's own licence. A dated snapshot."
+    note: "Announces version 5 of the publisher's model index, dated 27 October 2026. It puts the top open-weights model, Kimi K3.1 Pro, at 46 against 58 for the top proprietary model, a gap of 12 points where version 4.3 showed 3. Among models with weights released by that date, the best score 32. The article lists Kimi K3.1 Pro's weights as not yet released; Moonshot published them on Hugging Face on 2 November 2026 under its own licence. A dated snapshot."
   - title: "Open source vs. frontier AI models: Which are best for coding?"
     author: Ron Meldiner (Faros)
     url: "https://www.faros.ai/blog/open-models-vs-frontier-models"
