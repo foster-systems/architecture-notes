@@ -100,10 +100,11 @@ The laws, standards and licences that bind a software company working in the EU.
 
 ### [Product and business](notes/product-and-business/)
 
-The business a software company's technology serves: pricing, metrics, product discovery and funding.
+The business a software company's technology serves: product discovery, pricing, enterprise readiness, metrics and funding.
 
 - [Product discovery](notes/product-and-business/product-discovery.md): How product teams find what to build, and how engineers work with product.
 - [Pricing and billing](notes/product-and-business/pricing-and-billing.md): SaaS pricing models, usage-based billing and the engineering of billing systems.
+- [Enterprise readiness](notes/product-and-business/enterprise-readiness.md): The features and assurances larger customers require before they buy a SaaS product: single sign-on, user provisioning, audit logs, roles and security reviews.
 - [SaaS metrics](notes/product-and-business/saas-metrics.md): How ARR, churn, retention, CAC and gross margin are defined and used.
 - [Fundraising and due diligence](notes/product-and-business/fundraising-and-due-diligence.md): What investors look at, how technical due diligence works and the standard early-stage funding documents.
 
