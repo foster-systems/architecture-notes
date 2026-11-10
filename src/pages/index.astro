@@ -28,18 +28,18 @@ const shelves = runs(2);
 const columns = runs(3, 3);
 ---
 
-<Base title="A subjective reading list" description="A subjective reading list on building software companies. By Przemek Łuniewski." index={false} home>
+<Base
+	title="Shelf: a reading list on building and running software companies"
+	description={`${stats.topics} topics in ${stats.sections} sections. Each topic lists the best free sources, with a short note on what each one is.`}
+	index={false}
+	home
+>
 	<section class="hero">
 		<div class="container">
 			<p class="eyebrow">{stats.sections} sections · {stats.topics} topics · {stats.sources} sources</p>
 			<div class="hero-head">
 				<h1>Shelf</h1>
-				<div class="hero-text">
-					<p class="tagline">A subjective reading list</p>
-					<p class="lede">
-						On building software companies, sorted by topic. Each source has a short note on what it is. <a href={url('about/')}>About</a>.
-					</p>
-				</div>
+				<a class="hero-about" href={url('about/')}>About</a>
 			</div>
 			<div class="bookcase">
 				<p class="key">
