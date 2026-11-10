@@ -24,7 +24,7 @@ Every summary (`description`, `why`, `note`) has at most 5 sentences, ideally 3,
 
 Every source must be readable by agents: free, no login or paywall, not blocked to bots. No store pages for books; link the author's free summary, catalogue or articles instead. Where the site blocks bots, `agents` points to a readable copy. Talks and videos need only be online. `npm run links` checks this.
 
-Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, sidebar, `llms.txt` and README list are built from the folder tree.
+Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, `llms.txt` and README list are built from the folder tree.
 
 A published URL keeps working: when a topic moves, add old path to new path in `redirects.json`.
 

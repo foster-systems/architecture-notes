@@ -1,0 +1,123 @@
+---
+import Sections from './Sections.astro';
+import { url } from '../lib/repo';
+---
+
+<dialog class="search" aria-label="Search" data-base={url('')}>
+	<div class="search-form">
+		<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+		<input type="text" enterkeyhint="search" placeholder="Search" aria-label="Search" autocomplete="off" spellcheck="false" />
+		<button class="search-close" type="button" aria-label="Close search" data-close>
+			<span>Esc</span>
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+		</button>
+	</div>
+	<p class="search-status" role="status"></p>
+	<Sections />
+	<ol class="search-results"></ol>
+	<button class="search-more" type="button" hidden>More results</button>
+</dialog>
+
+<script>
+	const dialog = document.querySelector<HTMLDialogElement>('dialog.search')!;
+	const input = dialog.querySelector('input')!;
+	const status = dialog.querySelector<HTMLElement>('.search-status')!;
+	const list = dialog.querySelector<HTMLElement>('.search-results')!;
+	const more = dialog.querySelector<HTMLButtonElement>('.search-more')!;
+	const sections = dialog.querySelector<HTMLElement>('.sections')!;
+	const step = 8;
+	let loading: Promise<any> | undefined;
+	const load = () => (loading ??= import(/* @vite-ignore */ `${dialog.dataset.base}pagefind/pagefind.js`).catch(() => undefined));
+	let found: any[] = [];
+	let shown = 0;
+	let active = 0;
+	let run = 0;
+
+	const escape = (text: string) => text.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`);
+	/** One line of the page's text around its first match after the title: from a sentence start where one is near, to the end of that source at most. */
+	const snippet = (title: string, content: string, locations: number[]) => {
+		const words = content.split(/[\r\n\s]+/g);
+		const lead = `${title}.`.split(/\s+/).length;
+		const hits = new Set(locations);
+		const first = [...locations].sort((a, b) => a - b).find((l) => l >= lead) ?? lead;
+		const closes = (i: number) => words[i] === '¶';
+		const ends = (i: number) => i < lead || closes(i) || /[.!?]$/.test(words[i]);
+		let start = first;
+		while (start > first - 5 && !ends(start - 1)) start--;
+		let end = start;
+		for (let length = 0; end < words.length && !closes(end); end++) {
+			length += words[end].length + 1;
+			if (length > 76 && end > first) break;
+		}
+		while (end > first + 1 && words[end - 1] === '·') end--;
+		const cut = end < words.length && !closes(end) && !ends(end - 1);
+		const text = words.slice(start, end).map((word, n) => {
+			const i = start + n;
+			if (cut && i === end - 1) word = word.replace(/[,;:]$/, '');
+			// The highlight stops at the word's last letter or digit.
+			const [, body, tail] = (hits.has(i) && word.match(/^(.*[\p{L}\p{N}])(.*)$/u)) || [];
+			return body ? `<mark>${escape(body)}</mark>${escape(tail)}` : escape(word);
+		});
+		return `${ends(start - 1) ? '' : '<span class="search-cut">…</span>'}${text.join(' ')}${cut ? '…' : ''}`;
+	};
+	const mark = (to: number, scroll = false) => {
+		const links = [...(sections.hidden ? list : sections).querySelectorAll('a')];
+		active = Math.max(0, Math.min(to, links.length - 1));
+		links.forEach((a, i) => a.toggleAttribute('data-active', i === active));
+		if (scroll) links[active]?.scrollIntoView({ block: 'nearest' });
+	};
+	const show = async () => {
+		const mine = run;
+		const batch = found.slice(shown, shown + step);
+		shown += batch.length;
+		more.hidden = shown >= found.length;
+		const page = await Promise.all(batch.map((r) => r.data()));
+		if (mine !== run) return;
+		for (const { url, meta, content, locations } of page) {
+			const li = document.createElement('li');
+			const eyebrow = meta.eyebrow ? `<span class="eyebrow">${escape(meta.eyebrow)}</span>` : '';
+			const spine = `<span class="spine ${meta.horizon ? `hz-${escape(meta.horizon)}` : 'none'}"></span>`;
+			li.innerHTML = `<a href="${url}"><span class="search-title">${spine}${escape(meta.title)}${eyebrow}</span><span class="search-excerpt">${snippet(meta.title, content, locations)}</span></a>`;
+			list.append(li);
+		}
+		if (sections.hidden) mark(active);
+	};
+	const open = async () => {
+		dialog.showModal();
+		input.select();
+		if (!(await load())) status.textContent = 'Search is available on the published site.';
+	};
+
+	document.querySelectorAll('[data-search-open]').forEach((button) => button.addEventListener('click', open));
+	addEventListener('keydown', (e) => {
+		if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+			e.preventDefault();
+			dialog.open ? dialog.close() : open();
+		}
+	});
+	input.addEventListener('keydown', (e) => {
+		if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+			e.preventDefault();
+			mark(dialog.querySelector('a[data-active]') ? active + (e.key === 'ArrowDown' ? 1 : -1) : 0, true);
+		} else if (e.key === 'Enter') {
+			dialog.querySelector<HTMLAnchorElement>('a[data-active]')?.click();
+		}
+	});
+	input.addEventListener('input', async () => {
+		const query = input.value.trim();
+		const pagefind = await load();
+		if (!pagefind) return;
+		const search = query ? await pagefind.debouncedSearch(query, {}, 120) : { results: [] };
+		if (search === null || input.value.trim() !== query) return;
+		run++;
+		sections.hidden = query !== '';
+		sections.querySelector('[data-active]')?.removeAttribute('data-active');
+		found = search.results;
+		shown = 0;
+		active = 0;
+		list.replaceChildren();
+		status.textContent = query ? `${found.length} ${found.length === 1 ? 'result' : 'results'} for ${query}` : '';
+		await show();
+	});
+	more.addEventListener('click', show);
+</script>

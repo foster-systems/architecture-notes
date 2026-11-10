@@ -1,0 +1,23 @@
+---
+import Spines from './Spines.astro';
+import { notes, sectionUrl, topicsOf, two } from '../lib/repo';
+
+interface Props {
+	current?: string;
+}
+const { current } = Astro.props;
+---
+
+<ol class="sections">
+	{
+		notes.sections.map((s, i) => (
+			<li>
+				<a href={sectionUrl(s)} aria-current={s.id === current ? 'true' : undefined}>
+					<span class="num">{two(i + 1)}</span>
+					{s.title}
+					<Spines topics={topicsOf(s)} />
+				</a>
+			</li>
+		))
+	}
+</ol>

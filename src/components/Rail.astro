@@ -1,0 +1,67 @@
+---
+import Books from './Books.astro';
+import Horizon from './Horizon.astro';
+import { horizons, sectionUrl, stats, url, type Entry, type Section } from '../lib/repo';
+
+interface Props {
+	kind: 'section' | 'topic' | 'plain';
+	id: string;
+	/** The section this page is. */
+	node?: Section;
+	/** The section this page is in. */
+	home?: Section;
+	position?: string | false;
+	latest?: string;
+	related: Entry[];
+}
+const { kind, id, node, home, position, latest, related } = Astro.props;
+---
+
+<aside class:list={['rail', { 'shelf-own': kind !== 'plain' }]} data-pagefind-ignore>
+	{node && (
+		<>
+			<Books topics={node.pages} />
+			<p class="rail-key">{latest && <span>Reviewed {latest}</span>}</p>
+		</>
+	)}
+	{kind === 'topic' && home && (
+		<>
+			<Books topics={home.pages} current={id} />
+			<p class="rail-key">
+				<a href={sectionUrl(home)}>{home.title}</a>
+				<span>{position}</span>
+			</p>
+		</>
+	)}
+	{related.length > 0 && (
+		<nav class="related" aria-labelledby="related">
+			<p class="label" id="related">Related</p>
+			<ul>
+				{related.map((r) => (
+					<li>
+						<a href={url(`${r.id}/`)}>
+							<Horizon value={r.data.horizon} />
+							{r.data.title}
+						</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+	)}
+	{kind === 'plain' && (
+		<dl class="facts">
+			{horizons.map((h) => (
+				<div>
+					<dt><Horizon value={h} word /></dt>
+					<dd>{stats.horizon(h)}</dd>
+				</div>
+			))}
+			{(['sections', 'topics', 'sources'] as const).map((unit) => (
+				<div>
+					<dt>{unit}</dt>
+					<dd>{stats[unit]}</dd>
+				</div>
+			))}
+		</dl>
+	)}
+</aside>
