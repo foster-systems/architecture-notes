@@ -5,9 +5,9 @@ why: "Agents work better in code with clear responsibilities and dependency dire
 horizon: foundation
 reviewed: 2026-11-03
 sidebar:
-  order: 3
+  order: 4
 tags: [design-principles, object-oriented-design, dependencies, modularity, maintainability]
-related: [foundations/ddd, foundations/tdd]
+related: [foundations/complexity, foundations/ddd, foundations/tdd]
 sources:
   - title: Design Principles and Design Patterns
     author: Robert C. Martin
