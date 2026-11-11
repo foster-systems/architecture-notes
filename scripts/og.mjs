@@ -40,7 +40,7 @@ await new Promise((ok) => server.once('listening', ok));
 const origin = `http://127.0.0.1:${server.address().port}`;
 
 const browser = await chromium.launch();
-const context = await browser.newContext({ viewport: { width: 1440, height: 756 }, deviceScaleFactor: 1200 / 1440, colorScheme: 'light', reducedMotion: 'reduce' });
+const context = await browser.newContext({ viewport: { width: 1440, height: 756 }, deviceScaleFactor: 1200 / 1440, reducedMotion: 'reduce' });
 const queue = [...shots];
 await Promise.all(
 	Array.from({ length: 4 }, async () => {
