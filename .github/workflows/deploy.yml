@@ -23,6 +23,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - run: npx playwright install --with-deps --only-shell chromium
+      - run: npm run og
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
