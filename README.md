@@ -1,6 +1,6 @@
 # Shelf
 
-A subjective reading list on building and running software technology, sorted by topic. Each source has a short note on what it is.
+A curated reading list for building and running a software company, from the first prototype to scale-up: technology, product, law and team. Each source has a short note on what it is. Scope and selection criteria: [About](notes/about.md).
 
 **Site:** https://shelf.foster.systems · **For agents:** [llms.txt](https://shelf.foster.systems/llms.txt)
 

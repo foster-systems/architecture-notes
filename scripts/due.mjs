@@ -2,7 +2,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 
-const DAYS = { foundation: 30, current: 7, emerging: 1 };
+const DAYS = { foundation: 30, current: 7, emerging: 3 };
 const DAY = 86400000;
 
 const due = readdirSync('notes', { recursive: true })
