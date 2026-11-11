@@ -12,6 +12,7 @@ A subjective reading list on building and running software technology, sorted by
 
 Design principles and practices that outlast any stack.
 
+- [Complexity and modular design](notes/foundations/complexity.md): What makes software hard to understand and change, and how splitting a system into modules keeps that in check.
 - [Domain-driven design](notes/foundations/ddd.md): Building software around a shared model of the business domain, split into bounded contexts with explicit relationships.
 - [Test-driven development](notes/foundations/tdd.md): A loop of writing a small failing test, making it pass, then cleaning up the design, one behaviour at a time.
 - [SOLID principles](notes/foundations/solid.md): Five design principles (SRP, OCP, LSP, ISP, DIP) for managing dependencies so code stays easy to change.

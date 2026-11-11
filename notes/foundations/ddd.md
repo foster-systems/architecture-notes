@@ -5,7 +5,7 @@ why: "Bounded contexts and one shared language give agents precise names and cle
 horizon: foundation
 reviewed: 2026-11-03
 sidebar:
-  order: 1
+  order: 2
 tags: [domain-modelling, bounded-context, ubiquitous-language, strategic-design, aggregates]
 related: [foundations/solid, foundations/tdd, agentic-engineering/governance]
 sources:

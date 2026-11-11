@@ -5,7 +5,7 @@ why: "Tests give an agent a pass or fail check, so it can fix its own mistakes b
 horizon: foundation
 reviewed: 2026-11-09
 sidebar:
-  order: 2
+  order: 3
 tags: [testing, tdd, feedback-loop, verification, refactoring]
 related: [foundations/solid, agentic-engineering/governance]
 sources:
