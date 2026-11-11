@@ -26,6 +26,8 @@ Every source must be readable by agents: free, no login or paywall, not blocked 
 
 Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, `llms.txt` and README list are built from the folder tree.
 
+Each top-level section has its own hue, set by its place in the order (`tone` in `src/lib/repo.ts`); nothing to configure. Neighbours on the shelf always differ; sections far apart can look alike. A section added last leaves the other colours as they are; one added in between shifts the colours after it.
+
 A published URL keeps working: when a topic moves, add old path to new path in `redirects.json`.
 
 ## Rules

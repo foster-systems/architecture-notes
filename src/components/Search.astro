@@ -75,6 +75,7 @@ import { url } from '../lib/repo';
 		if (mine !== run) return;
 		for (const { url, meta, content, locations } of page) {
 			const li = document.createElement('li');
+			if (meta.hue) li.style.setProperty('--hue', meta.hue);
 			const eyebrow = meta.eyebrow ? `<span class="eyebrow">${escape(meta.eyebrow)}</span>` : '';
 			const spine = `<span class="spine ${meta.horizon ? `hz-${escape(meta.horizon)}` : 'none'}"></span>`;
 			li.innerHTML = `<a href="${url}"><span class="search-title">${spine}${escape(meta.title)}${eyebrow}</span><span class="search-excerpt">${snippet(meta.title, content, locations)}</span></a>`;

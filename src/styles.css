@@ -14,8 +14,6 @@
 	--glow: light-dark(rgb(99 102 241 / 0.16), rgb(99 102 241 / 0.22));
 	--dot: light-dark(rgb(12 12 14 / 0.09), rgb(255 255 255 / 0.07));
 	--tint: light-dark(rgb(12 12 14 / 0.04), rgb(255 255 255 / 0.05));
-	--cover: light-dark(color-mix(in srgb, #4338ca 32%, #fafaf9), color-mix(in srgb, #a5b4fc 42%, #07080b));
-	--cover-edge: light-dark(rgb(67 56 202 / 0.6), rgb(165 180 252 / 0.55));
 	--slab: light-dark(rgb(12 12 14 / 0.05), rgb(255 255 255 / 0.04));
 	--sans: 'Inter Variable', Inter, system-ui, sans-serif;
 	--mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
@@ -26,6 +24,15 @@
 }
 :root[data-theme='light'] {
 	color-scheme: light;
+}
+/* A section's colour: the accent at the section's hue. At this lightness and chroma every hue stays inside sRGB and keeps 4.5:1 as text or under text. Whatever stands inside takes it as its accent. */
+[style*='--hue'] {
+	--accent: light-dark(oklch(0.5 0.08 var(--hue)), oklch(0.8 0.06 var(--hue)));
+}
+:root,
+[style*='--hue'] {
+	--cover: light-dark(color-mix(in srgb, var(--accent) 32%, var(--paper)), color-mix(in srgb, var(--accent) 42%, var(--paper)));
+	--cover-edge: light-dark(color-mix(in srgb, var(--accent) 60%, transparent), color-mix(in srgb, var(--accent) 55%, transparent));
 }
 
 *,
@@ -1796,7 +1803,7 @@ mark {
 		background: var(--line-strong);
 	}
 	.ticks span[data-on] {
-		background: var(--ink);
+		background: var(--accent);
 	}
 }
 /* Small or short screens: search takes the whole screen. */
