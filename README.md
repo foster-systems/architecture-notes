@@ -2,7 +2,7 @@
 
 A subjective reading list on building and running software technology, sorted by topic. Each source has a short note on what it is.
 
-**Site:** https://notes.foster.systems · **For agents:** [llms.txt](https://notes.foster.systems/llms.txt)
+**Site:** https://shelf.foster.systems · **For agents:** [llms.txt](https://shelf.foster.systems/llms.txt)
 
 ## Topics
 
