@@ -42,16 +42,16 @@ sources:
     type: law
     year: 2024
     note: "The full text of the Act, which sets security requirements for products with digital elements. Article 13 sets a support period of at least five years, or the expected time in use if shorter, and Article 14 sets the reporting duties. Article 71 applies reporting from 11 September 2026 and most other duties from 11 December 2027. Micro and small enterprises are exempt from fines for missing the 24-hour deadlines."
-  - title: Commission publishes new guidance to support timely Cyber Resilience Act implementation
+  - title: "Commission guidance on the application of the Cyber Resilience Act, C(2026) 5252"
     author: European Commission
-    url: "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation"
+    url: "https://ec.europa.eu/newsroom/dae/redirection/document/131456"
     type: guide
     year: 2026
     note: "The Commission's non-binding guidance of 27 July 2026, with 67 examples. It explains when software is a product, when a backend counts as remote data processing and how support periods work. Section 2.2 states that a web app accessed only through a browser is not itself a product, while an installed client is."
-  - title: "Cyber Resilience Act - Reporting obligations"
-    author: European Commission
-    url: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
+  - title: Single Reporting Platform (SRP)
+    author: ENISA
+    url: "https://www.enisa.europa.eu/topics/product-security/vulnerability-services/eu-incident-response-and-cyber-crisis-management/single-reporting-platform-srp"
     type: docs
     year: 2026
-    note: "The Commission's page on what manufacturers report since 11 September 2026: actively exploited vulnerabilities and severe incidents. It gives the deadlines of 24 hours, 72 hours and a final report. Reports go through ENISA's Single Reporting Platform, which the page links."
+    note: "ENISA's page for the platform through which manufacturers must send Cyber Resilience Act reports of actively exploited vulnerabilities and severe incidents, from 11 September 2026. A manufacturer reports once, and the platform passes the report to the relevant authorities. The page links the portal, an FAQ, a glossary of report fields, the user manual and the list of coordinating CSIRTs."
 ---
