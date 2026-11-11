@@ -13,7 +13,7 @@ Shelf covers a software company's first four stages: the idea, the search for pr
 
 A source is added when its producer has done real work on the subject, it shows evidence or a method, it still holds, it is the origin of the idea or its best current explanation, and it adds something no other source in the topic gives. A vendor's interest is named in the note. These checks are adapted from [Garousi et al.'s criteria for grey literature](https://arxiv.org/abs/1707.02553).
 
-A source is removed when it is misleading, superseded, trivial, out of scope, covered better by another source, or no longer readable, adapted from the [CREW method](https://archive.org/details/crewmethod12)'s weeding criteria. Each note's claims are traced to the original source, as in [SIFT](https://hapgood.us/2019/06/19/sift-the-four-moves/).
+A source is removed when it is misleading, superseded, trivial, out of scope, covered better by another source, or no longer readable. These reasons are adapted from the [CREW method](https://archive.org/details/crewmethod12)'s weeding criteria. Each note's claims are traced to the original source, as in [SIFT](https://hapgood.us/2019/06/19/sift-the-four-moves/).
 
 Sources are free to read, without a login, and readable by AI agents. Each topic has 5 to 7.
 
