@@ -24,8 +24,7 @@ sources:
     note: "The Commission's plain-language overview of the Act, chapter by chapter. It covers data access for connected products, unfair contract terms between businesses, cloud switching, interoperability and enforcement by national authorities."
   - title: Frequently Asked Questions about the Data Act
     author: European Commission
-    url: "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-frequently-asked-questions-about-data-act"
-    agents: "https://ec.europa.eu/newsroom/dae/redirection/document/108144"
+    url: "https://ec.europa.eu/newsroom/dae/redirection/document/108144"
     type: guide
     year: 2026
     note: "The Commission's non-binding answers to detailed questions on the Act, version 1.4 of 22 January 2026. Its section on switching confirms that Chapter VI covers SaaS and PaaS, and that functional equivalence applies only to infrastructure services. It also explains exportable data, digital assets and the notice and transition periods."
@@ -36,10 +35,11 @@ sources:
     type: law
     year: 2026
     note: "Non-binding model terms for data sharing and standard clauses for cloud contracts, adopted on 29 October 2026 under Article 41 of the Act. Annexes VI to XII hold the cloud clauses: switching and exit, termination, security and business continuity, non-dispersion, liability and non-amendment. The clauses are meant to be inserted into an existing service agreement."
-  - title: "Digital Package: questions and answers"
+  - title: "Proposal for a Digital Omnibus regulation, COM(2025) 837"
     author: European Commission
-    url: "https://digital-strategy.ec.europa.eu/en/faqs/digital-package"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0837"
+    agents: "https://publications.europa.eu/resource/cellar/ebf17714-c56e-11f0-8da2-01aa75ed71a1.0001.03/DOC_1"
     type: docs
     year: 2025
-    note: "The Commission's questions and answers on its digital omnibus proposal of November 2025, which would amend the Data Act among other laws. For cloud switching, it proposes exemptions for custom-made services and for services from SMEs and small mid-caps under contracts signed before the Act applied. The proposal is not yet law."
+    note: "The Commission's proposal of 19 November 2025 to simplify EU data law: it amends the Data Act, the GDPR and NIS2, and merges the Data Governance Act, the Open Data Directive and the free flow of data regulation into the Data Act. For cloud switching, it adds a lighter regime for custom-made services and for services from SMEs and small mid-caps under contracts concluded on or before 12 September 2025, and allows proportionate early termination penalties in fixed-term contracts. An explanatory memorandum opens the text. The proposal is not yet law."
 ---

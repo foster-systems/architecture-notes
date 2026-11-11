@@ -34,10 +34,10 @@ sources:
     type: guide
     year: 2026
     note: "A short Commission summary of Article 50: who must tell people they are dealing with AI, and who must mark AI-generated content. It links to the Commission's Article 50 guidelines and the voluntary code of practice."
-  - title: Guidelines for providers of general-purpose AI models
+  - title: Guidelines on the scope of the obligations for providers of general-purpose AI models
     author: European Commission
-    url: "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers"
+    url: "https://ec.europa.eu/newsroom/dae/redirection/document/118340"
     type: guide
     year: 2025
-    note: "The Commission's guidelines on when a model counts as general-purpose and who must meet the duties of its provider. They state that only significant modifications make a downstream company a provider. Not legally binding, but they guide enforcement."
+    note: "The Commission's guidelines of 19 November 2025 on when a model counts as general-purpose and who must meet the duties of its provider. A company that modifies a model becomes its provider only when the change is significant; the indicative test is more than a third of the original model's training compute. Not legally binding, but they guide enforcement."
 ---

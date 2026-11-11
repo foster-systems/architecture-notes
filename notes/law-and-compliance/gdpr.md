@@ -40,12 +40,13 @@ sources:
     type: guide
     year: 2021
     note: "The EDPB's step-by-step method for exporters that rely on standard contractual clauses or similar tools. Exporters map their transfers, assess the law of the destination country and add supplementary measures where needed. It follows the Schrems II judgment of the Court of Justice."
-  - title: Standard Contractual Clauses (SCC)
+  - title: "Commission Implementing Decision (EU) 2021/914 (standard contractual clauses)"
     author: European Commission
-    url: "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en"
-    type: docs
+    url: "https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/55862dbf-c72b-11eb-a925-01aa75ed71a1.0006.03/DOC_1"
+    type: law
     year: 2021
-    note: "The Commission's page for the model clauses issued on 4 June 2021, for transfers to recipients outside the EU that are not subject to the GDPR. It links a Q&A on their use. Further sets are in development, including one for recipients directly subject to the GDPR."
+    note: "The model clauses of 4 June 2021 for transfers to a recipient outside the EU whose processing is not subject to the GDPR. Its annex has four modules: controller to controller, controller to processor, processor to processor and processor to controller. The controller-to-processor and processor-to-processor modules also meet the Article 28 contract terms."
   - title: Adequacy decisions
     author: European Commission
     url: "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"

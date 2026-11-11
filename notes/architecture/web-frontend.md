@@ -45,10 +45,11 @@ sources:
     type: guide
     year: 2026
     note: "A W3C reference on using ARIA accessibility semantics in common design patterns and widgets. It has design patterns with working examples, and guidance on practices such as landmarks and accessible names."
-  - title: "European Accessibility Act (EAA)"
-    author: European Commission
-    url: "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en"
-    type: docs
-    year: 2026
-    note: "The Commission's page on the Act. It lists the products and services covered, including computers and operating systems, smartphones, banking services, e-books and e-commerce. It says Member States had to incorporate the Act into national law by June 2022. Under Article 31 of Directive (EU) 2019/882, those national rules apply from 28 June 2025."
+  - title: "Directive (EU) 2019/882 (European Accessibility Act)"
+    author: European Union
+    url: "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/6eb3ceb5-8905-11e9-9369-01aa75ed71a1.0006.03/DOC_1"
+    type: law
+    year: 2019
+    note: "The full text of the Act. Article 2 lists the products and services it covers, including computers and operating systems, smartphones, consumer banking, e-books and e-commerce services. Article 4 exempts microenterprises providing services, and Annex I sets the accessibility requirements. Under Article 31, the national rules apply from 28 June 2025."
 ---
