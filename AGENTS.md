@@ -1,6 +1,6 @@
 # Shelf: guide for agents
 
-A subjective reading list on building and running software companies, kept by Przemek Łuniewski. Public repo. Per topic, the best sources, each with a short note on what it is. The links are the value. Topics show the current state only: git history is the record.
+A subjective reading list on building and running software technology, kept by Przemek Łuniewski. Public repo. Per topic, the best sources, each with a short note on what it is. The links are the value. Topics show the current state only: git history is the record.
 
 ## Reading
 
