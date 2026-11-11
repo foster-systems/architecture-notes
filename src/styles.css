@@ -1,7 +1,7 @@
 /* Shelf is the library of foster.systems: its palette, Inter and JetBrains Mono, one container, hairlines over boxes. */
-/* Both themes come from the reader's system; the toggle pins one. */
+/* Dark by default; the toggle pins the reader's choice. */
 :root {
-	color-scheme: light dark;
+	color-scheme: dark;
 	--paper: light-dark(#fafaf9, #07080b);
 	--surface: light-dark(#fff, #0e1015);
 	--ink: light-dark(#0c0c0e, #f4f4f5);
@@ -26,9 +26,6 @@
 }
 :root[data-theme='light'] {
 	color-scheme: light;
-}
-:root[data-theme='dark'] {
-	color-scheme: dark;
 }
 
 *,
