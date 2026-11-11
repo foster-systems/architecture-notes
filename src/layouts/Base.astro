@@ -51,9 +51,8 @@ const changed = page && !entry.data.reviewed && lastChanged(file);
 		<header class="bar">
 			<div class="container bar-row">
 				<p class="lockup">
-					<a class="lockup-parent" href={parent} aria-label="foster.systems"><Mark /><span>foster.systems</span></a>
-					<span class="lockup-slash" aria-hidden="true">/</span>
-					<a href={url('')}>Shelf</a>
+					<a class="lockup-home" href={url('')}><Mark />Shelf</a>
+					<span class="lockup-by">by <a href={parent}>foster.systems</a></span>
 				</p>
 				<nav class="bar-nav" aria-label="Site">
 					<button class="search-open" type="button" aria-label="Search" data-search-open>
@@ -96,7 +95,7 @@ const changed = page && !entry.data.reviewed && lastChanged(file);
 
 		<dialog class="menu" aria-label="Menu">
 			<div class="menu-head">
-				<a class="lockup" href={url('')}><Mark />Shelf</a>
+				<a class="lockup-home" href={url('')}><Mark />Shelf</a>
 				<button class="bar-icon" type="button" aria-label="Close menu" data-close>
 					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
 				</button>

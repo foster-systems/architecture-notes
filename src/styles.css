@@ -255,27 +255,35 @@ a.eyebrow:hover,
 	height: 100%;
 }
 .lockup {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
 	min-width: 0;
-	font-weight: 600;
+	white-space: nowrap;
 }
-.lockup-parent {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	margin-inline: -0.375rem;
-	padding-inline: 0.375rem;
-	font-size: 0.9375rem;
-	font-weight: 500;
+.lockup-home {
+	margin-inline: -0.375rem 0.375rem;
+	padding: 0.375rem;
+	font-size: 1.0625rem;
+	font-weight: 650;
+	letter-spacing: -0.01em;
+}
+.lockup-home .mark {
+	margin-inline-end: 0.5rem;
+	vertical-align: -0.25em;
+}
+.lockup-by {
+	font-size: 0.875rem;
+	color: var(--subtle);
+}
+.lockup-by a {
 	color: var(--muted);
+	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+	text-decoration-color: transparent;
 }
-.lockup-parent:hover {
+.lockup-by a:is(:hover, :focus-visible) {
 	color: var(--ink);
-}
-.lockup-slash {
-	color: var(--line-strong);
+	text-decoration-color: currentColor;
 }
 .bar-nav {
 	display: flex;
@@ -1821,6 +1829,11 @@ mark {
 		border-radius: 0;
 	}
 }
+@media (width < 21rem) {
+	.lockup-by {
+		display: none;
+	}
+}
 @media (width < 40rem) {
 	:root {
 		--pad: 1.25rem;
@@ -1830,10 +1843,6 @@ mark {
 	}
 	.catalogue-key {
 		margin-bottom: 1rem;
-	}
-	.lockup-parent span,
-	.lockup-slash {
-		display: none;
 	}
 	.hero > .container {
 		padding-block: 2rem 2.5rem;
