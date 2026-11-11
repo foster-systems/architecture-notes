@@ -7,7 +7,7 @@ reviewed: 2026-11-10
 sidebar:
   order: 3
 tags: [enterprise, sso, scim, provisioning, audit-logs, rbac, security-questionnaire, saas]
-related: [security/identity-and-access, architecture/multi-tenancy, law-and-compliance/soc2-and-iso27001, product-and-business/pricing-and-billing]
+related: [security/identity-and-access, architecture/multi-tenancy, law-and-compliance/soc2-and-iso27001, law-and-compliance/saas-contracts, product-and-business/pricing-and-billing]
 sources:
   - title: EnterpriseReady
     author: Replicated

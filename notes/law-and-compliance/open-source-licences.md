@@ -5,7 +5,7 @@ why: "Most of a product's code is open source, and each licence sets conditions 
 horizon: foundation
 reviewed: 2026-11-10
 sidebar:
-  order: 6
+  order: 7
 tags: [open-source, licensing, copyleft, agpl, compliance]
 related: [security/supply-chain, architecture/build-or-buy, product-and-business/fundraising-and-due-diligence]
 sources:
