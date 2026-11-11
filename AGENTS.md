@@ -4,7 +4,7 @@ A curated reading list for building and running a software company, from the fir
 
 ## Standard
 
-`notes/about.md` is the standard every change applies: the scope (a software company's first four stages, up to a few hundred people), the checks for adding a source (Garousi et al.'s grey-literature criteria: producer, evidence or method, still holds, origin or best current explanation, adds something unique, vendor interest named) and the reasons for removing one (CREW: misleading, superseded, trivial, out of scope, covered better elsewhere, unreadable). Trace each claim in a note to the original (SIFT).
+`notes/about.md` is the standard every change applies: the scope (a software company's first four stages, up to a few hundred people), the checks for adding a source (adapted from Garousi et al.'s grey-literature criteria: producer, evidence or method, still holds, origin or best current explanation, adds something unique, vendor interest named) and the reasons for removing one (adapted from CREW: misleading, superseded, trivial, out of scope, covered better elsewhere, unreadable). Trace each claim in a note to the original (SIFT).
 
 ## Reading
 
@@ -41,7 +41,7 @@ A published URL keeps working: when a topic moves, add old path to new path in `
 - A new source must pass every check in the standard and beat what it displaces. A removal's commit message names its reason from the standard, e.g. "Superseded by …".
 - A topic outside the scope is removed or merged; a moved one gets a redirect.
 - Notes describe the source. Never invent experience or opinions and attribute them to Przemek.
-- Agents decide and publish. Each change needs an independent review and passing `npm run check` and `npm run links`.
+- Agents decide and publish. Each change needs an independent review, by an agent on a different model, and passing `npm run check` and `npm run links`.
 
 ## Writing
 
