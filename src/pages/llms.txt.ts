@@ -8,7 +8,7 @@ export function GET(context: APIContext) {
 	const lines = [
 		'# Shelf',
 		'',
-		'> A subjective reading list on building software companies, by Przemek Łuniewski. Each topic links up to 7 sources, each with a short note on what it is.',
+		'> A subjective reading list on building and running software technology, by Przemek Łuniewski. Each topic links up to 7 sources, each with a short note on what it is.',
 		'',
 		`Every link below returns Markdown. Source repo: ${github}.`,
 		'A source with an `agents` URL has an agent-readable copy (repo or Markdown) of its site.',

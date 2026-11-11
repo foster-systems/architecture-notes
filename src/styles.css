@@ -392,13 +392,15 @@ kbd {
 	line-height: 0.728;
 	letter-spacing: -0.055em;
 }
-.hero-about {
+.hero-line {
 	margin-bottom: 0.375rem;
 	padding-block: 0.5rem;
 	font-size: 1.0625rem;
 	font-weight: 500;
+	text-align: right;
+	text-wrap: balance;
 }
-.hero-about,
+.hero-line a,
 .lede a,
 .prose a {
 	color: var(--accent);
@@ -407,8 +409,7 @@ kbd {
 	text-underline-offset: 0.2em;
 	text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
 }
-.hero-about:hover,
-:is(.lede, .prose) a:hover {
+:is(.hero-line, .lede, .prose) a:hover {
 	text-decoration-color: currentColor;
 }
 .key {
@@ -1837,8 +1838,20 @@ mark {
 	.hero > .container {
 		padding-block: 2rem 2.5rem;
 	}
+	.hero-head {
+		flex-direction: column;
+		align-items: stretch;
+		border-bottom: 0;
+	}
 	.hero h1 {
 		font-size: clamp(5.5rem, 28vw, 6.5rem);
+		border-bottom: 2px solid var(--ink);
+	}
+	.hero-line {
+		margin-top: 0.75rem;
+		margin-bottom: 0;
+		padding-block: 0;
+		text-align: left;
 	}
 	.key {
 		font-size: 0.75rem;

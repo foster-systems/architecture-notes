@@ -3,7 +3,7 @@ title: About
 description: "What this is, how sources are chosen, and how to use it."
 ---
 
-Shelf is a subjective reading list on building and running software companies. [Przemek Łuniewski](https://foster.systems) keeps it.
+Shelf is a subjective reading list on building and running software technology. [Przemek Łuniewski](https://foster.systems) keeps it.
 
 ## What you find here
 
