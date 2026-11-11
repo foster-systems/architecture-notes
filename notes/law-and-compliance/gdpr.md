@@ -7,7 +7,7 @@ reviewed: 2026-11-09
 sidebar:
   order: 1
 tags: [gdpr, eu-law, compliance, privacy, processors, data-transfers]
-related: [data/privacy-by-design, law-and-compliance/nis2-and-cra, law-and-compliance/soc2-and-iso27001]
+related: [data/privacy-by-design, law-and-compliance/nis2-and-cra, law-and-compliance/data-act, law-and-compliance/soc2-and-iso27001]
 sources:
   - title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
     author: European Union

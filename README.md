@@ -95,6 +95,7 @@ The laws, standards and licences that bind a software company working in the EU.
 - [GDPR](notes/law-and-compliance/gdpr.md): The EU regulation on personal data, with EDPB guidance on processors and the Commission's tools for international transfers.
 - [EU AI Act](notes/law-and-compliance/ai-act.md): The EU regulation on AI systems and general-purpose models, as amended by the Digital Omnibus on AI.
 - [NIS2 and the Cyber Resilience Act](notes/law-and-compliance/nis2-and-cra.md): Two EU cybersecurity laws: NIS2 binds providers of services such as cloud and SaaS, and the Cyber Resilience Act binds makers of software and hardware products.
+- [EU Data Act](notes/law-and-compliance/data-act.md): The EU regulation on access to data from connected products and on switching between cloud services, SaaS included.
 - [SOC 2 and ISO/IEC 27001](notes/law-and-compliance/soc2-and-iso27001.md): Two security assurance schemes: SOC 2, a report by a CPA firm under AICPA criteria, and ISO/IEC 27001, a certifiable standard for information security management.
 - [Open source licences](notes/law-and-compliance/open-source-licences.md): What open source licences allow and require when a company builds its product on open source code.
 
