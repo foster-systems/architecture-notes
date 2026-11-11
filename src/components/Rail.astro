@@ -1,7 +1,7 @@
 ---
 import Books from './Books.astro';
 import Horizon from './Horizon.astro';
-import { horizons, sectionUrl, stats, url, type Entry, type Section } from '../lib/repo';
+import { horizons, sectionUrl, stats, tone, url, type Entry, type Section } from '../lib/repo';
 
 interface Props {
 	kind: 'section' | 'topic' | 'plain';
@@ -38,7 +38,7 @@ const { kind, id, node, home, position, latest, related } = Astro.props;
 			<p class="label" id="related">Related</p>
 			<ul>
 				{related.map((r) => (
-					<li>
+					<li style={tone(r.id)}>
 						<a href={url(`${r.id}/`)}>
 							<Horizon value={r.data.horizon} />
 							{r.data.title}

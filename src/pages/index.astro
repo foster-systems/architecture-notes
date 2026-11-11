@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Books from '../components/Books.astro';
 import Horizon from '../components/Horizon.astro';
 import Rows from '../components/Rows.astro';
-import { horizons, notes, sectionUrl, stats, topicsOf, two, url, typeset } from '../lib/repo';
+import { horizons, notes, sectionUrl, stats, tone, topicsOf, two, url, typeset } from '../lib/repo';
 
 let seen = 0;
 const numbered = notes.sections.map((s, i) => {
@@ -57,7 +57,7 @@ const columns = runs(3, 3);
 					{shelves.map((shelf) => (
 						<ol class="shelf">
 							{shelf.map((s) => (
-								<li class="group">
+								<li class="group" style={tone(s.id)}>
 									<Books topics={s.topics} from={s.from} label={s.title} />
 									<a class="group-label" href={`#${s.id}`}>
 										<span class="num">{s.num}</span>
@@ -70,7 +70,7 @@ const columns = runs(3, 3);
 				</div>
 				<p class="ticks" aria-hidden="true">
 					{numbered.map((s) => (
-						<span style={`flex-grow: ${s.topics.length}`} />
+						<span style={`flex-grow: ${s.topics.length}; ${tone(s.id)}`} />
 					))}
 				</p>
 			</div>
@@ -92,7 +92,7 @@ const columns = runs(3, 3);
 				{columns.map((column) => (
 					<div>
 						{column.map((s) => (
-							<section class="block" id={s.id}>
+							<section class="block" id={s.id} style={tone(s.id)}>
 								<div class="block-head">
 									<h2>
 										<span class="num">{s.num}</span>

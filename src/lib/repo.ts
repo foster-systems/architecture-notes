@@ -33,6 +33,12 @@ export const two = (n: number) => String(n).padStart(2, '0');
 export const topicsOf = (s: Section): Topic[] => [...s.pages, ...s.sections.flatMap(topicsOf)];
 /** A section without an index page is reached at its place on the home page. */
 export const sectionUrl = (s: Section) => url(s.hasIndex ? `${s.id}/` : `#${s.id}`);
+const within = (s: Section): { id: string }[] => [s, ...s.pages, ...s.sections.flatMap(within)];
+// A section's hue is its place on the shelf, turned by the golden angle from the accent's hue: neighbours differ, and a section added last leaves the others as they are.
+const hues = new Map(notes.sections.flatMap((s, i) => within(s).map((n) => [n.id, Math.round(275 + i * 137.508) % 360] as const)));
+export const hueOf = (id: string) => hues.get(id);
+/** The inline style that gives an element its section's colour. */
+export const tone = (id: string) => (hues.has(id) ? `--hue: ${hueOf(id)}` : undefined);
 const topics = notes.sections.flatMap(topicsOf);
 export const horizons: Horizon[] = ['foundation', 'current', 'emerging'];
 export const stats = {

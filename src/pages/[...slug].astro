@@ -7,7 +7,7 @@ import Miniature from '../components/Miniature.astro';
 import Rail from '../components/Rail.astro';
 import Rows from '../components/Rows.astro';
 import Spines from '../components/Spines.astro';
-import { ancestors, inline, notes, typeset, section, sectionUrl, topicsOf, two, url, type Entry } from '../lib/repo';
+import { ancestors, hueOf, inline, notes, typeset, section, sectionUrl, tone, topicsOf, two, url, type Entry } from '../lib/repo';
 
 export async function getStaticPaths() {
 	return (await getCollection('notes')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
@@ -29,6 +29,7 @@ const related = (await Promise.all((data.related ?? []).map((r) => getEntry('not
 const reviewed = data.reviewed?.toISOString().slice(0, 10);
 const latest = node?.pages.map((p) => p.reviewed ?? '').sort().at(-1);
 const position = at >= 0 && `${two(at + 1)} / ${two(peers.length)}`;
+const hue = hueOf(id);
 const rail = { kind, id, node, home, position, latest, related } as const;
 // Prose names a horizon in inline code; show it with its mark.
 const prose = entry.rendered?.html.replace(
@@ -40,6 +41,7 @@ const prose = entry.rendered?.html.replace(
 <Base title={data.title} description={data.description} entry={entry}>
 	<article
 		class:list={['container inner', kind]}
+		style={tone(id)}
 		data-pagefind-meta={kind === 'topic' ? `horizon:${data.horizon}` : node && position ? `eyebrow:${position}` : undefined}
 	>
 		<header class="head" data-pagefind-meta={kind === 'topic' ? `eyebrow:${home?.title ?? ''}` : undefined}>
@@ -76,7 +78,7 @@ const prose = entry.rendered?.html.replace(
 			</p>
 		</header>
 
-		<div class="intro">
+		<div class="intro" data-pagefind-meta={hue === undefined ? undefined : `hue:${hue}`}>
 			{data.description && <p class="lede" set:html={inline(data.description)} />}
 			{data.why && <p class="why" set:html={inline(data.why)} />}
 			{node && <div class="why prose" set:html={entry.rendered?.html} />}
@@ -139,14 +141,14 @@ const prose = entry.rendered?.html.replace(
 			<nav class="container" aria-label="Previous and next" data-pagefind-ignore>
 				<div class="pager">
 					{!node && home && (
-						<a class="pager-up" href={sectionUrl(home)}>
+						<a class="pager-up" href={sectionUrl(home)} style={tone(home.id)}>
 							<Arrow />
 							<span>{home.title}</span>
 							<span class="pager-place">{position}</span>
 						</a>
 					)}
 					{pager.map(({ rel, to }) => (
-						<a href={'pages' in to ? sectionUrl(to) : url(`${to.id}/`)} rel={rel} aria-label={`${rel === 'prev' ? 'Previous' : 'Next'}: ${to.title}`}>
+						<a href={'pages' in to ? sectionUrl(to) : url(`${to.id}/`)} rel={rel} style={tone(to.id)} aria-label={`${rel === 'prev' ? 'Previous' : 'Next'}: ${to.title}`}>
 							<Arrow />
 							{'horizon' in to && <Horizon value={to.horizon} silent />}
 							<span>{to.title}</span>

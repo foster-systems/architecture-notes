@@ -6,11 +6,12 @@ interface Props {
 	current?: string;
 	/** Heights follow the number of sources, as the books do. */
 	sized?: boolean;
+	style?: string;
 }
-const { topics, current, sized } = Astro.props;
+const { topics, current, sized, style } = Astro.props;
 ---
 
-<span class="spines" aria-hidden="true">
+<span class="spines" aria-hidden="true" style={style}>
 	{
 		topics.map((t) => (
 			<span
