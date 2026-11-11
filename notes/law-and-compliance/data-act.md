@@ -7,7 +7,7 @@ reviewed: 2026-11-10
 sidebar:
   order: 4
 tags: [data-act, eu-law, compliance, cloud-switching, interoperability, data-portability]
-related: [architecture/build-or-buy, architecture/multi-tenancy, law-and-compliance/gdpr, product-and-business/enterprise-readiness]
+related: [architecture/build-or-buy, architecture/multi-tenancy, law-and-compliance/gdpr, law-and-compliance/saas-contracts, product-and-business/enterprise-readiness]
 sources:
   - title: "Regulation (EU) 2023/2854 (Data Act)"
     author: European Union

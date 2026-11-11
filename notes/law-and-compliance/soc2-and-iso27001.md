@@ -5,7 +5,7 @@ why: "Large customers ask for these before buying, so either can decide a sale. 
 horizon: current
 reviewed: 2026-11-09
 sidebar:
-  order: 5
+  order: 6
 tags: [soc-2, iso-27001, compliance, audit, security-assurance]
 related: [security/application-security, security/identity-and-access, law-and-compliance/gdpr, law-and-compliance/nis2-and-cra, product-and-business/enterprise-readiness]
 sources:
