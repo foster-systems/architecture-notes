@@ -43,6 +43,7 @@ sources:
   - title: "Directive (EU) 2023/970 (Pay Transparency Directive)"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/dir/2023/970/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/5bbb9daf-f470-11ed-a05c-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2023
     note: "The EU directive that gives job applicants the right to the starting pay or its range in time for an informed pay negotiation, for example in the job notice or before the interview, and bars employers from asking about pay history. Employers must give workers the criteria for pay and progression, workers can ask for average pay by sex for the same work, and employers with 100 or more workers report gender pay gaps. Member States had to make it national law by 7 June 2026."

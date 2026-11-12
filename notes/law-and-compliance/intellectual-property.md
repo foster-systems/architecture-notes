@@ -19,12 +19,14 @@ sources:
   - title: "Directive 2009/24/EC on the legal protection of computer programs"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/dir/2009/24/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/fdad2566-1ecd-4d32-a54d-7b9b386c43c9.0006.02/DOC_1"
     type: law
     year: 2009
     note: "The EU directive on copyright in software. A program is protected as a literary work when it is its author's own intellectual creation; the ideas and principles behind it, including those behind its interfaces, are not. Article 2(3) gives the employer the economic rights in a program an employee writes as part of their duties, unless the contract says otherwise; no such rule covers contractors."
   - title: "Directive (EU) 2016/943 on the protection of undisclosed know-how and business information (trade secrets)"
     author: European Union
     url: "https://eur-lex.europa.eu/eli/dir/2016/943/oj/eng"
+    agents: "https://publications.europa.eu/resource/cellar/dc0eda0f-32bc-11e6-b497-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2016
     note: "The EU directive on trade secrets. Information counts as one only if it is not generally known, has commercial value because it is secret, and its holder has taken reasonable steps to keep it secret. The directive sets remedies against unlawful acquisition, use and disclosure."

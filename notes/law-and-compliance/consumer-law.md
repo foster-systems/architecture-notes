@@ -47,6 +47,7 @@ sources:
   - title: "Directive 93/13/EEC (Unfair Contract Terms Directive), consolidated text"
     author: European Union
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01993L0013-20220528"
+    agents: "https://publications.europa.eu/resource/cellar/ca4536e5-e274-11ec-a534-01aa75ed71a1.0007.02/DOC_1"
     type: law
     year: 2022
     note: "The directive on standard terms in consumer contracts, as amended in 2019. A term not individually negotiated is unfair if, contrary to good faith, it causes a significant imbalance to the consumer's detriment, and an unfair term does not bind the consumer. Its annex lists terms that may be unfair, such as changing the terms or the service unilaterally without a valid reason."

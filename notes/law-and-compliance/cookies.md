@@ -12,12 +12,14 @@ sources:
   - title: "Directive 2002/58/EC (ePrivacy Directive), consolidated text"
     author: European Union
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02002L0058-20091219"
+    agents: "https://publications.europa.eu/resource/cellar/6def8269-d337-4373-83c1-8c57678fc93f.0006.03/DOC_3"
     type: law
     year: 2009
     note: "The directive on privacy in electronic communications, as amended in 2009, which each member state applies through its own law. Article 5(3) allows storing or reading information on a user's device only with consent after clear information, except where strictly necessary to transmit a communication or to provide a service the user explicitly requested."
   - title: "Judgment in Case C-673/17 (Planet49)"
     author: Court of Justice of the European Union
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62017CJ0673"
+    agents: "https://publications.europa.eu/resource/cellar/3d6585b3-e42f-11e9-9c4e-01aa75ed71a1.0022.05/DOC_1"
     type: law
     year: 2019
     note: "The Grand Chamber judgment of 1 October 2019 on cookie consent. A pre-ticked checkbox the user must untick is not valid consent, and the rule applies whether or not the stored information is personal data. Users must be told how long cookies operate and whether third parties can access them."

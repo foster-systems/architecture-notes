@@ -33,6 +33,7 @@ sources:
   - title: "Judgment of the Court in Case C-492/23, Russmedia Digital and Inform Media Press"
     author: Court of Justice of the European Union
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62023CJ0492"
+    agents: "https://publications.europa.eu/resource/cellar/1a7e56c4-cf61-11f0-8da2-01aa75ed71a1.0006.05/DOC_1"
     type: law
     year: 2025
     note: "The Grand Chamber judgment of 2 December 2025 on an online marketplace that published a user's advertisement containing another person's sensitive data. The operator is a controller of personal data in the advertisements and must check, before publication, whether they contain sensitive data and whether the advertiser may publish it. It cannot rely on the hosting liability exemption for its GDPR duties; the case was decided under the e-Commerce Directive, whose exemptions the DSA now holds in Articles 4 to 6."
