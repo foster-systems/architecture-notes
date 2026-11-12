@@ -32,7 +32,7 @@ sources:
     url: "https://blog.acolyer.org/2019/04/18/keeping-master-green-at-scale/"
     type: article
     year: 2019
-    note: "Summary of Uber's SubmitQueue paper. It predicts which pending changes will pass and builds likely combinations in parallel, keeping the mainline green at thousands of changes a day."
+    note: "Summary of Uber's SubmitQueue paper. SubmitQueue predicts which pending changes will pass and builds likely combinations in parallel, keeping the mainline green at thousands of changes a day."
   - title: Why are good developers so wary of agentic development?
     author: Rachel Laycock
     url: "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"

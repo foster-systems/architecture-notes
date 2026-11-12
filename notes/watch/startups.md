@@ -1,12 +1,12 @@
 ---
 title: Startups and product
-description: "Essays, newsletters, podcasts and talks on starting and growing a software company: product-market fit, product management, pricing and go-to-market."
-why: "Founders who build the technology also make the product, pricing and sales decisions. These feeds show how founders and operators make them, as practice changes."
+description: "Essays, articles, podcasts and talks on starting and growing a software company: product-market fit, product management and growth."
+why: "Founders who build the technology also make the product and growth decisions. These feeds show how founders and operators make them, as practice changes."
 horizon: current
 reviewed: 2026-11-11
 sidebar:
   order: 5
-tags: [startups, product, growth, pricing, go-to-market, founders]
+tags: [startups, product, growth, founders]
 related: [product-and-business/product-discovery, product-and-business/go-to-market, product-and-business/pricing-and-billing, product-and-business/saas-metrics, product-and-business/fundraising-and-due-diligence, watch/newsletters]
 sources:
   - title: Essays
@@ -33,12 +33,6 @@ sources:
     type: video
     year: 2026
     note: "Long interviews with product and growth leaders and founders on building products, growth and careers, free on YouTube, with sponsor reads. The companion newsletter is mostly for paid subscribers."
-  - title: Growth Unhinged
-    author: Kyle Poyar
-    url: "https://www.growthunhinged.com/archive"
-    type: feed
-    year: 2026
-    note: "A weekly newsletter on startup pricing, go-to-market and product-led growth, with survey data and case studies. The author was an operating partner at the venture firm OpenView and a director at the pricing consultancy Simon-Kucher. He sells advising and consulting on pricing and growth, the newsletter takes sponsors, and some extras are for paying members."
   - title: SVPG articles
     author: Marty Cagan and partners, Silicon Valley Product Group
     url: "https://www.svpg.com/articles/"

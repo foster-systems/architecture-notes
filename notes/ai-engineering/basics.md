@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 1
 tags: [llm-apps, agents, context-engineering, tool-use]
-related: [ai-engineering/retrieval, ai-engineering/evals, ai-engineering/agent-systems, agentic-engineering/governance]
+related: [ai-engineering/retrieval, ai-engineering/evals, ai-engineering/agent-systems, ai-engineering/model-choice, agentic-engineering/governance]
 sources:
   - title: Deep Dive into LLMs like ChatGPT
     author: Andrej Karpathy

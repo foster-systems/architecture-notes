@@ -27,7 +27,7 @@ sources:
     agents: "https://www.ycombinator.com/blog/startup-school-week-5-recap-kirsty-nathoo-and-kevin-hale"
     type: talk
     year: 2019
-    note: "A Startup School lecture by Y Combinator's CFO on six common money mistakes she sees in startups. They range from not tracking bank balance, burn, runway and growth every week to understating expenses, handing finances to someone else, scaling too fast and fundraising too late. YC's Week 5 podcast recap has a transcript."
+    note: "A Startup School lecture by Kirsty Nathoo, then Y Combinator's CFO, on six common money mistakes she sees in startups. They range from not tracking bank balance, burn, runway and growth every week to understating expenses, handing finances to someone else, scaling too fast and fundraising too late. YC's Week 5 podcast recap has a transcript."
   - title: "SaaS Financial Plan 2.0"
     author: Christoph Janz
     url: "https://christophjanz.blogspot.com/2016/03/saas-financial-plan-20.html"
@@ -45,5 +45,5 @@ sources:
     url: "https://www.ycombinator.com/blog/advice-startups-running-out-of-money/"
     type: article
     year: 2016
-    note: "A Y Combinator partner's advice for funded startups with 12 months of runway or less. It lists beliefs that delay cost cuts, says payroll is the usual source of high burn, and explains why waiting weakens the company's position with investors and acquirers. Below about two months of cash it advises an orderly shutdown that pays employees, taxes and debts."
+    note: "Advice from Dalton Caldwell, then a Y Combinator partner, for funded startups with 12 months of runway or less. It lists beliefs that delay cost cuts, says payroll is the usual source of high burn, and explains why waiting weakens the company's position with investors and acquirers. Below about two months of cash it advises an orderly shutdown that pays employees, taxes and debts."
 ---

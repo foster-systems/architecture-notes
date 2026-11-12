@@ -14,7 +14,7 @@ sources:
     url: "https://simonwillison.net/"
     type: feed
     year: 2026
-    note: "A blog running since 2002 and updated almost daily, mostly on LLMs, coding agents and AI security. The author co-created Django, created Datasette and coined the term prompt injection. He works independently, and the blog carries sponsor banners."
+    note: "A blog running since 2002 and updated almost daily, mostly on LLMs, coding agents and AI security. The author co-created Django, created Datasette and coined the term prompt injection. He works independently, spends one day a week at Prime Radiant, an applied AI research lab, and the blog carries sponsor banners."
   - title: martinfowler.com
     author: Martin Fowler
     url: "https://martinfowler.com/recent-changes.html"

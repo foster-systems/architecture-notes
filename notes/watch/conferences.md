@@ -14,7 +14,7 @@ sources:
     url: "https://www.infoq.com/presentations/"
     type: talk
     year: 2026
-    note: "InfoQ's archive of recorded talks from QCon, QCon AI and InfoQ's online events, aimed at senior software developers. Talk pages include a full transcript. QCon runs in San Francisco and London, and QCon AI in New York and Boston."
+    note: "InfoQ's archive of recorded talks from QCon, QCon AI and InfoQ's online events, aimed at senior software developers. Recent talk pages include a full transcript. QCon runs in San Francisco and London, and QCon AI in New York and Boston. C4Media, the company behind InfoQ and QCon, sells conference tickets, sponsorships and certifications, and InfoQ is paid for by advertising."
   - title: AI Engineer
     author: AI Engineer (Software 3.0 Inc)
     url: "https://www.ai.engineer/talks"

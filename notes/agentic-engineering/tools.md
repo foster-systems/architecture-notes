@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 2
 tags: [coding-agents, mcp, agents-md, agent-skills, claude-code, codex, copilot, benchmarks]
-related: [agentic-engineering/steering, agentic-engineering/governance, ai-engineering/model-choice]
+related: [agentic-engineering/adoption, agentic-engineering/steering, agentic-engineering/governance, ai-engineering/model-choice]
 sources:
   - title: Claude Code overview
     author: Anthropic

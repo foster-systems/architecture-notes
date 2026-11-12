@@ -32,7 +32,7 @@ sources:
     url: "https://hai.stanford.edu/ai-index"
     type: guide
     year: 2026
-    note: "An annual report from Stanford HAI that tracks AI's technical progress, investment, adoption, economic influence and governance with sourced data. A steering committee from academia and industry leads it."
+    note: "An annual report from Stanford HAI that tracks AI's technical progress, investment, adoption, economic influence and governance with sourced data. A steering committee from academia and industry leads it. Google and OpenAI are among its supporting partners."
   - title: Stack Overflow Developer Survey
     author: Stack Overflow
     url: "https://survey.stackoverflow.co/"

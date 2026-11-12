@@ -1,7 +1,7 @@
 ---
 title: Delivery metrics
 description: "How to measure software delivery and developer productivity: DORA metrics, the SPACE and developer experience frameworks, and the limits of measurement."
-why: "Founders and boards ask whether engineering is getting faster, and the wrong metric does damage once it becomes a target. Research links a few measures to better results; most others mislead."
+why: "Founders and boards ask whether engineering is getting faster, and the wrong metric does damage once it becomes a target. Research links a few delivery measures to better results, and counts of output such as lines of code mislead."
 horizon: current
 reviewed: 2026-11-11
 sidebar:

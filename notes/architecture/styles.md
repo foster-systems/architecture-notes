@@ -1,6 +1,6 @@
 ---
 title: Architecture styles and patterns
-description: "The first structural decision of a software company (monolith, modular monolith or services) and the catalogues of named patterns."
+description: "The first structural decision of a software company (monolith, modular monolith or services) and the named patterns for building distributed systems."
 why: "The choice sets how a small team builds, deploys and changes its product, and a wrong split is costly to undo. Pattern names are a shared language for people and agents to discuss the trade-offs."
 horizon: foundation
 reviewed: 2026-11-11

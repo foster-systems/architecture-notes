@@ -7,14 +7,14 @@ reviewed: 2026-11-11
 sidebar:
   order: 8
 tags: [equity, cap-table, vesting, stock-options, esop, founders, 83b]
-related: [product-and-business/fundraising-and-due-diligence, team/hiring]
+related: [product-and-business/fundraising-and-due-diligence, team/hiring, team/levels-and-pay]
 sources:
   - title: "How to Split Equity Among Co-Founders"
     author: Michael Seibel
     url: "https://www.ycombinator.com/blog/splitting-equity-among-founders"
     type: article
     year: 2015
-    note: "A Y Combinator partner, who co-founded Justin.tv and Socialcam, argues for equal equity splits among co-founders. He lists the usual reasons for unequal splits and answers that most of the work of building a company lies ahead, and that investors read the split as a sign of how the CEO values the co-founders. It is the advice YC usually gives."
+    note: "Michael Seibel, then a Y Combinator partner and a co-founder of Justin.tv and Socialcam, argues for equal equity splits among co-founders. He lists the usual reasons for unequal splits and answers that most of the work of building a company lies ahead, and that investors read the split as a sign of how the CEO values the co-founders. It is the advice YC usually gives."
   - title: "The Equity Equation"
     author: Paul Graham
     url: "https://paulgraham.com/equity.html"

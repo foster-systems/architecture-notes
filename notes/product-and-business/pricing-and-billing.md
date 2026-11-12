@@ -49,6 +49,6 @@ sources:
     author: Lucas Rocha
     url: "https://www.moderntreasury.com/journal/accounting-for-developers-part-i"
     type: article
-    year: 2025
-    note: "The first of three parts teaching double-entry accounting to engineers who build systems that move or record money. It covers accounts, transactions, ledgers, and debit-normal and credit-normal balances. The author is a product manager at the ledger vendor Modern Treasury."
+    year: 2022
+    note: "The first of three parts teaching double-entry accounting to engineers who build systems that move or record money, updated in 2025. It covers accounts, transactions, ledgers, and debit-normal and credit-normal balances. The author is a product manager at the ledger vendor Modern Treasury."
 ---

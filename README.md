@@ -36,8 +36,8 @@ Building software with AI coding agents: whether they help, which ones to use, a
 - [Adopting coding agents](notes/agentic-engineering/adoption.md): Rolling out coding agents in an engineering team, and checking whether they make the team faster and its software better.
 - [Coding agents](notes/agentic-engineering/tools.md): The main coding agents and the open formats they share for repository instructions, tools and skills.
 - [Steering coding agents](notes/agentic-engineering/steering.md): Setting up a codebase so agents do good work: instructions, specs, tests and automated checks.
-- [Securing agents](notes/agentic-engineering/governance.md): Limiting what coding agents can reach and do: permissions, sandboxes, network limits, third-party plugins and prompt injection.
-- [Supervising agents](notes/agentic-engineering/supervising-agents.md): The engineer's job when agents write the code: directing them, judging their output, stepping in, and keeping the skill to do it.
+- [Securing coding agents](notes/agentic-engineering/governance.md): Limiting what coding agents can reach and do: permissions, sandboxes, network limits, third-party plugins and prompt injection.
+- [Supervising coding agents](notes/agentic-engineering/supervising-agents.md): The engineer's job when agents write the code: directing them, judging their output, stepping in, and keeping the skill to do it.
 - [Delivering agent-written code](notes/agentic-engineering/delivery.md): Keeping code review, CI and merging ahead of the rate at which agents produce changes.
 
 ### [Architecture](notes/architecture/)
@@ -45,7 +45,7 @@ Building software with AI coding agents: whether they help, which ones to use, a
 How systems are shaped and how those decisions are made.
 
 - [System design](notes/architecture/system-design.md): How distributed systems behave: consistency, replication, partitioning, failure and overload.
-- [Architecture styles and patterns](notes/architecture/styles.md): The first structural decision of a software company (monolith, modular monolith or services) and the catalogues of named patterns.
+- [Architecture styles and patterns](notes/architecture/styles.md): The first structural decision of a software company (monolith, modular monolith or services) and the named patterns for building distributed systems.
 - [Multi-tenancy](notes/architecture/multi-tenancy.md): How a SaaS product shares infrastructure and data among customers while keeping them apart.
 - [API design](notes/architecture/api-design.md): Designing web and service APIs that stay usable as they change: REST, gRPC, OpenAPI, versioning and compatibility.
 - [Asynchronous work and messaging](notes/architecture/messaging.md): Moving work out of the request with background jobs, queues and events, and keeping data correct when a message is late, lost or delivered twice.
@@ -151,7 +151,7 @@ What to follow as technology, practice and regulation move: reports, newsletters
 - [Newsletters and live feeds](notes/watch/newsletters.md): Newsletters on AI, security, reliability and engineering leadership, and live feeds of what practitioners read and star.
 - [People](notes/watch/people.md): Individuals whose writing shapes engineering practice today, across software design, AI, observability and leadership.
 - [Conferences](notes/watch/conferences.md): Recurring conferences on software architecture, AI engineering, reliability, cloud infrastructure and application security, with recordings of their talks online.
-- [Startups and product](notes/watch/startups.md): Essays, newsletters, podcasts and talks on starting and growing a software company: product-market fit, product management, pricing and go-to-market.
+- [Startups and product](notes/watch/startups.md): Essays, articles, podcasts and talks on starting and growing a software company: product-market fit, product management and growth.
 - [Regulatory change](notes/watch/regulation.md): Official trackers, decision databases and newsletters that follow new EU rules on data, AI and cybersecurity, and how regulators apply them.
 <!-- /topics -->
 

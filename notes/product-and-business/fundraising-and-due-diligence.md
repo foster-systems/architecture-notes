@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 7
 tags: [fundraising, due-diligence, safe, term-sheet, venture-capital]
-related: [product-and-business/equity-and-stock-options, product-and-business/runway-and-financial-planning, product-and-business/saas-metrics, foundations/technical-debt, security/application-security, law-and-compliance/soc2-and-iso27001, law-and-compliance/open-source-licences]
+related: [product-and-business/equity-and-stock-options, product-and-business/runway-and-financial-planning, product-and-business/saas-metrics, foundations/technical-debt, security/application-security, law-and-compliance/soc2-and-iso27001, law-and-compliance/open-source-licences, law-and-compliance/intellectual-property]
 sources:
   - title: "How to Raise Money"
     author: Paul Graham
@@ -32,7 +32,7 @@ sources:
     url: "https://www.ycombinator.com/blog/a-standard-and-clean-series-a-term-sheet"
     type: article
     year: 2019
-    note: "A sample Series A term sheet with standard terms, by the general counsel of YC Continuity, Y Combinator's growth fund, with a Word version. It explains what control terms, such as board composition, and non-standard economic terms, such as liquidation preferences above 1x, signal about an investor."
+    note: "A sample Series A term sheet with standard terms, by Jason Kwon, then general counsel of YC Continuity, the growth fund Y Combinator ran until 2023, with a Word version. It explains what control terms, such as board composition, and non-standard economic terms, such as liquidation preferences above 1x, signal about an investor."
   - title: "Model Legal Documents"
     author: National Venture Capital Association
     url: "https://nvca.org/model-legal-documents/"
