@@ -1,20 +1,27 @@
 ---
 title: Privacy by design
 description: "Engineering practice for personal data: collecting less, keeping it for a set time, and deleting it everywhere it went."
-why: "Retention and deletion are hard to add once personal data has spread into logs, backups and warehouses. A small company that designs for them early avoids the rework when a customer or regulator asks."
+why: "GDPR requires data protection by design and by default. Retention and deletion are hard to add once personal data has spread into logs, backups and warehouses, so a company that designs for them early avoids rework when a customer or regulator asks."
 horizon: foundation
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
-  order: 4
+  order: 5
 tags: [personal-data, data-minimisation, retention, deletion, threat-modelling]
 related: [law-and-compliance/gdpr, data/databases, data/product-analytics, security/application-security]
 sources:
+  - title: Guidelines 4/2019 on Article 25 Data Protection by Design and by Default
+    author: European Data Protection Board
+    url: "https://www.edpb.europa.eu/documents/guideline/guidelines-42019-on-article-25-data-protection-by-design-and-by-default_en"
+    agents: "https://www.edpb.europa.eu/system/files/documents/files/file1/edpb_guidelines_201904_dataprotection_by_design_and_by_default_v2.0_en.pdf"
+    type: guide
+    year: 2020
+    note: "The EU data protection authorities' interpretation of the GDPR duty to build data protection into processing. For each data protection principle it lists key design and default elements, with examples. It also recommends how controllers, processors and producers of products can work together on it."
   - title: GDPR developer's guide
     author: CNIL
     url: "https://www.cnil.fr/en/gdpr-developers-guide"
     type: guide
-    year: 2021
-    note: "A guide for developers from the French data protection authority, in 17 short sheets. They cover minimisation, user profiles, retention periods, data subject rights and analytics. The source is on GitHub."
+    year: 2020
+    note: "A guide for developers from the French data protection authority, in 17 short sheets. They cover minimisation, user profiles, retention periods, data subject rights and analytics."
   - title: Privacy Design Strategies (The Little Blue Book)
     author: Jaap-Henk Hoepman
     url: "https://www.cs.ru.nl/~jhh/publications/pds-booklet.pdf"
@@ -26,7 +33,7 @@ sources:
     url: "https://www.enisa.europa.eu/publications/data-protection-engineering"
     type: guide
     year: 2022
-    note: "A report from the EU cybersecurity agency that surveys technologies for data protection by design and by default. It assesses how well each one supports the data protection principles in GDPR Article 5."
+    note: "A report from the EU cybersecurity agency on technologies for data protection by design and by default, such as anonymisation, pseudonymisation and encryption. It assesses how each one helps meet the data protection principles in GDPR Article 5."
   - title: LINDDUN
     author: DistriNet, KU Leuven
     url: "https://linddun.org/"
@@ -38,17 +45,11 @@ sources:
     url: "https://www.usenix.org/conference/usenixsecurity20/presentation/cohn-gordon"
     type: paper
     year: 2020
-    note: "A USENIX Security 2020 paper on a deletion framework deployed in three online social networks. Developers annotate data types, and the framework runs and checks deletion across data stores, with a window to reverse mistakes."
+    note: "A USENIX Security 2020 paper on a deletion framework deployed in three online social networks at Facebook. Developers annotate data types, and the framework runs and checks deletion across data stores, with a window to restore data deleted by mistake."
   - title: How Google retains data we collect
     author: Google
     url: "https://policies.google.com/technologies/retention"
     type: docs
     year: 2026
     note: "Google's public description of how deletion works in its systems. Data leaves view first, then storage over about two months, and encrypted backups can hold it for up to six months. It is the vendor's account."
-  - title: OWASP Top 10 Privacy Risks
-    author: OWASP
-    url: "https://owasp.org/www-project-top-10-privacy-risks/"
-    type: guide
-    year: 2021
-    note: "A ranked list of ten privacy risks, version 2.0. It includes insufficient deletion of user data and collection of data not required for the consented purpose."
 ---

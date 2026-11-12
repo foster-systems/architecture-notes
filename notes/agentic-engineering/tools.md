@@ -1,54 +1,54 @@
 ---
-title: Agentic tools
-description: The main coding agents and open conventions used for agentic software delivery in late 2026.
-why: "Fleets mix tools. A team needs to know where each agent runs, how it gets context and tools, and which conventions carry across all of them."
-horizon: emerging
+title: Coding agents
+description: "The main coding agents and the open formats they share for repository instructions, tools and skills."
+why: "The agent a team picks decides where its code runs, what it can reach and how it is configured. Open formats for instructions, tools and skills let a team switch or mix agents without rebuilding that setup."
+horizon: current
 reviewed: 2026-11-11
 sidebar:
-  order: 1
-tags: [coding-agents, mcp, agents-md, agent-skills, agent-plugins, claude-code, codex, copilot]
-related: [agentic-engineering/governance, ai-engineering/basics]
+  order: 2
+tags: [coding-agents, mcp, agents-md, agent-skills, claude-code, codex, copilot, benchmarks]
+related: [agentic-engineering/steering, agentic-engineering/governance, ai-engineering/model-choice]
 sources:
   - title: Claude Code overview
     author: Anthropic
     url: "https://code.claude.com/docs/en/overview"
     type: docs
     year: 2026
-    note: "Entry point to an agent harness for the terminal, IDE, desktop, web and CI, and its model of instructions, skills, hooks and subagents."
-  - title: Codex documentation
+    note: "Anthropic's documentation for Claude Code, its coding agent for the terminal, IDEs, desktop, web and CI. Covers project instructions in CLAUDE.md, skills, hooks and subagents."
+  - title: ChatGPT + Codex user docs
     author: OpenAI
     url: "https://learn.chatgpt.com/docs"
     type: docs
     year: 2026
-    note: "Current docs for the Codex CLI, IDE extension and cloud. Covers approvals, sandboxing and AGENTS.md handling."
+    note: "OpenAI's documentation for Codex, its coding agent, published together with the ChatGPT docs. Covers the CLI, IDE extension and cloud, with approvals, sandboxing and AGENTS.md."
   - title: GitHub Copilot on GitHub.com and GitHub Mobile
     author: GitHub
     url: "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
     type: docs
     year: 2026
-    note: "GitHub's documentation of Copilot on the web and mobile. It covers repository chat, agent work that can open a pull request, code review, automations, session history and customization. It also compares cloud sandbox sessions with GitHub Actions sessions and lists their limits."
+    note: "GitHub's documentation for Copilot on the web and mobile: repository chat, agent tasks that open pull requests, code review and automations. Explains where an agent session runs: a cloud sandbox, a GitHub Actions runner or a custom environment."
   - title: Model Context Protocol specification
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://modelcontextprotocol.io/specification/latest"
     type: spec
     year: 2026
-    note: "The standard way agents reach tools and data, supported by all the tools above. Includes security principles for connecting a server."
+    note: "The open protocol through which agents reach tools and data, supported by the agents above. Includes security and trust principles for hosts and servers."
   - title: AGENTS.md
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://agents.md/"
     type: spec
     year: 2025
-    note: A plain-Markdown convention for repo instructions that most coding agents read.
+    note: "A plain Markdown file of repository instructions that most coding agents read. The site lists the agents that support it."
   - title: Agent Skills specification
     author: Agentic AI Foundation (Linux Foundation)
     url: "https://agentskills.io/specification"
     type: spec
     year: 2025
-    note: "An open format for instructions and scripts that agents load only when a task needs them. One skill folder works in most coding agents."
-  - title: Agent Plugins specification
-    author: Agent Plugins Technical Steering Committee
-    url: "https://agent-plugins.org/specification"
-    type: spec
+    note: "An open format for folders of instructions, scripts and resources that an agent loads only when a task needs them. Developed at Anthropic and adopted by many other agents."
+  - title: "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces"
+    author: "Mike A. Merrill et al."
+    url: "https://arxiv.org/abs/2601.11868"
+    type: paper
     year: 2026
-    note: "One folder format that packages Agent Skills and MCP servers. Clients that read it include Codex, Copilot, Cursor, Kiro, OpenHands and VS Code; Claude Code keeps its own plugin format. The spec does not require clients to sandbox plugin processes and leaves authorization and credentials to each client."
+    note: "The paper behind Terminal-Bench 2.0: 89 hard terminal tasks, each with its own environment and tests, run on many pairs of agent and model, including Claude Code and Codex CLI. In its results the model usually matters more than the agent. It publishes the harness so a team can rerun the tasks. tbench.ai now ranks agents on later task sets, version 4.1 in November 2026."
 ---

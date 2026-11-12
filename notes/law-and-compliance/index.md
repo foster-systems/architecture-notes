@@ -1,8 +1,8 @@
 ---
 title: Law and compliance
-description: "The laws, standards and licences that bind a software company working in the EU."
+description: "The laws, contracts, standards and rights a software company working in the EU has to handle."
 sidebar:
   order: 10
 ---
 
-These topics link to the legal texts and official guidance. They are not legal advice.
+These topics link to legal texts, official guidance and practitioner sources. They are not legal advice.

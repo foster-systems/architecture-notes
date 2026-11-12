@@ -3,7 +3,7 @@ title: Architecture styles and patterns
 description: "The first structural decision of a software company (monolith, modular monolith or services) and the catalogues of named patterns."
 why: "The choice sets how a small team builds, deploys and changes its product, and a wrong split is costly to undo. Pattern names are a shared language for people and agents to discuss the trade-offs."
 horizon: foundation
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
   order: 2
 tags: [monolith, modular-monolith, microservices, patterns, distributed-systems, reference]
@@ -20,7 +20,7 @@ sources:
     url: "https://martinfowler.com/articles/dont-start-monolith.html"
     type: article
     year: 2015
-    note: "An argument against the monolith-first advice, for teams whose goal is microservices. It says a new system is the best time to divide it into independently deployed parts, because a monolith's parts become tightly coupled. It also states when the approach fits and what it makes harder."
+    note: "A reply to Monolith First by a consultant at innoQ. It argues that a new system is the time to split it into separately deployed parts, because a monolith's parts become tightly coupled and hard to cut apart later. It limits this to teams that know the domain well and notes that service boundaries are then hard to change."
   - title: "Microservice Prerequisites"
     author: Martin Fowler
     url: "https://martinfowler.com/bliki/MicroservicePrerequisites.html"
@@ -51,5 +51,5 @@ sources:
     url: "https://microservices.io/patterns/"
     type: guide
     year: 2026
-    note: "A catalogue of microservice patterns, grouped by the design problem each one addresses. The groups include architectural style, service boundaries, refactoring to services, service collaboration, testing, deployment and observability."
+    note: "A catalogue of microservice patterns by the author of Microservices Patterns, grouped by the design problem each one addresses: architectural style, service boundaries, refactoring to services, service collaboration, transactional messaging, testing and deployment. The author sells consulting and training on the style."
 ---

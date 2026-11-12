@@ -1,13 +1,13 @@
 ---
 title: Web frontend
 description: "The client side of a SaaS web application: rendering choices, web performance and accessibility."
-why: "Rendering choices decide how much JavaScript each user's device must run. In the EU, accessibility is a legal duty for products and services such as e-commerce and banking."
+why: "Rendering choices decide how much JavaScript each user's device must run. In the EU, accessibility is a legal duty for products and for consumer services such as e-commerce and banking."
 horizon: current
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
-  order: 5
+  order: 7
 tags: [frontend, rendering, ssr, islands, performance, core-web-vitals, accessibility, wcag, eaa]
-related: [architecture/api-design, law-and-compliance/gdpr]
+related: [architecture/api-design, architecture/caching, law-and-compliance/cookies]
 sources:
   - title: "Rendering on the web"
     author: Addy Osmani and Jason Miller
@@ -20,7 +20,7 @@ sources:
     url: "https://jasonformat.com/islands-architecture/"
     type: article
     year: 2020
-    note: "The post by the creator of Preact that documented the islands pattern. Servers render HTML pages, and interactive regions hydrate separately on the client as small, self-contained widgets. It contrasts the pattern with single-page applications."
+    note: "A post by the creator of Preact that describes the islands pattern, a name he credits to Etsy's Katie Sylor-Miller. Servers render HTML pages, and interactive regions hydrate separately on the client as small, self-contained widgets. It contrasts the pattern with single-page applications."
   - title: "Web Vitals"
     author: Philip Walton
     url: "https://web.dev/articles/vitals"
@@ -32,7 +32,7 @@ sources:
     url: "https://infrequently.org/2025/11/performance-inequality-gap-2026/"
     type: article
     year: 2025
-    note: "The eighth part of a series on device, network and web content trends. It sets page-weight budgets for 3- and 5-second load targets, split into JavaScript and other resources. It also names a network profile and test devices that represent a 75th-percentile user."
+    note: "Part eight of a series on device, network and web content trends. It sets page-weight budgets for 3- and 5-second load targets, split into JavaScript and other resources. It also names a network profile and test devices that represent a 75th-percentile user."
   - title: "WCAG 2 Overview"
     author: W3C Web Accessibility Initiative
     url: "https://www.w3.org/WAI/standards-guidelines/wcag/"
@@ -51,5 +51,5 @@ sources:
     agents: "https://publications.europa.eu/resource/cellar/6eb3ceb5-8905-11e9-9369-01aa75ed71a1.0006.03/DOC_1"
     type: law
     year: 2019
-    note: "The full text of the Act. Article 2 lists the products and services it covers, including computers and operating systems, smartphones, consumer banking, e-books and e-commerce services. Article 4 exempts microenterprises providing services, and Annex I sets the accessibility requirements. Under Article 31, the national rules apply from 28 June 2025."
+    note: "The full text of the Act. Article 2 lists the products and the consumer services it covers, including computers and operating systems, smartphones, consumer banking, e-books and e-commerce. Article 4 exempts microenterprises providing services, and Annex I sets the accessibility requirements. It covers products placed on the market and services provided after 28 June 2025."
 ---

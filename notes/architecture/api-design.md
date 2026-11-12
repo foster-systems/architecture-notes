@@ -3,11 +3,11 @@ title: API design
 description: "Designing web and service APIs that stay usable as they change: REST, gRPC, OpenAPI, versioning and compatibility."
 why: "A published API is a contract others build on, so mistakes are expensive to undo. Choices on versioning, retries and schemas decide what can change later without breaking customers."
 horizon: foundation
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
   order: 4
 tags: [api, rest, grpc, openapi, versioning, compatibility, idempotency]
-related: [architecture/system-design, foundations/ddd, security/application-security]
+related: [architecture/system-design, architecture/messaging, foundations/ddd, security/application-security]
 sources:
   - title: "Chapter 5: Representational State Transfer (REST)"
     author: Roy Thomas Fielding
@@ -18,6 +18,7 @@ sources:
   - title: "API Improvement Proposals"
     author: Google
     url: "https://google.aip.dev/"
+    agents: "https://github.com/aip-dev/google.aip.dev"
     type: guide
     year: 2026
     note: "Design documents that record Google's API design choices, with a framework other organisations can use to define their own conventions. The process is public and takes contributions through GitHub."

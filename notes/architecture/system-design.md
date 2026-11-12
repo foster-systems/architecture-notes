@@ -3,18 +3,18 @@ title: System design
 description: "How distributed systems behave: consistency, replication, partitioning, failure and overload."
 why: "A SaaS product is a distributed system as soon as it has a database, a queue and a third-party API. Early choices on consistency and failure handling are expensive to change and surface as data bugs and outages."
 horizon: foundation
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
   order: 1
 tags: [distributed-systems, consistency, replication, partitioning, failure, overload]
-related: [architecture/multi-tenancy, data/databases, reliability/slos, architecture/styles]
+related: [architecture/messaging, architecture/multi-tenancy, architecture/styles, data/databases, reliability/slos, architecture/caching]
 sources:
   - title: "Distributed Systems"
     author: Martin Kleppmann
-    url: "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf"
+    url: "https://www.cl.cam.ac.uk/teaching/2627/ConcDisSys/dist-sys-notes.pdf"
     type: guide
-    year: 2021
-    note: "Lecture notes from a University of Cambridge undergraduate course, with exercises and free recorded lectures. They cover system models, clocks, broadcast, replication, quorums, consensus with Raft and replica consistency. The author also wrote Designing Data-Intensive Applications."
+    year: 2026
+    note: "Lecture notes from a University of Cambridge undergraduate course, 2026/27 edition, with exercises. They cover system models, clocks, broadcast, replication, quorums, consensus with Raft, and eventual consistency with CRDTs. The author also co-wrote Designing Data-Intensive Applications."
   - title: "Consistency"
     author: Jepsen
     url: "https://jepsen.io/consistency"
@@ -40,11 +40,11 @@ sources:
     year: 2013
     note: "Lessons from a distributed systems engineer, written for newcomers. Topics include partial failure, coordination cost, backpressure, metrics, capacity estimation and feature flags."
   - title: "Timeouts, retries, and backoff with jitter"
-    author: Amazon Web Services
+    author: Marc Brooker
     url: "https://builder.aws.com/content/3EumjoZascWd1oZiEgL8ORlv3qE/timeouts-retries-and-backoff-with-jitter"
     type: article
     year: 2019
-    note: "Amazon's account of how its services handle transient errors with time limits, retries and randomized delay. It gives guidance on choosing timeout values and on keeping retries from overloading a struggling service."
+    note: "An Amazon Builders' Library article on how Amazon's services handle transient errors with timeouts, retries and randomized backoff. It sets timeouts from a downstream latency percentile and limits retries with a token bucket so they do not overload a struggling service."
   - title: "Queues Don't Fix Overload"
     author: Fred Hebert
     url: "https://ferd.ca/queues-don-t-fix-overload.html"

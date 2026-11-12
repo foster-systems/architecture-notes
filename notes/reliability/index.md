@@ -5,4 +5,4 @@ sidebar:
   order: 8
 ---
 
-These topics cover observability, reliability targets and incident response.
+These topics cover telemetry, reliability targets, incident response, on-call, and backups and disaster recovery.
