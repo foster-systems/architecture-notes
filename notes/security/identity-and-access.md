@@ -5,7 +5,7 @@ why: "Broken access control is the top risk in the OWASP Top 10:2025. How users 
 horizon: current
 reviewed: 2026-11-11
 sidebar:
-  order: 3
+  order: 4
 tags: [security, identity, authentication, authorization, oauth, passkeys, least-privilege, secrets]
 related: [security/application-security, security/security-programme, architecture/multi-tenancy, product-and-business/enterprise-readiness, law-and-compliance/soc2-and-iso27001]
 sources:

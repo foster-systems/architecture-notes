@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 4
 tags: [security, prompt-injection, sandboxing, permissions, supply-chain, plugins]
-related: [agentic-engineering/tools, agentic-engineering/supervising-agents, security/identity-and-access, security/supply-chain, law-and-compliance/ai-act]
+related: [agentic-engineering/tools, agentic-engineering/supervising-agents, security/ai-features, security/identity-and-access, security/supply-chain, law-and-compliance/ai-act]
 sources:
   - title: "The lethal trifecta for AI agents: private data, untrusted content, and external communication"
     author: Simon Willison

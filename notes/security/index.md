@@ -5,4 +5,4 @@ sidebar:
   order: 9
 ---
 
-These topics cover a company's first security programme, application security, identity and access, the software supply chain, and handling reported vulnerabilities.
+These topics cover a company's first security programme, application security, securing AI features, identity and access, the software supply chain, and handling reported vulnerabilities.

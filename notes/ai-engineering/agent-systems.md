@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 4
 tags: [agents, multi-agent, tools, memory, reliability]
-related: [ai-engineering/basics, ai-engineering/evals, agentic-engineering/governance, architecture/styles]
+related: [ai-engineering/basics, ai-engineering/evals, security/ai-features, agentic-engineering/governance, architecture/styles]
 sources:
   - title: Measuring Agents in Production
     author: "Melissa Z. Pan et al. (UC Berkeley and others)"
