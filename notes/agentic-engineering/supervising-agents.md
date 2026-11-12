@@ -1,5 +1,5 @@
 ---
-title: Supervising agents
+title: Supervising coding agents
 description: "The engineer's job when agents write the code: directing them, judging their output, stepping in, and keeping the skill to do it."
 why: "Engineers answer for code they did not write and may not have read. A team has to decide what each person checks and owns, and how they keep the skill to take over when an agent fails."
 horizon: current
@@ -26,7 +26,7 @@ sources:
     url: "https://arxiv.org/abs/2601.20245"
     type: paper
     year: 2026
-    note: "A randomised experiment with 52 developers learning a new Python library. Those with an AI assistant scored lower on understanding, code reading and debugging, without a significant speed gain on average. Developers who used the assistant to ask questions kept more than those who delegated the code."
+    note: "A randomised experiment with 52 developers learning a new Python library. Those with an AI assistant scored lower on understanding, code reading and debugging, without a significant speed gain on average. Developers who used the assistant to ask questions kept more than those who delegated the code. The authors work at Anthropic, which sells AI coding tools."
   - title: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt
     author: Margaret-Anne Storey
     url: "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/"
@@ -39,7 +39,7 @@ sources:
     agents: "https://web.archive.org/web/20261017150838/https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b"
     type: article
     year: 2026
-    note: "Three production bugs fixed with agents in unfamiliar code. Shows a method for keeping an agent's conclusions honest: start from signals, compare against a control case, and keep only hypotheses that fit every fact."
+    note: "Three production bugs the author fixed with agents, in code she knew to different degrees. Shows a method for keeping an agent's conclusions honest: start from signals, compare against a control case, and keep only hypotheses that fit every fact."
   - title: ParticleDB 1.1.4
     author: Kyle Kingsbury (Jepsen)
     url: "https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"

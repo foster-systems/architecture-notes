@@ -14,7 +14,7 @@ sources:
     url: "https://www.latent.space/archive"
     type: feed
     year: 2026
-    note: "A publication, podcast and community on AI engineering, the work of turning AI research into working software. It sends essays and interviews two to three times a week, and a weekday AI News briefing, in full to paying members. Its founder, swyx, also runs the AI Engineer conferences and works on coding-agent evaluation at Cognition, which makes a coding agent."
+    note: "A publication, podcast and community on AI engineering, the work of turning AI research into working software. It publishes essays and interviews two to three times a week and an AI News briefing every weekday; only paying members get the full briefing by email. Its issues carry sponsor slots. Its founder, swyx, also runs the AI Engineer conferences and works on coding-agent evaluation at Cognition, which makes a coding agent."
   - title: Import AI
     author: Jack Clark
     url: "https://importai.substack.com/archive"

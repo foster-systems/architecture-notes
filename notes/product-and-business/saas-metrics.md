@@ -14,7 +14,7 @@ sources:
     url: "https://www.saasmetricsboard.com/"
     type: spec
     year: 2023
-    note: "Standard definitions and formulas for SaaS metrics, published by a group of SaaS lenders, benchmark providers and finance operators. It covers ARR, contracted ARR, gross and net revenue retention, logo retention, the Rule of 40, CAC, CAC payback and CAC ratios. Each metric has its own page with the definition, the formula and worked examples."
+    note: "Standard definitions and formulas for SaaS metrics, published by a group of SaaS lenders, benchmark providers and finance operators. It covers ARR, contracted ARR, gross and net revenue retention, logo retention, the Rule of 40, CAC payback and CAC ratios. Each metric has its own page with the definition, the formula and worked examples."
   - title: "SaaS Metrics 2.0 – A Guide to Measuring and Improving what Matters"
     author: David Skok
     url: "https://www.forentrepreneurs.com/saas-metrics-2/"
@@ -38,7 +38,7 @@ sources:
     url: "https://www.thesaascfo.com/how-to-calculate-saas-gross-margin/"
     type: article
     year: 2024
-    note: "A SaaS finance executive, writing as The SaaS CFO, sets out which costs belong in cost of goods sold, including hosting, support and customer success. It shows how to calculate overall margin and margin per revenue stream. The author is a founding member of the SaaS Metrics Standards Board."
+    note: "A SaaS finance executive, writing as The SaaS CFO, sets out which costs belong in cost of goods sold, including hosting, support and customer success. It shows how to calculate overall margin and margin per revenue stream. The author is a founding member of the SaaS Metrics Standards Board and sells SaaS finance courses, templates and fractional CFO services on the same site."
   - title: "What is a Good Retention Rate for a Private SaaS Company in 2025?"
     author: SaaS Capital
     url: "https://www.saas-capital.com/research/saas-retention-benchmarks-for-private-b2b-companies/"

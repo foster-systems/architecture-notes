@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 5
 tags: [models, open-weight, routing, inference, cost, benchmarks]
-related: [ai-engineering/evals, ai-engineering/agent-systems, infrastructure/finops, law-and-compliance/ai-act]
+related: [ai-engineering/basics, ai-engineering/evals, ai-engineering/agent-systems, infrastructure/finops, law-and-compliance/ai-act]
 sources:
   - title: "Practices for Automated Benchmark Evaluations of Language Models (NIST AI 800-2)"
     author: NIST Center for AI Standards and Innovation

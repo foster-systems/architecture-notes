@@ -42,7 +42,7 @@ sources:
   - title: "Hybrid working from home improves retention without damaging performance"
     author: Nicholas Bloom, Ruobing Han, James Liang
     url: "https://www.nature.com/articles/s41586-024-07500-2"
-    agents: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11208135/"
+    agents: "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11208135/fullTextXML"
     type: paper
     year: 2024
     note: "A randomised trial with 1,612 engineering, marketing and finance staff at Trip.com, where half could work from home two days a week. Hybrid work cut quit rates by a third and did not change performance reviews, promotions or lines of code written. James Liang co-founded and chairs Trip.com."

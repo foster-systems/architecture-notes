@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 8
 tags: [adr, rfc, design-docs, c4, decision-making]
-related: [architecture/build-or-buy, foundations/ddd, team/technical-leadership, team/engineering-strategy, agentic-engineering/governance]
+related: [architecture/build-or-buy, foundations/ddd, team/technical-leadership, team/engineering-strategy, agentic-engineering/steering]
 sources:
   - title: "Documenting Architecture Decisions"
     author: Michael Nygard

@@ -1,5 +1,5 @@
 ---
-title: Securing agents
+title: Securing coding agents
 description: "Limiting what coding agents can reach and do: permissions, sandboxes, network limits, third-party plugins and prompt injection."
 why: "Agents run with real credentials, read untrusted content and load third-party plugins, and prompt injection has no complete fix. Hard limits on what an agent can reach still hold when approval prompts and model safeguards miss."
 horizon: current
@@ -27,7 +27,7 @@ sources:
     agents: "https://web.archive.org/web/20251222094028/https://genai.owasp.org/download/52117/"
     type: guide
     year: 2025
-    note: "A peer-reviewed list of the main security risks of agentic applications, such as goal hijack, tool misuse, identity and privilege abuse and agentic supply chain flaws, with mitigations. Usable as a design-review checklist."
+    note: "A peer-reviewed list of the main security risks of agentic applications, such as goal hijack, tool misuse, identity and privilege abuse and agentic supply chain flaws, with mitigations."
   - title: Careful adoption of agentic AI services
     author: "ASD's ACSC, CISA, NSA, Canadian Centre for Cyber Security, NCSC-NZ, NCSC-UK"
     url: "https://www.ncsc.govt.nz/protect-your-organisation/careful-adoption-of-agentic-ai-services/"
@@ -41,7 +41,7 @@ sources:
     year: 2026
     note: "In a lab, CERT-EU hid a credential stealer in local copies of two plugins for Claude Code and Pi. It ran from event hooks, so tool permissions and controls on the model's tool calls missed it. Recommends limits on the whole agent environment: isolation, short-lived credentials, network allow-lists and pinned plugins."
   - title: How we contain Claude across products
-    author: Anthropic
+    author: "Anthropic (Max McGuinness, Mikaela Grace, Jiri De Jonghe, Jake Eaton, Abel Ribbink)"
     url: "https://www.anthropic.com/research/how-we-contain-claude"
     type: article
     year: 2026

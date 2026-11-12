@@ -14,7 +14,7 @@ sources:
     url: "https://pmarchive.com/guide_to_startups_part4.html"
     type: article
     year: 2007
-    note: "The essay that named product-market fit: being in a good market with a product that can satisfy that market. It argues that the market matters more than the team or the product, and that before fit a startup should do whatever it takes to reach it. Pmarchive keeps the original blog post."
+    note: "The 2007 essay that made the term product-market fit widely known: being in a good market with a product that can satisfy that market. It credits the idea to Andy Rachleff. It argues that the market matters more than the team or the product, and that before fit a startup should do whatever it takes to reach it. Pmarchive keeps the original blog post."
   - title: "How Superhuman Built an Engine to Find Product Market Fit"
     author: Rahul Vohra
     url: "https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/"
@@ -33,7 +33,7 @@ sources:
     url: "https://www.producttalk.org/opportunity-solution-trees/"
     type: guide
     year: 2023
-    note: "Explains the opportunity solution tree, a diagram linking a desired outcome to customer opportunities, candidate solutions and assumption tests. It lists what a team needs first and walks through building a tree and choosing what to pursue. The author teaches continuous discovery to product teams."
+    note: "Explains the opportunity solution tree, a diagram linking a desired outcome to customer opportunities, candidate solutions and assumption tests. It lists what a team needs first and walks through building a tree and choosing what to pursue. The author sells courses and a book on continuous discovery through Product Talk, and the page promotes them."
   - title: "The Four Big Risks"
     author: Marty Cagan
     url: "https://www.svpg.com/four-big-risks/"
@@ -45,11 +45,11 @@ sources:
     url: "https://www.svpg.com/product-vs-feature-teams/"
     type: article
     year: 2019
-    note: "Distinguishes delivery teams, feature teams measured by roadmap output, and empowered product teams that are given problems to solve and own the outcome. It gives tests for telling which model a company runs."
+    note: "Distinguishes delivery teams, feature teams measured by roadmap output, and empowered product teams that are given problems to solve and own the outcome. It gives tests for telling which model a company runs. SVPG, the author's firm, sells product workshops and coaching."
   - title: "Shape Up: Stop Running in Circles and Ship Work that Matters"
     author: Ryan Singer
     url: "https://basecamp.com/shapeup"
     type: guide
     year: 2019
-    note: "A free online book on Basecamp's product development method. It covers shaping a problem and a bounded solution, betting on six-week cycles in place of a backlog, and handing whole projects to small teams."
+    note: "A free online book on Basecamp's product development method. It covers shaping a problem and a bounded solution, betting on six-week cycles in place of a backlog, and handing whole projects to small teams. Its publisher, 37signals, sells the Basecamp project tool, and an appendix shows how to run the method in it."
 ---

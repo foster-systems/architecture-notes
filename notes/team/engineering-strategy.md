@@ -18,6 +18,7 @@ sources:
   - title: "Wardley Maps"
     author: Simon Wardley
     url: "https://learnwardleymapping.com/book/"
+    agents: "https://github.com/HiredThought/wardley-maps-ebook"
     type: guide
     year: 2022
     note: "Wardley's book on his mapping technique, which places the parts of a business on a map by user need and by how mature each part is. It is told as his own path to a clearer view of company strategy, in 19 chapters under CC BY-SA 4.0, with free PDF, EPUB and audio. The page is run by Hired Thought, which sells a Wardley mapping course."

@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 4
 tags: [testing, tdd, feedback-loop, verification, refactoring]
-related: [foundations/refactoring, delivery/testing-strategy, agentic-engineering/supervising-agents]
+related: [foundations/refactoring, delivery/testing-strategy, agentic-engineering/steering, agentic-engineering/supervising-agents]
 sources:
   - title: Canon TDD
     author: Kent Beck
