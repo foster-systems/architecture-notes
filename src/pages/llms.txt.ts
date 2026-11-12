@@ -8,7 +8,7 @@ export function GET(context: APIContext) {
 	const lines = [
 		'# Shelf',
 		'',
-		'> A subjective reading list on building and running software technology, by Przemek Łuniewski. Each topic links up to 7 sources, each with a short note on what it is.',
+		'> A curated reading list for building and running a software company, from the first prototype to scale-up: technology, product, law and team. By Przemek Łuniewski. Each topic links 5 to 7 sources, each with a short note on what it is. Scope and selection criteria: ' + abs('about.md') + '.',
 		'',
 		`Every link below returns Markdown. Source repo: ${github}.`,
 		'A source with an `agents` URL has an agent-readable copy (repo or Markdown) of its site.',

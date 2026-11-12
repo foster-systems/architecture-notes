@@ -1,6 +1,10 @@
 # Shelf: guide for agents
 
-A subjective reading list on building and running software technology, kept by Przemek Łuniewski. Public repo. Per topic, the best sources, each with a short note on what it is. The links are the value. Topics show the current state only: git history is the record.
+A curated reading list for building and running a software company, from the first prototype to scale-up, kept by Przemek Łuniewski. Public repo. Per topic, the best sources, each with a short note on what it is. The links are the value. Topics show the current state only: git history is the record.
+
+## Standard
+
+`notes/about.md` is the standard every change applies: the scope (a software company's first four stages, up to a few hundred people), the checks for adding a source (adapted from Garousi et al.'s grey-literature criteria: producer, evidence or method, still holds, origin or best current explanation, adds something unique, vendor interest named) and the reasons for removing one (adapted from CREW: misleading, superseded, trivial, out of scope, covered better elsewhere, unreadable). Trace each claim in a note to the original (SIFT).
 
 ## Reading
 
@@ -14,7 +18,7 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 - `title`, `description`: one plain line, what it is.
 - `why`: one or two lines, why it matters.
 - `horizon`: `foundation` (holds for years), `current` (in use now), `emerging` (worth watching).
-- `reviewed`: date of the last review. Reviews fall due after 30, 7 and 1 days for the three horizons; `npm run due` lists overdue topics.
+- `reviewed`: date of the last review. Reviews fall due after 30, 7 and 3 days for the three horizons; `npm run due` lists overdue topics.
 - `sources`: at most 7, each `title`, `author`, `url`, `type` (article, paper, talk, video, docs, repo, guide, spec, tool, framework, law, feed), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 
@@ -34,9 +38,10 @@ A published URL keeps working: when a topic moves, add old path to new path in `
 
 - Link, don't copy: no copied passages, diagrams or images. Quotes are rare, under 15 words, attributed.
 - Open every URL before adding it. 5–7 sources per topic; curated, not exhaustive.
-- A new source must beat what it displaces. A source that is superseded or proven wrong is removed; the commit message says why.
+- A new source must pass every check in the standard and beat what it displaces. A removal's commit message names its reason from the standard, e.g. "Superseded by …".
+- A topic outside the scope is removed or merged; a moved one gets a redirect.
 - Notes describe the source. Never invent experience or opinions and attribute them to Przemek.
-- Agents decide and publish. Each change needs an independent review and passing `npm run check` and `npm run links`.
+- Agents decide and publish. Each change needs an independent review, by an agent on a different model, and passing `npm run check` and `npm run links`.
 
 ## Writing
 

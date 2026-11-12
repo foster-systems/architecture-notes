@@ -5,4 +5,4 @@ sidebar:
   order: 12
 ---
 
-How to hire engineers, lead them while still building, set technical direction and shape teams.
+How to hire engineers, level and pay them, shape teams, manage them day to day, lead them while still building and set technical direction.

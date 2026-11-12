@@ -1,9 +1,9 @@
 ---
 title: People
-description: "Individuals whose writing shapes engineering practice today, across engineering, AI and leadership."
-why: "New practice often appears first in the writing of people who are doing the work. Following a few of them shows what experienced builders and leaders try before it reaches reports."
+description: "Individuals whose writing shapes engineering practice today, across software design, AI, observability and leadership."
+why: "New practice often appears first in the writing of people doing the work. Following a few of them shows what experienced builders and leaders try before it reaches reports and books."
 horizon: current
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
   order: 3
 tags: [people, blogs, feeds, engineering, ai, leadership]
@@ -14,41 +14,41 @@ sources:
     url: "https://simonwillison.net/"
     type: feed
     year: 2026
-    note: "A blog running since 2002, updated almost daily, with ongoing coverage of LLMs. The author co-created Django and created Datasette."
+    note: "A blog running since 2002 and updated almost daily, mostly on LLMs, coding agents and AI security. The author co-created Django, created Datasette and coined the term prompt injection. He works independently, and the blog carries sponsor banners."
   - title: martinfowler.com
     author: Martin Fowler
     url: "https://martinfowler.com/recent-changes.html"
     type: feed
     year: 2026
-    note: "The recent-changes list of a site on architecture, delivery, testing and data, with writing by Fowler and articles by others he has vetted. Fowler wrote Refactoring and is Chief Scientist at Thoughtworks."
+    note: "The list of new writing on a site about architecture, refactoring, delivery, testing and, lately, AI-assisted development. Fowler writes some articles and vets and edits those by others. He wrote Refactoring and is Chief Scientist at Thoughtworks, a software consultancy."
   - title: Armin Ronacher's Thoughts and Writings
     author: Armin Ronacher
     url: "https://lucumr.pocoo.org/"
     type: feed
     year: 2026
-    note: "A personal blog on engineering, with recent posts on AI. The author created Flask and Jinja2, spent about a decade at Sentry and founded Earendil."
+    note: "A personal blog on engineering, open source and, lately, building software with AI agents. The author created Flask and Jinja2, worked at Sentry for a decade and founded Earendil, which builds tools for working with AI."
   - title: karpathy
     author: Andrej Karpathy
     url: "https://karpathy.bearblog.dev/blog/"
     type: feed
     year: 2026
-    note: "A personal blog with infrequent posts, among them a 2025 LLM Year in Review. The author was a founding member of OpenAI and Director of AI at Tesla."
+    note: "A personal blog with occasional posts on LLMs and how people use them, among them a 2025 LLM Year in Review. The author was a founding member of OpenAI and Director of AI at Tesla, and since May 2026 has worked on LLM research at Anthropic, an AI company. He also explains LLMs in videos on YouTube."
   - title: Irrational Exuberance
     author: Will Larson
     url: "https://lethain.com/"
     type: feed
     year: 2026
-    note: "A blog on engineering leadership and strategy, with recent posts on code review and verification. The author is CTO at Imprint and wrote An Elegant Puzzle, Staff Engineer, The Engineering Executive's Primer and Crafting Engineering Strategy."
+    note: "A blog on engineering leadership, strategy and organisations, running since 2007. The author is CTO at Imprint and wrote An Elegant Puzzle, Staff Engineer, The Engineering Executive's Primer and Crafting Engineering Strategy."
   - title: charity.wtf
     author: Charity Majors
     url: "https://charity.wtf/archive"
     type: feed
     year: 2026
-    note: "A newsletter on observability, management and AI in engineering organisations. The author is co-founder and CTO of Honeycomb and co-wrote Observability Engineering."
+    note: "A newsletter on observability, engineering management and AI in engineering teams. The author is co-founder and CTO of Honeycomb, which sells observability tools, and co-wrote Observability Engineering."
   - title: "Blog | Lara Hogan"
     author: Lara Hogan
     url: "https://larahogan.me/blog/"
     type: feed
     year: 2026
-    note: "A blog on leading tech teams: feedback, one-on-ones, decision-making, team resilience and career planning. The author coaches managers and leaders across the tech industry."
+    note: "A blog for engineering managers on one-on-ones, feedback, meetings, hiring and leading through crises, with worksheets and templates. The author wrote Resilient Management and coaches managers and leaders in tech."
 ---

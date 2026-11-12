@@ -1,54 +1,48 @@
 ---
 title: Platform engineering
-description: "Internal platforms that give product teams self-service infrastructure, and the choice of what runs containers."
-why: "A small team has to run every layer it adopts. These sources help decide how much platform to build and whether Kubernetes is worth its cost."
+description: "Internal platforms that give product teams self-service infrastructure, tools and supported default paths, run as a product for developers."
+why: "As a company grows past a few teams, each team building its own delivery and infrastructure slows everyone and fragments the stack. A platform built too early or without users' input becomes one more system to run that nobody wants."
 horizon: current
-reviewed: 2026-11-09
+reviewed: 2026-11-11
 sidebar:
-  order: 2
-tags: [platform-engineering, internal-platforms, containers, kubernetes, deployment]
-related: [infrastructure/cloud-foundations, infrastructure/finops, delivery/ci-cd, team/team-design, architecture/build-or-buy]
+  order: 4
+tags: [platform-engineering, internal-platforms, golden-paths, developer-experience, developer-portal]
+related: [infrastructure/hosting, infrastructure/infrastructure-as-code, infrastructure/cloud-foundations, delivery/ci-cd, delivery/delivery-metrics, team/team-design, architecture/build-or-buy]
 sources:
   - title: What I Talk About When I Talk About Platforms
     author: Evan Bottcher
     url: "https://martinfowler.com/articles/talk-about-platforms.html"
     type: article
     year: 2018
-    note: "A short definition of a digital platform: self-service APIs, tools, services, knowledge and support, run as an internal product for delivery teams."
+    note: "A definition of a digital platform: self-service APIs, tools, services, knowledge and support, run as an internal product for delivery teams. It describes how platforms fail when shared services keep teams waiting on another team's backlog, and where to start."
+  - title: How We Use Golden Paths to Solve Fragmentation in Our Software Ecosystem
+    author: Gary Niemen (Spotify)
+    url: "https://engineering.atspotify.com/2020/8/how-we-use-golden-paths-to-solve-fragmentation-in-our-software-ecosystem"
+    type: article
+    year: 2020
+    note: "Spotify's account of its golden paths, a term now common in platform engineering. A golden path is an opinionated, supported way to build a common kind of software, such as a backend service, written as a step-by-step tutorial. Spotify introduced them when autonomous teams had fragmented its tools; teams can leave the path but then get less support."
+  - title: Mind the platform execution gap
+    author: Cristóbal García García and Chris Ford
+    url: "https://martinfowler.com/articles/platform-prerequisites.html"
+    type: article
+    year: 2021
+    note: "The capabilities an organization needs before a platform strategy can work: a clear business case, product thinking, reliable operations, software engineering practice and healthy teams. The authors are Thoughtworks consultants writing from client work."
   - title: CNCF Platforms White Paper
     author: CNCF Platforms Working Group
     url: "https://tag-app-delivery.cncf.io/whitepapers/platforms/"
     type: paper
     year: 2023
-    note: "The Cloud Native Computing Foundation's description of internal platforms: their attributes, how to measure them and the capabilities they can offer. It says platforms should stay as thin as practical. It is written for enterprise leaders and platform team leads."
+    note: "The Cloud Native Computing Foundation's description of internal platforms: why to build them, their attributes, the capabilities they can offer and how to measure them. It advises building the thinnest viable platform over managed services. It is written for enterprise leaders and platform team leads."
   - title: Platform engineering
-    author: DORA
+    author: DORA, Google Cloud
     url: "https://dora.dev/capabilities/platform-engineering/"
     type: guide
     year: 2026
-    note: "DORA's page on internal developer platforms, with advice to start from a minimum viable platform around the most common workflow. It lists common pitfalls and ways to measure results. It also reports DORA's 2025 finding that platform quality shapes whether AI adoption helps performance."
-  - title: Overview
-    author: Kubernetes project
-    url: "https://kubernetes.io/docs/concepts/overview/"
-    type: docs
-    year: 2026
-    note: "The project's own description of what Kubernetes provides and what it leaves out. It does not build application code, provide databases or middleware, or dictate logging and monitoring."
-  - title: "\"Let's use Kubernetes!\" Now you have 8 problems"
-    author: Itamar Turner-Trauring
-    url: "https://pythonspeed.com/articles/dont-need-kubernetes"
-    type: article
-    year: 2021
-    note: "An argument that Kubernetes is a poor fit for small teams because of its moving parts and its effect on development and debugging. It lists simpler options, including a single large VM, Heroku-style platforms, Docker Compose and Nomad."
-  - title: Choosing an AWS container service
-    author: Amazon Web Services
-    url: "https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/choosing-aws-container-service.html"
-    type: guide
-    year: 2025
-    note: "AWS's decision guide across three layers: compute capacity, orchestration and higher-level services such as App Runner and Lightsail. It names organization size and skills as a main factor and notes the upgrade work Kubernetes needs. It is the vendor's account, limited to its own services."
-  - title: Kamal
-    author: 37signals
-    url: "https://kamal-deploy.org/"
+    note: "Guidance on internal developer platforms from DORA, a research programme run by Google Cloud, based on its yearly surveys. It advises starting with a minimum viable platform for the most common workflow and lists common traps. It reports that platforms can lower throughput and stability if badly run, and that platform quality decides whether AI adoption improves performance."
+  - title: What is Backstage?
+    author: Backstage project
+    url: "https://backstage.io/docs/overview/what-is-backstage"
     type: tool
     year: 2026
-    note: "A deployment tool that runs containers on servers listed by IP address, over SSH, with zero-downtime deploys. It calls basic Docker commands, so each step is visible. It comes from the company behind Basecamp and HEY and works with any web app packaged as a container."
+    note: "An open-source framework for developer portals, with a software catalogue, project templates and documentation kept as code. Spotify built it and gave it to the CNCF, where it is an incubating project. Spotify sells plugins and a hosted portal for it."
 ---

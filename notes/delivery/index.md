@@ -1,6 +1,6 @@
 ---
 title: Delivery
-description: "Getting changes to production: pipelines, tests and how to measure the result."
+description: "Getting changes to production: pipelines, tests, code review and how to measure the result."
 sidebar:
   order: 7
 ---
