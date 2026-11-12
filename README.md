@@ -99,6 +99,7 @@ Securing the company, its product and how the product is built.
 
 - [Security programme](notes/security/security-programme.md): The security work a software company does before and after its first security hire: a baseline of controls, who owns security, what to do first, and readiness for a breach.
 - [Application security](notes/security/application-security.md): Building secure web applications: common risks, security requirements, secure development practices and threat modelling.
+- [Securing AI features](notes/security/ai-features.md): Protecting the language model features of a product, such as assistants, search over customer data and agents that call tools, from prompt injection, data leaks and misuse.
 - [Identity and access](notes/security/identity-and-access.md): Proving who a user or service is and limiting what it can do: authentication, passkeys, OAuth, authorization and secrets.
 - [Software supply chain](notes/security/supply-chain.md): Keeping dependencies, build pipelines and releases trustworthy: dependency choice and scanning, CI hardening, provenance, software bills of materials and signing.
 - [Vulnerability handling](notes/security/vulnerability-handling.md): Receiving vulnerability reports, deciding which flaws to fix first, and disclosing them in coordination with the people who found them.

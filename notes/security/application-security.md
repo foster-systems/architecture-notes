@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 2
 tags: [security, owasp, appsec, secure-sdlc, threat-modelling]
-related: [security/security-programme, security/identity-and-access, security/supply-chain, security/vulnerability-handling, architecture/api-design, agentic-engineering/governance]
+related: [security/security-programme, security/ai-features, security/identity-and-access, security/supply-chain, security/vulnerability-handling, architecture/api-design, agentic-engineering/governance]
 sources:
   - title: "OWASP Top 10:2025"
     author: OWASP

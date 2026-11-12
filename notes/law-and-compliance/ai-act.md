@@ -7,7 +7,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 3
 tags: [ai-act, eu-law, compliance, transparency, gpai, high-risk, gdpr]
-related: [law-and-compliance/gdpr, agentic-engineering/governance, ai-engineering/model-choice]
+related: [law-and-compliance/gdpr, security/ai-features, agentic-engineering/governance, ai-engineering/model-choice]
 sources:
   - title: "Regulation (EU) 2024/1689 (AI Act), consolidated text"
     author: European Union

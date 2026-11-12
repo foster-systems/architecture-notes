@@ -5,7 +5,7 @@ why: "Most code a small company ships comes from dependencies, and its CI pipeli
 horizon: current
 reviewed: 2026-11-11
 sidebar:
-  order: 4
+  order: 5
 tags: [security, supply-chain, slsa, sbom, dependencies, ci, signing]
 related: [security/application-security, security/vulnerability-handling, delivery/ci-cd, agentic-engineering/governance, law-and-compliance/nis2-and-cra, law-and-compliance/open-source-licences]
 sources:
