@@ -36,6 +36,7 @@ sources:
   - title: Interpretative Communication on Directive 2003/88/EC concerning certain aspects of the organisation of working time
     author: European Commission
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023XC0324(01)"
+    agents: "https://publications.europa.eu/resource/cellar/2bd7c585-c9e8-11ed-a05c-01aa75ed71a1.0006.03/DOC_1"
     type: guide
     year: 2023
     note: "The Commission's reading of the EU Working Time Directive and the Court of Justice's case law on it. It explains when stand-by time counts as working time: when the required response time and other constraints significantly limit how the worker can use that time. It is not binding; national law and courts apply the directive."
