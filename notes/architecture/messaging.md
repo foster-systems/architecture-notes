@@ -2,7 +2,7 @@
 title: Asynchronous work and messaging
 description: "Moving work out of the request with background jobs, queues and events, and keeping data correct when a message is late, lost or delivered twice."
 why: "Most SaaS products send email, call third-party APIs and update other systems in the background. A job queued outside the database transaction, or a consumer that cannot handle a duplicate, loses work or charges a customer twice. A queue backlog can turn a short outage into a long one."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 5

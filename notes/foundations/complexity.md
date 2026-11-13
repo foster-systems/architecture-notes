@@ -2,7 +2,7 @@
 title: Complexity and modular design
 description: "What makes software hard to understand and change, and how splitting a system into modules keeps that in check."
 why: "Complexity sets how fast a codebase can change and how many people can work in it at once. Naming where it comes from lets a team choose the simpler design before the cost shows up in every change."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

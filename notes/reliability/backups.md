@@ -2,7 +2,7 @@
 title: Backups and disaster recovery
 description: "Keeping copies of data that can be restored, and planning how to recover from losing a database, a region or a cloud account."
 why: "Lost customer data can end a young company, and backups that were never restored often fail when they are needed. Recovery targets for data loss and downtime decide what to back up, how often, and how much standby capacity to pay for."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 5

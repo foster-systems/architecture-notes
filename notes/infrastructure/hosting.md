@@ -2,7 +2,7 @@
 title: Hosting and compute
 description: "Choosing what runs the application: a platform as a service, serverless functions, containers on an orchestrator such as Kubernetes, or plain servers."
 why: "A small team has to operate every layer it adopts, and the choice of runtime sets much of its operations work and hosting bill. Moving off a runtime later means rewriting deployment, configuration and often the application."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 3

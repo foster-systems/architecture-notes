@@ -2,7 +2,7 @@
 title: Fundraising and due diligence
 description: "How early-stage software companies raise money, the standard funding documents, and how investors run technical due diligence."
 why: "Funding terms decide who controls the company and how much the founders keep. The person running technology answers investors' technical questions and supplies much of what they review, and having it ready shortens closing."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 7

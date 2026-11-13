@@ -2,7 +2,7 @@
 title: System design
 description: "How distributed systems behave: consistency, replication, partitioning, failure and overload."
 why: "A SaaS product is a distributed system as soon as it has a database, a queue and a third-party API. Early choices on consistency and failure handling are expensive to change and surface as data bugs and outages."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

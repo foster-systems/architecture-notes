@@ -2,7 +2,7 @@
 title: Code review
 description: "How a team reviews changes to its code: what reviewers look for, how fast reviews should be, and whether to review before or after merging."
 why: "Where changes wait for review, review speed sets much of a team's lead time. Review is also how a small team spreads knowledge of the codebase and how it meets the separation of duties that compliance audits ask for."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 3

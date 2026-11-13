@@ -2,7 +2,7 @@
 title: Software supply chain
 description: "Keeping dependencies, build pipelines and releases trustworthy: dependency choice and scanning, CI hardening, provenance, software bills of materials and signing."
 why: "Most code a small company ships comes from dependencies, and its CI pipeline holds the tokens to publish and deploy. A poisoned package or a stolen CI token reaches production through the normal build."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 5

@@ -2,7 +2,7 @@
 title: People
 description: "Individuals whose writing shapes engineering practice today, across software design, AI, observability and leadership."
 why: "New practice often appears first in the writing of people doing the work. Following a few of them shows what experienced builders and leaders try before it reaches reports and books."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 3

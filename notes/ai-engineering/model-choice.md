@@ -2,7 +2,7 @@
 title: Choosing models per workload
 description: "Deciding which model runs which work and where it is hosted, and checking the choice on the team's own tasks."
 why: "Model and host set the cost, quality and data exposure of every AI feature, and prices and rankings change every few months. A team needs a repeatable way to choose and to check the choice."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 5

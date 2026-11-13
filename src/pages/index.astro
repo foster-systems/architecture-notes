@@ -1,9 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import Books from '../components/Books.astro';
-import Horizon from '../components/Horizon.astro';
 import Rows from '../components/Rows.astro';
-import { horizons, lastChanged, notes, sectionUrl, stats, tone, topicsOf, two, url, typeset } from '../lib/repo';
+import { lastChanged, notes, sectionUrl, stats, tone, topicsOf, two, url, typeset } from '../lib/repo';
 
 let seen = 0;
 const numbered = notes.sections.map((s, i) => {
@@ -49,16 +48,6 @@ const updated = lastChanged('notes');
 				<p class="hero-line">Building and running a software company. <a href={url('about/')}>More…</a></p>
 			</div>
 			<div class="bookcase">
-				<p class="key">
-					<span class="legend">
-						{horizons.map((h) => (
-							<button type="button" aria-pressed="false" data-legend={h}>
-								<Horizon value={h} word />
-								<span class="count">{stats.horizon(h)}</span>
-							</button>
-						))}
-					</span>
-				</p>
 				<ol class="shelves">
 					{numbered.map((s) => (
 						<li class="group" style={tone(s.id)}>
@@ -81,15 +70,6 @@ const updated = lastChanged('notes');
 
 	<section class="catalogue">
 		<div class="container">
-			<p class="key catalogue-key">
-				<span class="legend">
-					{horizons.map((h) => (
-						<button type="button" aria-pressed="false" data-legend={h}>
-							<Horizon value={h} word />
-						</button>
-					))}
-				</span>
-			</p>
 			<div class="catalogue-cols">
 				{columns.map((column) => (
 					<div>
@@ -115,21 +95,6 @@ const updated = lastChanged('notes');
 
 <script>
 	const bookcase = document.querySelector<HTMLElement>('.bookcase')!;
-
-	// One horizon at a time: press a legend item to dim the rest, on the shelves and in the catalogue.
-	const legend = [...document.querySelectorAll<HTMLButtonElement>('[data-legend]')];
-	const only = (horizon?: string) => {
-		if (horizon) document.body.dataset.only = horizon;
-		else delete document.body.dataset.only;
-		legend.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.legend === horizon)));
-	};
-	legend.forEach((b) => b.addEventListener('click', () => only(b.getAttribute('aria-pressed') === 'true' ? undefined : b.dataset.legend)));
-	addEventListener('keydown', (e) => e.key === 'Escape' && !document.querySelector('dialog[open]') && only());
-
-	// The catalogue's legend shows once the first one has left the screen.
-	new IntersectionObserver((entries) => document.body.toggleAttribute('data-key-out', !entries.at(-1)!.isIntersecting), {
-		rootMargin: `-${document.querySelector<HTMLElement>('.bar')!.offsetHeight}px 0px 0px`,
-	}).observe(bookcase.querySelector('.legend')!);
 
 	// Phone: the shelf scrolls sideways; the ticks show which sections are in view.
 	const shelves = bookcase.querySelector<HTMLElement>('.shelves')!;

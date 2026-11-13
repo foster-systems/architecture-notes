@@ -2,7 +2,7 @@
 title: Test-driven development
 description: "A loop of writing a small failing test, making it pass, then cleaning up the design, one behaviour at a time."
 why: "Tests written with the code give a fast, repeatable check that a change works and broke nothing else. That keeps code safe to change as the product and team grow, whether a person or an agent wrote it."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 4

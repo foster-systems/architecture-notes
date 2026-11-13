@@ -2,7 +2,7 @@
 title: Security programme
 description: "The security work a software company does before and after its first security hire: a baseline of controls, who owns security, what to do first, and readiness for a breach."
 why: "Until it hires security staff, a company's security is decided by its founders and engineers, often when the first large customer sends a security questionnaire. A short baseline and a clear owner cover the most common risks and make those reviews easier to pass."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

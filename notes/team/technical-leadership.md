@@ -2,7 +2,7 @@
 title: Technical leadership
 description: "The startup CTO's job: what the role is, how it changes as the engineering team grows, when to hire a VP of Engineering, and how much code to keep writing."
 why: "At a small company one person often sets technical direction, manages people and still ships code. Between 6 and 30 engineers those jobs stop fitting in one person, and the CTO has to choose what to keep and what to hire for."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 5

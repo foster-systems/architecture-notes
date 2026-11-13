@@ -2,7 +2,7 @@
 title: FinOps
 description: "Managing cloud and AI spend as a shared practice of engineering, finance and product, measured as cost per unit of value."
 why: "Cloud and AI spend move with every deploy and prompt, and in a SaaS company they fall directly on gross margin. Cost per customer or per request shows whether spend grows faster than the business."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 5

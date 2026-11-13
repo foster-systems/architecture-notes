@@ -2,7 +2,7 @@
 title: Levels, pay and performance
 description: "How a software company defines engineering levels, sets pay, and runs performance reviews and promotions."
 why: "Levels and pay ranges set for the first hires are copied into every later offer, and unequal pay for the same work is costly to undo. In the EU, the Pay Transparency Directive requires employers to tell applicants the starting pay or its range before pay is negotiated, and to use objective criteria for pay and progression."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 2

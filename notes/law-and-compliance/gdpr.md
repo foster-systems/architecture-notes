@@ -2,7 +2,7 @@
 title: GDPR
 description: "The EU regulation on how organisations collect, use, share and protect personal data."
 why: "It applies to any company established in the EU that handles personal data, and to others that offer services to people in the EU. A SaaS company is usually a processor for its customers' data and a controller for its own, and each role has different duties. Fines reach 4% of worldwide annual turnover."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 1

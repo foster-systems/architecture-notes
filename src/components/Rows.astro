@@ -1,5 +1,4 @@
 ---
-import Horizon from './Horizon.astro';
 import { inline, url, type Topic } from '../lib/repo';
 
 interface Props {
@@ -15,8 +14,8 @@ const { topics, detail = false, reviewed } = Astro.props;
 	{
 		topics.map((t) => (
 			<li>
-				<a class:list={['row', t.horizon && `hz-${t.horizon}`]} href={url(`${t.id}/`)} data-topic={t.id}>
-					{t.horizon ? <Horizon value={t.horizon} /> : <span />}
+				<a class="row" href={url(`${t.id}/`)} data-topic={t.id}>
+					<span class="spine" aria-hidden="true" />
 					<span class="row-title">{t.title}</span>
 					{detail && (
 						<span class="row-desc">

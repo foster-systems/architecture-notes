@@ -2,7 +2,6 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Arrow from '../components/Arrow.astro';
-import Horizon from '../components/Horizon.astro';
 import Miniature from '../components/Miniature.astro';
 import Rail from '../components/Rail.astro';
 import Rows from '../components/Rows.astro';
@@ -31,18 +30,13 @@ const latest = node?.pages.map((p) => p.reviewed ?? '').sort().at(-1);
 const position = at >= 0 && `${two(at + 1)} / ${two(peers.length)}`;
 const hue = hueOf(id);
 const rail = { kind, id, node, home, position, latest, related } as const;
-// Prose names a horizon in inline code; show it with its mark.
-const prose = entry.rendered?.html.replace(
-	/<code>(foundation|current|emerging)<\/code>/g,
-	'<span class="hz"><span class="spine hz-$1"></span><span class="hz-word">$1</span></span>',
-);
 ---
 
 <Base title={data.title} description={data.description} entry={entry}>
 	<article
 		class:list={['container inner', kind]}
 		style={tone(id)}
-		data-pagefind-meta={kind === 'topic' ? `horizon:${data.horizon}` : node && position ? `eyebrow:${position}` : undefined}
+		data-pagefind-meta={kind === 'topic' ? 'topic:1' : node && position ? `eyebrow:${position}` : undefined}
 	>
 		<header class="head" data-pagefind-meta={kind === 'topic' ? `eyebrow:${home?.title ?? ''}` : undefined}>
 			<div class="head-title">
@@ -67,7 +61,6 @@ const prose = entry.rendered?.html.replace(
 			<p class="head-key" data-pagefind-ignore>
 				{node && <span>{node.pages.length} topics</span>}
 				{node && latest && <span class="key-place">Reviewed {latest}</span>}
-				{data.horizon && <Horizon value={data.horizon} word />}
 				{reviewed && <span class="key-reviewed">Reviewed {reviewed}</span>}
 				{kind === 'topic' && home && (
 					<span class="key-place">
@@ -130,7 +123,7 @@ const prose = entry.rendered?.html.replace(
 					</ol>
 				</section>
 			)}
-			{kind === 'plain' && <div class="prose" set:html={prose} />}
+			{kind === 'plain' && <div class="prose" set:html={entry.rendered?.html} />}
 		</div>
 
 		{kind === 'topic' && <Rail {...rail} />}
@@ -150,7 +143,7 @@ const prose = entry.rendered?.html.replace(
 					{pager.map(({ rel, to }) => (
 						<a href={'pages' in to ? sectionUrl(to) : url(`${to.id}/`)} rel={rel} style={tone(to.id)} aria-label={`${rel === 'prev' ? 'Previous' : 'Next'}: ${to.title}`}>
 							<Arrow />
-							{'horizon' in to && <Horizon value={to.horizon} silent />}
+							{!('pages' in to) && <span class="spine" aria-hidden="true" />}
 							<span>{to.title}</span>
 						</a>
 					))}

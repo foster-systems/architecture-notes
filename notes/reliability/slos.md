@@ -2,7 +2,7 @@
 title: Service level objectives
 description: "Reliability targets based on what users experience, and the error budgets that follow from them."
 why: "An SLO gives a team a number for deciding when to ship features and when to work on reliability. An error budget makes that decision agreed in advance, and the SLO sets the internal target behind any SLA the company signs."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 2

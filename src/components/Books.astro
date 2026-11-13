@@ -15,7 +15,7 @@ const { topics, current, from = 0, label } = Astro.props;
 	{
 		topics.map((t, i) => (
 			<a
-				class:list={['book', t.horizon && `hz-${t.horizon}`]}
+				class="book"
 				href={url(`${t.id}/`)}
 				aria-current={t.id === current ? 'page' : undefined}
 				data-topic={t.id}

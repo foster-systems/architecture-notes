@@ -2,7 +2,7 @@
 title: Retrieval
 description: "Giving a language model the right documents at answer time: search over a company's own data, and the choice between retrieval and long context."
 why: "Most AI products answer from data the model was not trained on, such as a customer's documents. When retrieval misses, the model answers anyway, so wrong results look like normal output and are found late."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 2
