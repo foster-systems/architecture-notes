@@ -71,6 +71,7 @@ Setting up cloud infrastructure, running software on it and paying for it.
 - [Cloud foundations](notes/infrastructure/cloud-foundations.md): The base of a cloud setup: accounts, region, network, a security baseline and reviews of the architecture.
 - [Infrastructure as code](notes/infrastructure/infrastructure-as-code.md): Defining servers, networks and cloud services in versioned code that a tool applies, instead of setting them up by hand.
 - [Hosting and compute](notes/infrastructure/hosting.md): Choosing what runs the application: a platform as a service, serverless functions, containers on an orchestrator such as Kubernetes, or plain servers.
+- [Email delivery](notes/infrastructure/email.md): Sending a product's email, such as sign-up, password reset and billing messages, so that it reaches the inbox: SPF, DKIM and DMARC, sending domains and IP addresses, and the rules of the large mailbox providers.
 - [Platform engineering](notes/infrastructure/platform-engineering.md): Internal platforms that give product teams self-service infrastructure, tools and supported default paths, run as a product for developers.
 - [FinOps](notes/infrastructure/finops.md): Managing cloud and AI spend as a shared practice of engineering, finance and product, measured as cost per unit of value.
 

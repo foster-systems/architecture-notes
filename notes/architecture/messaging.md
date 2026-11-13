@@ -6,7 +6,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 5
 tags: [messaging, queues, background-jobs, events, outbox, idempotency, at-least-once]
-related: [architecture/system-design, architecture/api-design, architecture/multi-tenancy, data/databases, data/data-pipelines]
+related: [architecture/system-design, architecture/api-design, architecture/multi-tenancy, data/databases, data/data-pipelines, infrastructure/email]
 sources:
   - title: "Enterprise Integration Patterns: Messaging Patterns"
     author: Gregor Hohpe and Bobby Woolf
