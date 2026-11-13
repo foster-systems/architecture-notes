@@ -2,7 +2,7 @@
 title: Testing strategy
 description: "What to test at which level: the test pyramid and its alternatives, contract tests and code coverage."
 why: "A test suite runs on every change and costs time on each one. What each level of test buys decides whether a small team gets fast, trusted feedback or a slow, flaky build that people learn to ignore."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 2

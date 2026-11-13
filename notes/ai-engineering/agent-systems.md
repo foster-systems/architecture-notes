@@ -2,7 +2,7 @@
 title: Agent system design
 description: "Designing software in which language model agents choose their own steps at runtime: how many agents, what they share and remember, and which tools they get."
 why: "Each added agent, step or tool raises cost and adds ways to fail, and the failures often look like normal output. These choices decide whether an agent feature holds up in production."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

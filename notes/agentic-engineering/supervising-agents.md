@@ -2,7 +2,7 @@
 title: Supervising coding agents
 description: "The engineer's job when agents write the code: directing them, judging their output, stepping in, and keeping the skill to do it."
 why: "Engineers answer for code they did not write and may not have read. A team has to decide what each person checks and owns, and how they keep the skill to take over when an agent fails."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 5

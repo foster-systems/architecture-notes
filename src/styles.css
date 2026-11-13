@@ -15,7 +15,6 @@
 	--glow: light-dark(rgb(99 102 241 / 0.16), rgb(99 102 241 / 0.22));
 	--dot: light-dark(rgb(12 12 14 / 0.09), rgb(255 255 255 / 0.07));
 	--tint: light-dark(rgb(12 12 14 / 0.04), rgb(255 255 255 / 0.05));
-	--slab: light-dark(rgb(12 12 14 / 0.05), rgb(255 255 255 / 0.04));
 	--sans: 'Inter Variable', Inter, system-ui, sans-serif;
 	--mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
 	--pad: 2rem;
@@ -29,11 +28,6 @@
 /* A section's colour: the accent at the section's hue. At this lightness and chroma every hue stays inside sRGB and keeps 4.5:1 as text or under text. Whatever stands inside takes it as its accent. */
 [style*='--hue'] {
 	--accent: light-dark(oklch(0.5 0.08 var(--hue)), oklch(0.8 0.06 var(--hue)));
-}
-:root,
-[style*='--hue'] {
-	--cover: light-dark(color-mix(in srgb, var(--accent) 32%, var(--paper)), color-mix(in srgb, var(--accent) 42%, var(--paper)));
-	--cover-edge: light-dark(color-mix(in srgb, var(--accent) 60%, transparent), color-mix(in srgb, var(--accent) 55%, transparent));
 }
 
 *,
@@ -143,25 +137,14 @@ a.eyebrow:hover,
 	color: var(--subtle);
 }
 
-/* Horizon, inline: a small spine, filled by how long the topic holds */
-.hz {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.5rem;
-}
+/* A small spine marks a topic in lists. */
 .spine {
 	flex: none;
 	width: 0.4375rem;
 	height: 1.125rem;
 	border-radius: 2px;
-	box-shadow: inset 0 0 0 1.5px currentColor;
-	color: var(--accent);
-}
-.spine.hz-foundation {
 	background: currentColor;
-}
-.spine.hz-current {
-	background: linear-gradient(0deg, currentColor 50%, transparent 50%);
+	color: var(--accent);
 }
 .spine.on {
 	color: var(--ink);
@@ -173,16 +156,12 @@ a.eyebrow:hover,
 .sep {
 	display: none;
 }
-.hz-word {
-	font: 0.8125rem/1.5 var(--mono);
-	color: var(--muted);
-}
 .spines {
 	display: flex;
 	gap: 0.1875rem;
 }
 
-/* Horizon, as a figure: every topic is a book with its title on the spine */
+/* Every topic is a book with its title on the spine */
 .books {
 	display: flex;
 	align-items: flex-end;
@@ -199,7 +178,9 @@ a.eyebrow:hover,
 	height: calc(var(--shelf) - (2 - var(--more)) * var(--step));
 	padding: 0.625rem 0.375rem 1.375rem;
 	border-radius: 2px 2px 0 0;
-	font: 500 var(--spine-text, 0.8125rem) / 1.15 var(--sans);
+	background: var(--accent);
+	color: var(--paper);
+	font: 600 var(--spine-text, 0.8125rem) / 1.15 var(--sans);
 	letter-spacing: 0.01em;
 }
 .book span {
@@ -208,23 +189,6 @@ a.eyebrow:hover,
 	max-inline-size: calc(var(--shelf) - (2 - var(--more)) * var(--step) - 2rem);
 	writing-mode: vertical-rl;
 	rotate: 180deg;
-}
-.book.hz-foundation {
-	background: var(--accent);
-	color: var(--paper);
-	font-weight: 600;
-}
-.book.hz-current {
-	background: var(--cover);
-	font-weight: 600;
-	box-shadow:
-		inset 0 -0.875rem var(--accent),
-		inset 0 0 0 1px var(--cover-edge);
-}
-.book.hz-emerging {
-	background: var(--paper);
-	box-shadow: inset 0 0 0 1.5px var(--accent);
-	color: var(--accent);
 }
 /* Ink means the open page. A book you point at rises and gets an ink cap. */
 .book[aria-current] {
@@ -451,52 +415,13 @@ kbd {
 :is(.hero-line, .lede, .prose) a:hover {
 	text-decoration-color: currentColor;
 }
-.key {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	gap: 0.5rem 2rem;
-	margin-top: 1.75rem;
-	font: 0.8125rem/1.5 var(--mono);
-	font-variant-numeric: tabular-nums;
-	color: var(--subtle);
-}
-.legend {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.25rem;
-	margin-inline-start: -0.5rem;
-}
-.legend button {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.5rem;
-	min-height: 1.75rem;
-	padding: 0 0.5rem;
-	border: 0;
-	border-radius: 0.5rem;
-	background: none;
-	cursor: pointer;
-}
-.legend button:hover {
-	background: color-mix(in srgb, var(--accent) 6%, transparent);
-	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent);
-}
-.legend button[aria-pressed='true'] {
-	background: color-mix(in srgb, var(--accent) 12%, transparent);
-	box-shadow: inset 0 0 0 1px var(--accent);
-}
-.legend button[aria-pressed='true'] :is(.hz-word, .count) {
-	color: var(--accent);
-}
 /* Sections wrap onto as many shelves as the width needs. */
 .shelves {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 1.75rem 1.125rem;
-	margin-top: 1.5rem;
+	margin-top: 3rem;
 	overflow-x: clip;
 }
 /* A short last shelf keeps its books together. */
@@ -539,30 +464,10 @@ kbd {
 .ticks {
 	display: none;
 }
-/* One horizon at a time: the other books turn to plain slabs, the other rows fade. */
-[data-only='foundation'] .bookcase .book:not(.hz-foundation),
-[data-only='current'] .bookcase .book:not(.hz-current),
-[data-only='emerging'] .bookcase .book:not(.hz-emerging) {
-	background: var(--slab);
-	box-shadow: none;
-	color: color-mix(in srgb, var(--ink) 30%, transparent);
-}
-[data-only='foundation'] .catalogue .row:not(.hz-foundation),
-[data-only='current'] .catalogue .row:not(.hz-current),
-[data-only='emerging'] .catalogue .row:not(.hz-emerging) {
-	opacity: 0.35;
-}
 @media (hover: hover) {
 	.shelves:has(.group-label:hover) .group:not(:has(.group-label:hover)) .book {
 		opacity: 0.6;
 		transition-delay: 120ms;
-	}
-	.bookcase:has([data-legend='foundation']:hover) .book:not(.hz-foundation),
-	.bookcase:has([data-legend='current']:hover) .book:not(.hz-current),
-	.bookcase:has([data-legend='emerging']:hover) .book:not(.hz-emerging) {
-		background: var(--slab);
-		box-shadow: none;
-		color: color-mix(in srgb, var(--ink) 30%, transparent);
 	}
 }
 
@@ -573,23 +478,6 @@ kbd {
 }
 .catalogue > .container {
 	padding-block: 1.5rem 2.5rem;
-}
-.catalogue-key {
-	margin: 0 0 1.5rem;
-	padding-block: 0.375rem;
-	border-bottom: 1px solid transparent;
-}
-body:not([data-key-out]) .catalogue-key:not(:focus-within) {
-	visibility: hidden;
-	opacity: 0;
-}
-/* While a filter is on, its legend follows the list. */
-[data-only] .catalogue-key {
-	position: sticky;
-	top: var(--bar);
-	z-index: 5;
-	border-color: var(--line);
-	background: var(--surface);
 }
 .catalogue-cols {
 	display: grid;
@@ -678,7 +566,7 @@ body:not([data-key-out]) .catalogue-key:not(:focus-within) {
 	background: var(--tint);
 	box-shadow: inset 2px 0 var(--accent);
 }
-.rows.detail .hz {
+.rows.detail .spine {
 	align-self: start;
 	margin-top: 0.3125rem;
 }
@@ -875,14 +763,6 @@ code {
 	background: light-dark(color-mix(in srgb, var(--ink) 6%, transparent), color-mix(in srgb, var(--ink) 10%, transparent));
 	font: 0.9em var(--mono);
 }
-.prose .hz {
-	gap: 0.375rem;
-	vertical-align: -0.1875rem;
-}
-.prose .hz-word {
-	font-size: 0.875rem;
-	color: var(--ink);
-}
 .sub {
 	margin-top: 3rem;
 }
@@ -951,9 +831,6 @@ code {
 .facts dt {
 	display: flex;
 	color: var(--muted);
-}
-.facts .hz-word {
-	color: var(--ink);
 }
 
 /* Topic: sources */
@@ -1393,11 +1270,6 @@ mark {
 			stroke 140ms ease-out,
 			translate 140ms ease-out;
 	}
-	.catalogue-key {
-		transition:
-			opacity 120ms ease-out,
-			visibility 120ms;
-	}
 	/* Between pages the bar holds its place and the content cross-fades. */
 	@view-transition {
 		navigation: auto;
@@ -1457,12 +1329,9 @@ mark {
 	.hero h1 {
 		font-size: 9rem;
 	}
-	.bookcase .key {
-		margin-top: 1rem;
-	}
 	.shelves {
 		row-gap: 1rem;
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 	.group-label {
 		min-height: 2.625rem;
@@ -1857,9 +1726,6 @@ mark {
 	.catalogue > .container {
 		padding-top: 1rem;
 	}
-	.catalogue-key {
-		margin-bottom: 1rem;
-	}
 	.hero > .container {
 		padding-block: 2rem 2.5rem;
 	}
@@ -1877,15 +1743,6 @@ mark {
 		margin-bottom: 0;
 		padding-block: 0;
 		text-align: left;
-	}
-	.key {
-		font-size: 0.75rem;
-	}
-	.legend {
-		gap: 0;
-	}
-	.legend .hz-word {
-		font-size: 0.75rem;
 	}
 	.row {
 		min-height: 2.75rem;

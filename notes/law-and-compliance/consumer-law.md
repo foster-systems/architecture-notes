@@ -2,7 +2,7 @@
 title: EU consumer law
 description: "The EU rules for selling apps, digital content, digital services and subscriptions to consumers: information before the contract, the right of withdrawal, conformity of digital products, unfair terms and unfair commercial practices."
 why: "A company that sells to consumers in the EU must give set information before the order, let buyers withdraw within 14 days and keep a digital product in conformity, with updates, for as long as the contract runs. A service paid for with personal data is covered too. Fake reviews are banned outright, and hidden subscription terms and manipulative design can be unfair practices."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 6

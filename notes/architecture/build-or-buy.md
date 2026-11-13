@@ -2,7 +2,7 @@
 title: Build or buy
 description: "Deciding what to build, what to buy and what to adopt, and the risk each dependency brings."
 why: "A small company has little engineering time and needs to spend it on what makes the product different. Every technology and vendor adopted also becomes a long-term operating cost and a dependency."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 9

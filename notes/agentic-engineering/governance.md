@@ -2,7 +2,7 @@
 title: Securing coding agents
 description: "Limiting what coding agents can reach and do: permissions, sandboxes, network limits, third-party plugins and prompt injection."
 why: "Agents run with real credentials, read untrusted content and load third-party plugins, and prompt injection has no complete fix. Hard limits on what an agent can reach still hold when approval prompts and model safeguards miss."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

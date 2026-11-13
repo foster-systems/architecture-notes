@@ -2,7 +2,7 @@
 title: Open source licences
 description: "What open source licences allow and require when a company builds its product on open source code."
 why: "Most of a product's code is open source, and each licence sets conditions on its use. A missed copyleft obligation can mean releasing source code or rewriting a component, and acquirers and investors check for it in due diligence."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 10

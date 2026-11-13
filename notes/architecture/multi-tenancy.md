@@ -2,7 +2,7 @@
 title: Multi-tenancy
 description: "How a SaaS product shares infrastructure and data among customers while keeping them apart."
 why: "The tenancy model sets cost per customer, blast radius, what enterprise buyers accept and how hard the data layer is to change later. One tenant reading another's data is among the worst failures a SaaS company can have."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 3

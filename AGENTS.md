@@ -17,8 +17,8 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 - `title`, `description`: one plain line, what it is.
 - `why`: one or two lines, why it matters.
-- `horizon`: `foundation` (holds for years), `current` (in use now), `emerging` (worth watching).
-- `reviewed`: date of the last review. Reviews fall due after 30, 7 and 3 days for the three horizons; `npm run due` lists overdue topics.
+- `review`: days between reviews: 30, or 7 where the field moves fast (AI, EU law, cloud tooling, Watch).
+- `reviewed`: date of the last review. `npm run due` lists overdue topics.
 - `sources`: at most 7, each `title`, `author`, `url`, `type` (article, paper, talk, video, docs, repo, guide, spec, tool, framework, law, feed), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 

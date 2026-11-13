@@ -2,7 +2,7 @@
 title: Web frontend
 description: "The client side of a SaaS web application: rendering choices, web performance and accessibility."
 why: "Rendering choices decide how much JavaScript each user's device must run. In the EU, accessibility is a legal duty for products and for consumer services such as e-commerce and banking."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 7

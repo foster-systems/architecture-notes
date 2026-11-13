@@ -6,7 +6,6 @@ import { findSection, tree } from './tree.mjs';
 export const github = `https://github.com/${repo}`;
 export const url = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 export type Entry = CollectionEntry<'notes'>;
-export type Horizon = 'foundation' | 'current' | 'emerging';
 
 export const lastChanged = (file: string) => {
 	try {
@@ -40,12 +39,10 @@ export const hueOf = (id: string) => hues.get(id);
 /** The inline style that gives an element its section's colour. */
 export const tone = (id: string) => (hues.has(id) ? `--hue: ${hueOf(id)}` : undefined);
 const topics = notes.sections.flatMap(topicsOf);
-export const horizons: Horizon[] = ['foundation', 'current', 'emerging'];
 export const stats = {
 	sections: notes.sections.length,
 	topics: topics.length,
 	sources: topics.reduce((n, t) => n + t.sources, 0),
-	horizon: (h: Horizon) => topics.filter((t) => t.horizon === h).length,
 };
 
 const entities: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };

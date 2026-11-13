@@ -2,7 +2,7 @@
 title: Pricing and billing
 description: "How a software company prices and packages its product, and how billing systems meter usage, charge customers and keep the records right."
 why: "A pricing model decides what the product must meter, store and enforce, so a pricing change is often an engineering project. AI features add a cost per request, which pushes pricing toward usage, and billing bugs charge customers the wrong amount."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 3

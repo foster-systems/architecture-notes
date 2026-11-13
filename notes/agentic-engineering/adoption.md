@@ -2,7 +2,7 @@
 title: Adopting coding agents
 description: "Rolling out coding agents in an engineering team, and checking whether they make the team faster and its software better."
 why: "Spending on agents, hiring plans and team design all rest on how much agents speed up the work, and developers' own estimates of that are unreliable. Controlled studies and repository data give a company a sounder basis for these decisions."
-horizon: current
+review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 1

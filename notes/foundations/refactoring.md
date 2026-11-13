@@ -2,7 +2,7 @@
 title: Refactoring and rewrites
 description: "Improving the structure of working code without changing what it does, and choosing between rewriting a system and replacing it piece by piece."
 why: "Every product outgrows its first code. Small, steady refactoring keeps it easy to change, while a rewrite from scratch can stop a product from shipping for years."
-horizon: foundation
+review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 6

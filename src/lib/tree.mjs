@@ -21,7 +21,6 @@ function page(path, file) {
 		description: data.description,
 		order: data.sidebar?.order ?? Infinity,
 		sources: data.sources?.length ?? 0,
-		horizon: data.horizon,
 		reviewed: data.reviewed && new Date(data.reviewed).toISOString().slice(0, 10),
 	};
 }

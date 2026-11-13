@@ -15,7 +15,7 @@ const { topics, current, sized, style } = Astro.props;
 	{
 		topics.map((t) => (
 			<span
-				class:list={['spine', t.horizon && `hz-${t.horizon}`, { on: t.id === current }]}
+				class:list={['spine', { on: t.id === current }]}
 				style={sized ? `--more: ${Math.max(0, Math.min(2, t.sources - 5))}` : undefined}
 			/>
 		))
