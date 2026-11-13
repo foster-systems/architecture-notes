@@ -3,7 +3,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 
-const UA = 'architecture-notes-links/1.0 (+https://github.com/foster-systems/architecture-notes)';
+const UA = 'shelf-links/1.0 (+https://shelf.foster.systems)';
 const CHALLENGE = /<title>\s*(just a moment|attention required|access denied)|cf-chl-|challenge-platform/i;
 const MIN_TEXT = 500;
 

@@ -2,7 +2,6 @@
 title: Go-to-market and early sales
 description: "How a software company finds its first customers, matches its way of selling to its price point, and moves from founder-led sales to a sales team."
 why: "Price per customer decides how a product must be sold, from self-service to field sales, and that choice shapes the product. Hiring salespeople before the company knows how customers buy burns cash without adding revenue."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 2

@@ -2,7 +2,6 @@
 title: AI engineering basics
 description: "How applications and agents built on language models work: the model, its context, tools and the system around them."
 why: "A team cannot design, review or debug an AI feature without knowing how the model loop and its context behave. Most quality, cost and failure in these products comes from the system around the model."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

@@ -2,7 +2,6 @@
 title: Regulatory change
 description: "Official trackers, decision databases and newsletters that follow new EU rules on data, AI and cybersecurity, and how regulators apply them."
 why: "New EU rules and guidance on data, AI and cybersecurity arrive every year, with deadlines and fines. These sources show what is coming, and how regulators read and enforce the rules already in force."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 6

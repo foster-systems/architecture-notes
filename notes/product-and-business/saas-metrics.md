@@ -2,7 +2,6 @@
 title: SaaS metrics
 description: "How recurring revenue, retention, churn, customer acquisition cost and gross margin are defined, calculated and compared with peers."
 why: "Boards and investors read these numbers, and product and billing data feed them. Hosting, AI inference and support costs sit inside gross margin, so technical decisions show up in the metrics."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 5

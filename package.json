@@ -1,5 +1,5 @@
 {
-  "name": "architecture-notes",
+  "name": "shelf",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
@@ -8,7 +8,6 @@
     "readme": "node scripts/readme.mjs",
     "check": "node scripts/readme.mjs --check && npm run build",
     "links": "node scripts/links.mjs",
-    "due": "node scripts/due.mjs",
     "og": "node scripts/og.mjs"
   },
   "dependencies": {

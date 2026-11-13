@@ -2,7 +2,6 @@
 title: Data pipelines
 description: "Moving data from source systems into a warehouse or lakehouse, transforming it for analysis, and orchestrating the jobs."
 why: "Reporting, analytics and AI features all read from these pipelines. A small company needs few of the parts, and each part it adds has to be run and paid for."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 3

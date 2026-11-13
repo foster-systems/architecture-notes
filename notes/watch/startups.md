@@ -2,7 +2,6 @@
 title: Startups and product
 description: "Essays, articles, podcasts and talks on starting and growing a software company: product-market fit, product management and growth."
 why: "Founders who build the technology also make the product and growth decisions. These feeds show how founders and operators make them, as practice changes."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 5

@@ -2,7 +2,6 @@
 title: Conferences
 description: "Recurring conferences on software architecture, AI engineering, reliability, cloud infrastructure and application security, with recordings of their talks online."
 why: "At these events practitioners report what they built and what broke. Recorded talks let a small team follow each field without travelling."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

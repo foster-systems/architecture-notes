@@ -2,7 +2,6 @@
 title: Enterprise readiness
 description: "The features and assurances larger customers require before they buy a SaaS product: single sign-on, user provisioning, audit logs, roles and security reviews."
 why: "Enterprise deals often depend on these features, and each one is easier to build early than to retrofit. Their identity standards are changing, so what counts as enterprise-grade keeps moving."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

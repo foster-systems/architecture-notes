@@ -2,7 +2,6 @@
 title: Incidents
 description: "Responding to production failures and learning from them: severity, roles, communication and post-incident reviews."
 why: "Incidents test whether a team can communicate and restore service under pressure, in front of its customers. A small company needs a simple response process before its first serious outage, and a habit of learning from each one."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 3

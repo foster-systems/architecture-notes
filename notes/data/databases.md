@@ -2,7 +2,6 @@
 title: Databases
 description: "Choosing the main database of a software product, usually a relational one such as Postgres, using it well and changing its schema safely."
 why: "The database holds the state a company cannot rebuild, and it is the hardest part of the stack to replace. One locking migration can take the whole product down."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

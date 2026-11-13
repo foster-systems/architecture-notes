@@ -2,7 +2,6 @@
 title: Runway and financial planning
 description: "How a software company measures burn and runway, tells whether it reaches profit on the cash it has, and plans revenue, headcount and spending."
 why: "A startup dies when it runs out of cash, and founders often find out too late to raise more or cut costs. Hiring is usually the largest cost, so each hiring plan is also a decision about runway."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 6

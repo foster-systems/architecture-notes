@@ -2,7 +2,6 @@
 title: EU AI Act
 description: "The EU regulation on AI systems and general-purpose AI models, as amended by the Digital Omnibus on AI in 2026."
 why: "It applies to companies that put AI systems on the EU market or use them in the EU, and to others whose AI output is used there. Duties depend on the company's role, provider or deployer, and on the system's risk tier. A product with a chatbot has had transparency duties since August 2026. Generative systems already on the market by then must mark their output as AI-generated from December 2026, and most high-risk duties apply from December 2027."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 3

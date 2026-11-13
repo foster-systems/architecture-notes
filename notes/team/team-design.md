@@ -2,7 +2,6 @@
 title: Team design
 description: "How engineering teams are split and sized, how they work together, and where they work: Conway's law, Team Topologies, team size, and remote and office work."
 why: "Once a company outgrows one informal group, team boundaries start to shape the software. Team splits and the remote or office choice are cheaper to set early than to change later."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 3

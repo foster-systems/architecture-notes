@@ -2,7 +2,6 @@
 title: SOC 2 and ISO/IEC 27001
 description: "Two security assurance schemes: SOC 2, a report by a CPA firm under AICPA criteria, and ISO/IEC 27001, a certifiable standard for information security management."
 why: "Large customers ask for one of these before buying, so either can decide a sale. Both check that stated controls exist and are followed; neither is a security test. The engineering work is cheapest when started early, while the team is small."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 9

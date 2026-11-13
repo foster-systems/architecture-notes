@@ -2,7 +2,6 @@
 title: On-call
 description: "Who answers production alerts outside working hours, how the rotation is run, and what it costs the people on it."
 why: "A software company needs someone on call from its first paying customers, usually its own engineers. A rotation with too few people or noisy alerts burns them out, and in the EU stand-by time can count as working time."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 4

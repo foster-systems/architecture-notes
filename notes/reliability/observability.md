@@ -2,7 +2,6 @@
 title: Observability
 description: "Understanding what running systems do through logs, metrics and traces."
 why: "A small team debugs production with the telemetry it already has, and that telemetry is often one of its largest tool bills. Instrumenting with OpenTelemetry keeps the choice of backend open."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 1

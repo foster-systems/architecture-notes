@@ -2,7 +2,6 @@
 title: Infrastructure as code
 description: "Defining servers, networks and cloud services in versioned code that a tool applies, instead of setting them up by hand."
 why: "A setup built by hand cannot be rebuilt, reviewed or copied to a new environment, and it drifts. Code keeps a small team's infrastructure repeatable and gives coding agents a reviewable way to change it."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 2

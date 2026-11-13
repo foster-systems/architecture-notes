@@ -17,9 +17,8 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 - `title`, `description`: one plain line, what it is.
 - `why`: one or two lines, why it matters.
-- `review`: days between reviews: 30, or 7 where the field moves fast (AI, EU law, cloud tooling, Watch).
-- `reviewed`: date of the last review. `npm run due` lists overdue topics.
-- `sources`: at most 7, each `title`, `author`, `url`, `type` (article, paper, talk, video, docs, repo, guide, spec, tool, framework, law, feed), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
+- `reviewed`: date of the last review. A topic is reviewed when its field changes: a new release, law, ruling or study, a source that breaks, moves or is superseded, or a reader's issue.
+- `sources`: 5 to 7, each `title`, `author`, `url`, `type` (article, paper, talk, video, docs, repo, guide, spec, tool, framework, law, feed), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 
 No body: a topic is its front matter.
@@ -37,7 +36,7 @@ A published URL keeps working: when a topic moves, add old path to new path in `
 ## Rules
 
 - Link, don't copy: no copied passages, diagrams or images. Quotes are rare, under 15 words, attributed.
-- Open every URL before adding it. 5–7 sources per topic; curated, not exhaustive.
+- Open every URL before adding it.
 - A new source must pass every check in the standard and beat what it displaces. A removal's commit message names its reason from the standard, e.g. "Superseded by …".
 - A topic outside the scope is removed or merged; a moved one gets a redirect.
 - Notes describe the source. Never invent experience or opinions and attribute them to Przemek.

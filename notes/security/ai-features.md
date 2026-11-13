@@ -2,7 +2,6 @@
 title: Securing AI features
 description: "Protecting the language model features of a product, such as assistants, search over customer data and agents that call tools, from prompt injection, data leaks and misuse."
 why: "A language model cannot reliably tell its developer's instructions from text an attacker planted in a document, email or web page, and no product fully removes this risk. The design has to limit what a fooled model can read and do."
-review: 7
 reviewed: 2026-11-12
 sidebar:
   order: 3

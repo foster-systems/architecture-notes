@@ -19,7 +19,7 @@ Sources are free to read, without a login, and readable by AI agents. Each topic
 
 ## How it is kept
 
-Each topic is reviewed against these criteria every 30 days, or every 7 where the field moves fast, such as AI, EU law and cloud tooling.
+A topic is reviewed against these criteria when its field changes: a new release, law, ruling or study, a source that breaks, moves or is superseded, or a reader's issue. Each topic shows the date of its last review.
 
 AI agents look for sources and review the existing ones. A second agent, on a different model, checks each change against these criteria, and an automated build checks format and links before it is published. Each page links to its history on GitHub; a removal's commit names its reason.
 
