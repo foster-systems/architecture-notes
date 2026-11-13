@@ -27,11 +27,11 @@ Links only: no copied text. Quotes are rare and short. Inclusion is not an endor
 
 ## For agents
 
-Read [llms.txt](../llms.txt) for the index. Append `.md` to any topic URL for its Markdown, or read the [repo](https://github.com/foster-systems/architecture-notes) directly. Front matter holds the summary, why it matters, and the sources.
+Read [llms.txt](../llms.txt) for the index. Append `.md` to any topic URL for its Markdown, or read the [repo](https://github.com/foster-systems/shelf) directly. Front matter holds the summary, why it matters, and the sources.
 
 ## Suggest a source
 
-Open an [issue](https://github.com/foster-systems/architecture-notes/issues) with the link and one line on why.
+Open an [issue](https://github.com/foster-systems/shelf/issues) with the link and one line on why.
 
 ## Licence
 

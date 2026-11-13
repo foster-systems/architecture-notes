@@ -158,7 +158,7 @@ What to follow as technology, practice and regulation move: reports, newsletters
 
 ## Contributing
 
-Suggest a source by opening an [issue](https://github.com/foster-systems/architecture-notes/issues).
+Suggest a source by opening an [issue](https://github.com/foster-systems/shelf/issues).
 
 ## Licence
 
