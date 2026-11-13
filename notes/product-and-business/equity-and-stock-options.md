@@ -2,7 +2,6 @@
 title: Equity and stock options
 description: "How founders split ownership, how founder shares vest and are taxed, and how a company sizes and runs stock options for employees."
 why: "Equity decisions made at incorporation and with the first hires are hard to undo and can cost founders and employees money or control years later. Stock options are also how a young company competes for engineers against larger employers' salaries, and the rules differ by country."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 8

@@ -2,7 +2,6 @@
 title: NIS2 and the Cyber Resilience Act
 description: "Two EU cybersecurity laws: NIS2 binds providers of services such as cloud and SaaS, and the Cyber Resilience Act binds makers of software and hardware products."
 why: "A SaaS provider falls under NIS2 as a cloud computing service provider once it is medium-sized or larger under the EU definition; a smaller one that sells to NIS2 entities meets NIS2 terms through their supply-chain duties. A web app used only through a browser is not a Cyber Resilience Act product, but an installed client or mobile app is, and the backend it needs is covered with it."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

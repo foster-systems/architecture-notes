@@ -2,7 +2,6 @@
 title: Cookies and tracking consent
 description: "The EU rule that a website or app needs the user's consent before it stores or reads information on their device, unless the service strictly needs it."
 why: "Most products add analytics, advertising, chat or session-replay tools that set cookies or similar trackers, and each needs consent unless it is strictly necessary for the service the user asked for. The rule covers pixels, SDKs and local storage as well as cookies, and applies whether or not the data is personal. Data protection authorities coordinate their enforcement of consent banners across the EU."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 2

@@ -2,7 +2,6 @@
 title: EU Data Act
 description: "The EU regulation on access to data from connected products and on switching between cloud services, SaaS included."
 why: "Its switching rules cover every SaaS provider regardless of size: contracts must let customers leave, data must be exportable through open interfaces, and switching charges end on 12 January 2027. A SaaS product tied to a connected device also falls under its data access rules."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 5

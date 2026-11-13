@@ -2,7 +2,6 @@
 title: Caching
 description: "Keeping copies of data close to where they are used: HTTP and CDN caches, application caches, invalidation and the failures caches cause."
 why: "A cache cuts latency and database load, and a product soon depends on it. Wrong cache rules can serve one user's private data to another, and an empty cache can overload the database and cause an outage."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 6

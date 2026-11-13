@@ -2,7 +2,6 @@
 title: Evals
 description: "Testing whether an LLM application or agent does its job, during development and in production."
 why: "Model output varies from run to run, so a change that looks fine in one trial can break others. Evals tell a team whether a prompt, model or tool change made the product better or worse."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 3

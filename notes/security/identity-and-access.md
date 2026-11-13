@@ -2,7 +2,6 @@
 title: Identity and access
 description: "Proving who a user or service is and limiting what it can do: authentication, passkeys, OAuth, authorization and secrets."
 why: "Broken access control is the top risk in the OWASP Top 10:2025. How users sign in, where tokens live and how permissions are modelled are decided early and are hard to change later. Least privilege and well-kept secrets limit the damage when a credential leaks."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

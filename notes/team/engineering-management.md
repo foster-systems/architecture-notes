@@ -2,7 +2,6 @@
 title: Engineering management
 description: "Managing engineers day to day: appointing the first managers, one-on-ones, feedback, underperformance and letting people go."
 why: "Once a team outgrows what its founders can manage, someone has to manage people as a job, often an engineer promoted from the team. Managers shape results and who stays, and underperformance or a layoff handled badly costs trust that is slow to rebuild."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 4

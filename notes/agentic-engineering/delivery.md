@@ -2,7 +2,6 @@
 title: Delivering agent-written code
 description: "Keeping code review, CI and merging ahead of the rate at which agents produce changes."
 why: "Agents raise the number and size of changes faster than reviewers and CI can absorb them. When review and checks fall behind, main goes red or unreviewed code reaches production."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 6

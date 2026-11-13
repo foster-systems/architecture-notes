@@ -2,7 +2,6 @@
 title: Newsletters and live feeds
 description: "Newsletters on AI, security, reliability and engineering leadership, and live feeds of what practitioners read and star."
 why: "One person covering a company's whole technology cannot watch every field. A few curated newsletters catch the changes that matter, and live feeds show what practitioners read and build this week."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 2

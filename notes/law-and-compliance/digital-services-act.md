@@ -2,7 +2,6 @@
 title: EU Digital Services Act
 description: "The EU regulation on intermediary services, such as hosting services and online platforms, and on how they handle illegal content and moderate what users post."
 why: "It applies to any service that stores content its users provide and serves users in the EU, whatever the company's size or location. Every such service needs points of contact, terms that explain its content moderation, a way to report illegal content and a statement of reasons when it restricts content or accounts. Online platforms, which publish user content to the public, carry more duties, from complaint handling to a ban on manipulative design, but micro and small enterprises are exempt from most of them. Fines reach 6% of worldwide annual turnover."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 7

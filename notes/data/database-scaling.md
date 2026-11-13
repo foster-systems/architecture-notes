@@ -2,7 +2,6 @@
 title: Scaling the database
 description: "Keeping one main database healthy as load grows, and splitting it when one server is no longer enough: connections, vacuum, replicas, partitioning and sharding."
 why: "A growing product usually hits the limits of its first database before any other part of the stack. Each step, from a connection pooler to sharding, costs more than the last, and a late start leaves little runway."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 2

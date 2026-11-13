@@ -2,7 +2,6 @@
 title: Hiring
 description: "How a company finds and assesses engineers and brings them into the team: the hiring funnel, structured interviews, work samples and onboarding."
 why: "Each early hire is a large share of the team, and a wrong one costs months. Interview habits copied from large companies often test the wrong things, and AI tools have changed what a coding test can show."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 1

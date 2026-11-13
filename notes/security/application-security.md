@@ -2,7 +2,6 @@
 title: Application security
 description: "Building secure web applications: common risks, security requirements, secure development practices and threat modelling."
 why: "A small software company rarely has a security team, so the engineers who build the product apply the controls themselves. A flaw they miss reaches customers' data."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 2

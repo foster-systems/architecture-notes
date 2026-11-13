@@ -2,7 +2,6 @@
 title: Product discovery
 description: "How a software company decides what to build, tests ideas with customers before building them, and tells whether it has product-market fit."
 why: "At a small company the same few people decide what to build and then build it. Discovery tests ideas with customers before engineering time goes into them, and a fit test tells the company when to stop searching and start scaling."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

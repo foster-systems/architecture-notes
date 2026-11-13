@@ -2,7 +2,6 @@
 title: Domain-driven design
 description: "Building software around a shared model of the business domain, split into bounded contexts with explicit relationships."
 why: "As a product grows, one model of the business stops fitting every part of it, and code, teams and services start to mix meanings. Bounded contexts and a shared language help decide where to split code and teams and how the parts talk to each other."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 3

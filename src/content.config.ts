@@ -20,14 +20,13 @@ const topic = z
 		title: z.string(),
 		description: summary.optional(),
 		why: summary.optional(),
-		review: z.number().int().positive().optional(),
 		reviewed: z.coerce.date().optional(),
-		sources: z.array(source).max(7).optional(),
+		sources: z.array(source).min(5).max(7).optional(),
 		related: z.array(z.string()).optional(),
 		tags: z.array(z.string()).optional(),
 		sidebar: z.object({ order: z.number() }).optional(),
 	})
-	.refine((d) => !d.sources || (d.review && d.reviewed), 'a topic with sources needs review and reviewed');
+	.refine((d) => !d.sources || d.reviewed, 'a topic with sources needs reviewed');
 
 export const collections = {
 	notes: defineCollection({

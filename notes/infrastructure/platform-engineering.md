@@ -2,7 +2,6 @@
 title: Platform engineering
 description: "Internal platforms that give product teams self-service infrastructure, tools and supported default paths, run as a product for developers."
 why: "As a company grows past a few teams, each team building its own delivery and infrastructure slows everyone and fragments the stack. A platform built too early or without users' input becomes one more system to run that nobody wants."
-review: 7
 reviewed: 2026-11-11
 sidebar:
   order: 4

@@ -2,7 +2,6 @@
 title: Privacy by design
 description: "Engineering practice for personal data: collecting less, keeping it for a set time, and deleting it everywhere it went."
 why: "GDPR requires data protection by design and by default. Retention and deletion are hard to add once personal data has spread into logs, backups and warehouses, so a company that designs for them early avoids rework when a customer or regulator asks."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 5

@@ -2,7 +2,6 @@
 title: Cloud foundations
 description: "The base of a cloud setup: accounts, region, network, a security baseline and reviews of the architecture."
 why: "Accounts, region and network ranges are chosen in the first weeks and are hard to change once production depends on them. A few controls set at the start reduce the most common security risks of a new cloud account."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 1

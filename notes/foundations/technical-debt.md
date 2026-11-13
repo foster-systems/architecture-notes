@@ -2,7 +2,6 @@
 title: Technical debt
 description: "Shortcuts and aging choices in code and design that make later changes slower, and how to decide which to pay back."
 why: "Every young company takes on debt to ship. Knowing which debt slows the team and which can wait decides where cleanup time goes, and how to explain that time to the rest of the business."
-review: 30
 reviewed: 2026-11-11
 sidebar:
   order: 5
