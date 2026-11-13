@@ -360,7 +360,7 @@ kbd {
 	justify-content: space-between;
 	gap: 0.25rem 2rem;
 }
-.updated {
+.checked {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -368,7 +368,7 @@ kbd {
 	font-variant-numeric: tabular-nums;
 	color: var(--subtle);
 }
-.updated::before {
+.checked::before {
 	content: '';
 	width: 0.5rem;
 	height: 0.5rem;
@@ -376,7 +376,7 @@ kbd {
 	background: var(--fresh);
 	box-shadow: 0 0 0 3px color-mix(in srgb, var(--fresh) 25%, transparent);
 }
-.updated time {
+.checked time {
 	color: var(--ink);
 }
 .hero-head {

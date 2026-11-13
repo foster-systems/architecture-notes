@@ -1,4 +1,5 @@
 ---
+import { readFileSync } from 'node:fs';
 import Base from '../layouts/Base.astro';
 import Books from '../components/Books.astro';
 import Rows from '../components/Rows.astro';
@@ -24,7 +25,8 @@ const runs = (n: number, head = 0) => {
 	return out;
 };
 const columns = runs(3, 3);
-const updated = lastChanged('notes');
+const stamp = readFileSync('checked.txt', 'utf8').trim();
+const checked = [/^\d{4}-\d{2}-\d{2}$/.test(stamp) ? stamp : '', lastChanged('notes') ?? ''].sort().at(-1);
 ---
 
 <Base
@@ -37,9 +39,9 @@ const updated = lastChanged('notes');
 		<div class="container">
 			<div class="hero-top">
 				<p class="eyebrow">{stats.sections} sections · {stats.topics} topics · {stats.sources} sources</p>
-				{updated && (
-					<p class="updated">
-						Updated <time datetime={updated}>{new Date(updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}</time>
+				{checked && (
+					<p class="checked">
+						Checked <time datetime={checked}>{new Date(checked).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}</time>
 					</p>
 				)}
 			</div>
