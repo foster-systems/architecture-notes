@@ -45,7 +45,6 @@ export const stats = {
 	sections: notes.sections.length,
 	topics: topics.length,
 	sources: topics.reduce((n, t) => n + t.sources, 0),
-	reviewed: topics.map((t) => t.reviewed ?? '').sort().at(-1),
 	horizon: (h: Horizon) => topics.filter((t) => t.horizon === h).length,
 };
 
