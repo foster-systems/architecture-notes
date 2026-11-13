@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Books from '../components/Books.astro';
 import Horizon from '../components/Horizon.astro';
 import Rows from '../components/Rows.astro';
-import { horizons, notes, sectionUrl, stats, tone, topicsOf, two, url, typeset } from '../lib/repo';
+import { horizons, lastChanged, notes, sectionUrl, stats, tone, topicsOf, two, url, typeset } from '../lib/repo';
 
 let seen = 0;
 const numbered = notes.sections.map((s, i) => {
@@ -24,8 +24,8 @@ const runs = (n: number, head = 0) => {
 	}
 	return out;
 };
-const shelves = runs(2);
 const columns = runs(3, 3);
+const updated = lastChanged('notes');
 ---
 
 <Base
@@ -36,7 +36,14 @@ const columns = runs(3, 3);
 >
 	<section class="hero">
 		<div class="container">
-			<p class="eyebrow">{stats.sections} sections · {stats.topics} topics · {stats.sources} sources</p>
+			<div class="hero-top">
+				<p class="eyebrow">{stats.sections} sections · {stats.topics} topics · {stats.sources} sources</p>
+				{updated && (
+					<p class="updated">
+						Updated <time datetime={updated}>{new Date(updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}</time>
+					</p>
+				)}
+			</div>
 			<div class="hero-head">
 				<h1>Shelf</h1>
 				<p class="hero-line">Building and running a software company. <a href={url('about/')}>More…</a></p>
@@ -51,23 +58,18 @@ const columns = runs(3, 3);
 							</button>
 						))}
 					</span>
-					<span>Reviewed {stats.reviewed}</span>
 				</p>
-				<div class="shelves">
-					{shelves.map((shelf) => (
-						<ol class="shelf">
-							{shelf.map((s) => (
-								<li class="group" style={tone(s.id)}>
-									<Books topics={s.topics} from={s.from} label={s.title} />
-									<a class="group-label" href={`#${s.id}`}>
-										<span class="num">{s.num}</span>
-										{s.title}
-									</a>
-								</li>
-							))}
-						</ol>
+				<ol class="shelves">
+					{numbered.map((s) => (
+						<li class="group" style={tone(s.id)}>
+							<Books topics={s.topics} from={s.from} label={s.title} />
+							<a class="group-label" href={`#${s.id}`}>
+								<span class="num">{s.num}</span>
+								{s.title}
+							</a>
+						</li>
 					))}
-				</div>
+				</ol>
 				<p class="ticks" aria-hidden="true">
 					{numbered.map((s) => (
 						<span style={`flex-grow: ${s.topics.length}; ${tone(s.id)}`} />

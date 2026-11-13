@@ -11,6 +11,7 @@
 	--line: light-dark(#e4e4e7, #1d2028);
 	--line-strong: light-dark(#d4d4d8, #2b2f3a);
 	--accent: light-dark(#4338ca, #a5b4fc);
+	--fresh: light-dark(#16a34a, #4ade80);
 	--glow: light-dark(rgb(99 102 241 / 0.16), rgb(99 102 241 / 0.22));
 	--dot: light-dark(rgb(12 12 14 / 0.09), rgb(255 255 255 / 0.07));
 	--tint: light-dark(rgb(12 12 14 / 0.04), rgb(255 255 255 / 0.05));
@@ -388,6 +389,32 @@ kbd {
 .hero > .container {
 	padding-block: 2.25rem 3.5rem;
 }
+.hero-top {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.25rem 2rem;
+}
+.updated {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font: 0.8125rem/1.5 var(--mono);
+	font-variant-numeric: tabular-nums;
+	color: var(--subtle);
+}
+.updated::before {
+	content: '';
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: var(--fresh);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--fresh) 25%, transparent);
+}
+.updated time {
+	color: var(--ink);
+}
 .hero-head {
 	display: flex;
 	align-items: flex-end;
@@ -463,19 +490,32 @@ kbd {
 .legend button[aria-pressed='true'] :is(.hz-word, .count) {
 	color: var(--accent);
 }
+/* Sections wrap onto as many shelves as the width needs. */
 .shelves {
-	display: grid;
-	row-gap: 1.75rem;
-	margin-top: 1.5rem;
-}
-.shelf {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	background: linear-gradient(var(--ink), var(--ink)) 0 var(--shelf) / 100% 2px no-repeat;
+	gap: 1.75rem 1.125rem;
+	margin-top: 1.5rem;
+	overflow-x: clip;
+}
+/* A short last shelf keeps its books together. */
+.group:last-child {
+	margin-inline-end: auto;
 }
 .group {
+	position: relative;
 	flex: none;
 	width: min-content;
+}
+/* Each group draws the shelf from its left edge to the frame's right edge. */
+.group::before {
+	content: '';
+	position: absolute;
+	top: var(--shelf);
+	width: 100vw;
+	height: 2px;
+	background: var(--ink);
 }
 .group-label {
 	display: flex;
@@ -1400,7 +1440,7 @@ mark {
 		padding-top: 4rem;
 	}
 }
-/* A short screen still shows both shelves whole. */
+/* A short screen gets a smaller bookcase. */
 @media (min-width: 68.75rem) and (max-height: 54.5rem) {
 	.home {
 		--shelf: 9.5rem;
@@ -1457,35 +1497,8 @@ mark {
 		display: none;
 	}
 }
-/* Narrower than two full shelves: sections wrap onto as many shelves as needed. No room for a rail either. */
+/* No room for a rail. */
 @media (width < 68.75rem) {
-	.shelves {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		gap: 1.75rem 1.125rem;
-		overflow-x: clip;
-	}
-	/* A short last row keeps its books together. */
-	.shelves::after {
-		content: '';
-		flex: auto;
-	}
-	.shelf {
-		display: contents;
-	}
-	.group {
-		position: relative;
-	}
-	/* Each group draws the shelf from its left edge to the frame's right edge. */
-	.group::before {
-		content: '';
-		position: absolute;
-		top: var(--shelf);
-		width: 100vw;
-		height: 2px;
-		background: var(--ink);
-	}
 	.inner {
 		--shelf: 8.25rem;
 		padding-bottom: 2.5rem;
@@ -1785,7 +1798,6 @@ mark {
 	.shelves[data-scrolled] {
 		mask-image: linear-gradient(to right, transparent, #000 1.5rem, #000 calc(100% - 2rem), transparent);
 	}
-	.shelves::after,
 	.group::before {
 		content: none;
 	}
