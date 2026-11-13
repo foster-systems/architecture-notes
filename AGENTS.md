@@ -17,7 +17,7 @@ Topic front matter (validated by `src/content.config.ts`; the build fails on err
 
 - `title`, `description`: one plain line, what it is.
 - `why`: one or two lines, why it matters.
-- `reviewed`: date of the last review. A topic is reviewed when its field changes: a new release, law, ruling or study, a source that breaks, moves or is superseded, or a reader's issue.
+- `reviewed`: date of the last review. A topic is reviewed when its subject area changes: a new release, law, ruling or study, a source that breaks, moves or is superseded, or a reader's issue.
 - `sources`: 5 to 7, each `title`, `author`, `url`, `type` (article, paper, talk, video, docs, repo, guide, spec, tool, framework, law, feed), `year`, `note`, and optional `agents`: an agent-readable copy (repo or Markdown) of the site at `url`.
 - `related`: topic ids like `foundations/ddd`. `tags`: free.
 
@@ -30,6 +30,8 @@ Every source must be readable by agents: free, no login or paywall, not blocked 
 Sections are folders, nested as deep as needed. A folder's optional `index.md` gives its `title`, `description`, `sidebar.order` and intro; without it the folder name is the title. Pages sort by `sidebar.order`, then title. Names starting with `_` or `.` are skipped. The site, `llms.txt` and README list are built from the folder tree.
 
 Each top-level section has its own hue, set by its place in the order (`tone` in `src/lib/repo.ts`); nothing to configure. Neighbours on the shelf always differ; sections far apart can look alike. A section added last leaves the other colours as they are; one added in between shifts the colours after it.
+
+`checked.txt` holds the date the catalog was last checked against the standard; the editor loop writes it after each round. The home page shows the later of it and the last change in `notes/`.
 
 A published URL keeps working: when a topic moves, add old path to new path in `redirects.json`.
 
