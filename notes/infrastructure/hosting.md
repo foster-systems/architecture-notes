@@ -6,7 +6,7 @@ reviewed: 2026-11-11
 sidebar:
   order: 3
 tags: [hosting, paas, serverless, containers, kubernetes, deployment]
-related: [infrastructure/cloud-foundations, infrastructure/infrastructure-as-code, infrastructure/platform-engineering, infrastructure/finops, architecture/styles, architecture/build-or-buy, delivery/ci-cd]
+related: [infrastructure/cloud-foundations, infrastructure/email, infrastructure/infrastructure-as-code, infrastructure/platform-engineering, infrastructure/finops, architecture/styles, architecture/build-or-buy, delivery/ci-cd]
 sources:
   - title: The Twelve-Factor App
     author: Adam Wiggins

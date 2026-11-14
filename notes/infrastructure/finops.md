@@ -4,7 +4,7 @@ description: "Managing cloud and AI spend as a shared practice of engineering, f
 why: "Cloud and AI spend move with every deploy and prompt, and in a SaaS company they fall directly on gross margin. Cost per customer or per request shows whether spend grows faster than the business."
 reviewed: 2026-11-11
 sidebar:
-  order: 5
+  order: 6
 tags: [finops, cloud-cost, ai-cost, unit-economics, gross-margin, cost-optimization]
 related: [infrastructure/cloud-foundations, infrastructure/hosting, infrastructure/infrastructure-as-code, product-and-business/saas-metrics, product-and-business/pricing-and-billing, ai-engineering/model-choice]
 sources:

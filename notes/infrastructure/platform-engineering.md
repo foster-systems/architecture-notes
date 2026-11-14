@@ -4,7 +4,7 @@ description: "Internal platforms that give product teams self-service infrastruc
 why: "As a company grows past a few teams, each team building its own delivery and infrastructure slows everyone and fragments the stack. A platform built too early or without users' input becomes one more system to run that nobody wants."
 reviewed: 2026-11-11
 sidebar:
-  order: 4
+  order: 5
 tags: [platform-engineering, internal-platforms, golden-paths, developer-experience, developer-portal]
 related: [infrastructure/hosting, infrastructure/infrastructure-as-code, infrastructure/cloud-foundations, delivery/ci-cd, delivery/delivery-metrics, team/team-design, architecture/build-or-buy]
 sources:
